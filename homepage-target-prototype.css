@@ -21,6 +21,8 @@
 .m19-home-preview .nav-children { background: #fff; border: 1px solid #aec9bf; border-radius: .5rem; padding: .5rem; }
 .m19-home-preview .production-nav .nav-children { position: absolute; top: 100%; left: 0; width: 20rem; max-height: 65vh; overflow-y: auto; }
 .m19-home-preview .production-nav .nav-children a { display: block; }
+.m19-home-preview .production-nav > .nav-group:last-of-type .nav-children { left: auto; right: 0; }
+.m19-home-preview .nav-children a { overflow-wrap: anywhere; white-space: normal; }
 @media (max-width: 70rem) { .m19-home-preview .production-nav { display: none; } }
 .m19-home-preview .menu-panel a { display: block; padding: .6rem .4rem; min-height: 2.75rem; color: var(--m19-home-ink); }
 .m19-home-preview .menu-panel { max-height: 70vh; overflow-y: auto; }
@@ -62,6 +64,15 @@
 .m19-home-preview .name-card strong { display: block; font: 700 1.9rem/1.4 "PMingLiU", serif; }
 .m19-home-preview .name-card span { font-size: .95rem; color: #34424d; }
 .m19-home-preview .feedback { padding: .8rem 5%; font-size: .85rem; color: #455963; background: #f4f6f8; margin: 0; }
+.m19-home-preview .counter-section { display: grid; grid-template-columns: 1fr 1.5fr; gap: 2rem; align-items: center; padding: 3.5rem 5%; background: linear-gradient(125deg, #fff, #e8f4f0); border-block: 1px solid #cfb875; }
+.m19-home-preview .counter-section h2 { font: 700 clamp(1.5rem, 2.5vw, 2.3rem)/1.5 "PMingLiU", serif; }
+.m19-home-preview .counter-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 0; text-align: center; }
+.m19-home-preview .counter-grid > div { display: flex; flex-direction: column-reverse; min-width: 0; padding: 1rem .25rem; }
+.m19-home-preview .counter-grid dd { margin: 0; color: #006052; font-size: clamp(1.6rem, 3vw, 3.5rem); font-weight: 700; line-height: 1.4; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.m19-home-preview .counter-plus { margin-inline-start: .1em; color: var(--m19-home-gold); font-size: .55em; }
+.m19-home-preview .counter-sr { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 48rem) { .m19-home-preview .counter-section { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 36rem) { .m19-home-preview .counter-grid { grid-template-columns: minmax(0, 1fr); } }
 .m19-home-preview .structure { max-width: 65rem; margin: auto; padding: 4rem 1.5rem; }
 .m19-home-preview .structure ol { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 3rem; padding-left: 1.5rem; }
 @media (max-width: 70rem) { .m19-home-preview .desktop-nav { display: none; } .m19-home-preview .header-book { margin-left: auto; } }
