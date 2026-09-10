@@ -103,6 +103,28 @@
 .m19-home-preview .footer a { color: white; display: inline-block; padding-block: .65rem; }
 .m19-home-preview .footer a:focus-visible { outline-color: #fff; }
 .m19-home-preview button:disabled { cursor: default; }
+/* Preview revision 2: mirror the reviewed source safeguards without loading WP. */
+.m19-home-preview .action {
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+.m19-home-preview .action:hover { text-decoration: underline; }
+.m19-home-preview .primary:visited,
+.m19-home-preview .primary:hover,
+.m19-home-preview .primary:focus,
+.m19-home-preview .primary:active { color: #fff; background: linear-gradient(110deg, #347843, #006052 55%, #00483e); }
+.m19-home-preview .secondary:visited,
+.m19-home-preview .secondary:hover,
+.m19-home-preview .secondary:focus,
+.m19-home-preview .secondary:active { color: var(--m19-home-ink); background: #f7fcfb; }
+.m19-home-preview .name-card { min-width: 0; overflow-wrap: anywhere; }
+.m19-home-preview .action:focus-visible { outline: 3px solid #17324d; outline-offset: 4px; box-shadow: 0 0 0 7px #fff; }
+@media (min-width: 48.001rem) {
+  .m19-home-preview .name-card { border-bottom: 0; border-inline-start: 3px solid var(--m19-home-gold); }
+}
 @media (max-width: 48rem) {
   .m19-home-preview .service-grid, .m19-home-preview .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .m19-home-preview .care-layout, .m19-home-preview .contact-layout { grid-template-columns: minmax(0, 1fr); }
