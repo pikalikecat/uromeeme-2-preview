@@ -4,22 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'none'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
   <title>津久首頁・指定構圖離線版型</title>
-  <link rel="stylesheet" href="homepage-target-prototype.css?v=2ba7daf">
+  <link rel="stylesheet" href="homepage-target-prototype.css?v=nophoto-20260910">
   <script src="homepage-target-prototype.js" defer></script>
 </head>
 <body class="m19-home-preview">
   <!-- One user-selected direction, not a new design contest. No production assets/data. -->
   <a class="skip" href="#main">跳到主要內容</a>
-  <aside class="prototype-note">本地預覽更新：2026-09-10・第 2 版｜已同步按鈕換行、互動配色與姓名卡細節｜Logo 與人物照片仍待接入，非正式網站</aside>
+  <aside class="prototype-note">公開預覽更新：2026-09-10｜Logo 與頁內導覽已更新｜人物照片暫不公開，非正式網站</aside>
   <header class="header">
-    <div class="brand"><span class="logo-slot">原 Logo<br>素材位置</span><span>津 久 診 所</span></div>
-    <span class="desktop-nav">完整導覽選單（項目待核對）</span>
+    <div class="brand"><img class="brand-image" src="assets/logo.png" width="1076" height="189" alt="津久診所"></div>
+    <nav class="desktop-nav" aria-label="預覽頁內導覽"><a href="#structure">診療服務</a><a href="#team-title">醫師團隊</a><a href="#contact-title">到訪資訊</a></nav>
     <button class="action primary header-book" type="button" data-preview="預約看診" disabled>預約看診 <span aria-hidden="true">↗</span></button>
     <details class="menu">
       <summary aria-label="預覽選單"><span aria-hidden="true">☰</span></summary>
-      <div class="menu-panel"><strong>選單結構預留</strong><p>沿用既有完整導覽，未核對前不建立新路徑。</p><a href="#structure">查看首頁區塊規格</a></div>
+      <nav class="menu-panel" aria-label="完整預覽區塊"><strong>預覽區塊導覽</strong><p>僅供查看此版型，不是正式官網選單。</p><a href="#structure">診療服務</a><a href="#care-title">照護特色</a><a href="#team-title">醫師團隊</a><a href="#reviews-title">Google 精選評論</a><a href="#visit-title">第一次就診</a><a href="#articles-title">衛教文章</a><a href="#faq-title">常見問題</a><a href="#contact-title">門診・交通・聯絡</a></nav>
     </details>
   </header>
   <section class="announcement" aria-label="最新公告">
@@ -33,19 +33,17 @@
         <p class="eyebrow" lang="en">CARE FOR A HEALTHIER TOMORROW</p>
         <h1 id="hero-title">泌尿與肛門直腸健康，<br>從安心諮詢開始。</h1>
       </div>
-      <div class="portrait" role="img" aria-label="院長與執行院長雙主治合照預留區，尚未載入正式照片">
-        <div class="portrait-label">雙主治原始合照位置<span>保留完整人物比例<br>不使用模擬圖中的 AI 人像</span></div>
-      </div>
+      <div class="portrait" role="img" aria-label="雙醫師合照預留區，照片暫不公開"><div class="portrait-label">雙醫師合照預留區<span>照片暫不公開</span></div></div>
       <div class="names">
         <div class="name-card"><strong>陳偉傑</strong><span>院長／泌尿科醫師</span></div>
         <div class="name-card"><strong>羅詩修</strong><span>執行院長／泌尿科醫師</span></div>
       </div>
       <div class="hero-actions">
         <button class="action primary" type="button" data-preview="預約看診" disabled>預約看診 <span aria-hidden="true">→</span></button>
-        <button class="action secondary" type="button" data-preview="認識津久" disabled>認識津久 <span aria-hidden="true">→</span></button>
+        <a class="action secondary" href="#team-title">認識津久 <span aria-hidden="true">→</span></a>
       </div>
     </section>
-    <p class="feedback" id="preview-feedback" role="status">按鈕僅顯示操作回饋，不開啟預約或外部連結。</p>
+    <p class="feedback" id="preview-feedback" role="status">導覽與「認識津久」可跳至本頁區塊；預約按鈕僅顯示回饋，不開啟外部服務。</p>
     <noscript><p class="feedback">JavaScript 未啟用：預覽按鈕停用、公告靜止；選單與同頁區塊連結仍可使用。</p></noscript>
     <section class="structure" id="structure" aria-labelledby="structure-title">
       <p class="eyebrow">SERVICES · 六項入口</p>
@@ -64,16 +62,16 @@
       <div class="section-inner care-layout"><div><p class="eyebrow">CARE · 內容預留</p><h2 id="care-title">照護特色</h2></div><div class="empty-panel"><p>此區接入經確認的照護特色與說明。</p><p class="draft-label">不以示意文案宣稱設備、療效、認證或排名。</p></div></div>
     </section>
     <section class="section-inner" aria-labelledby="team-title">
-      <p class="eyebrow">OUR TEAM</p><h2 id="team-title">醫師團隊</h2>
+      <p class="eyebrow">OUR TEAM</p><h2 id="team-title">醫師團隊</h2><p class="draft-label">七張照片依提供的姓名對應接入；部分仍含舊版深色外框，尚未統一背景與人物比例。教授單人素材待補，本區不是最終照片排版。</p>
       <p class="draft-label">八位完整列出、不使用輪播隱藏成員。正式照片待接入；姓名職稱依使用者提供文字。</p>
       <ul class="team-grid plain-list">
-        <li><div class="doctor-photo" aria-hidden="true">照片待接入</div><h3>陳偉傑</h3><p>院長</p></li>
-        <li><div class="doctor-photo" aria-hidden="true">照片待接入</div><h3>羅詩修</h3><p>執行院長</p></li>
-        <li><div class="doctor-photo" aria-hidden="true">照片待接入</div><h3>陳嘉哲</h3><p>肛門直腸外科主任</p></li>
-        <li><div class="doctor-photo" aria-hidden="true">照片待接入</div><h3>李齊泰</h3><p>泌尿科醫師</p></li>
-        <li><div class="doctor-photo" aria-hidden="true">照片待接入</div><h3>吳致寬</h3><p>泌尿科醫師</p></li>
-        <li><div class="doctor-photo" aria-hidden="true">照片待接入</div><h3>李彥錞</h3><p>整形外科醫師</p></li>
-        <li><div class="doctor-photo" aria-hidden="true">照片待接入</div><h3>蔡沅蓁</h3><p>家醫科醫師</p></li>
+        <li><div class="doctor-photo" aria-hidden="true">照片暫不公開</div><h3>陳偉傑</h3><p>院長</p></li>
+        <li><div class="doctor-photo" aria-hidden="true">照片暫不公開</div><h3>羅詩修</h3><p>執行院長</p></li>
+        <li><div class="doctor-photo" aria-hidden="true">照片暫不公開</div><h3>陳嘉哲</h3><p>肛門直腸外科主任</p></li>
+        <li><div class="doctor-photo" aria-hidden="true">照片暫不公開</div><h3>李齊泰</h3><p>泌尿科醫師</p></li>
+        <li><div class="doctor-photo" aria-hidden="true">照片暫不公開</div><h3>吳致寬</h3><p>泌尿科醫師</p></li>
+        <li><div class="doctor-photo" aria-hidden="true">照片暫不公開</div><h3>李彥錞</h3><p>整形外科醫師</p></li>
+        <li><div class="doctor-photo" aria-hidden="true">照片暫不公開</div><h3>蔡沅蓁</h3><p>家醫科醫師</p></li>
         <li><div class="doctor-photo" aria-hidden="true">單人素材待補</div><h3>蔡曜州</h3><p>教授</p></li>
       </ul>
     </section>
