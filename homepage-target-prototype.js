@@ -2,6 +2,27 @@
 (() => {
   const root = document.querySelector('.m19-home-preview');
   if (!root) return;
+  // Local image diagnostics only; never retry through another URL or service.
+  root.querySelectorAll('img').forEach(image => {
+    let notice = null;
+    function renderImageState() {
+      if (!image.complete) return;
+      if (image.naturalWidth > 0) {
+        if (notice) { notice.remove(); notice = null; }
+        image.hidden = false;
+        return;
+      }
+      if (notice) return;
+      notice = document.createElement('p');
+      notice.className = 'image-load-notice';
+      notice.textContent = `${image.alt || '圖片'}尚未載入。請稍後重新整理頁面。`;
+      image.insertAdjacentElement('afterend', notice);
+      image.hidden = true;
+    }
+    image.addEventListener('load', renderImageState);
+    image.addEventListener('error', renderImageState);
+    renderImageState();
+  });
   // Memory-only preview feedback. No navigation, requests, storage, or WordPress.
   const feedback = root.querySelector('#preview-feedback');
   root.querySelectorAll('[data-preview]').forEach(button => {
