@@ -1,0 +1,4 @@
+/* Only the existing service labels become links; retain icon and group layout. */
+.m19-home-preview .service-link-r49 { color:inherit; display:inline-flex; align-items:center; min-height:44px; max-width:100%; text-decoration:underline; text-decoration-color:#9abcb3; text-underline-offset:.22em; text-decoration-thickness:1px; }
+.m19-home-preview .service-link-r49:hover { color:#006052; text-decoration-color:currentColor; }
+.m19-home-preview .service-link-r49:focus-visible { outline:3px solid #17324d; outline-offset:4px; border-radius:2px; }

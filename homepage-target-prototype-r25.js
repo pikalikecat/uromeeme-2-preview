@@ -15,7 +15,7 @@
       if (notice) return;
       notice = document.createElement('p');
       notice.className = 'image-load-notice';
-      notice.textContent = `${image.alt || '圖片'}尚未載入。請稍後重新整理頁面。`;
+      notice.textContent = `${image.alt || '圖片'}尚未載入。請確認本地素材檔案仍在原位置。`;
       image.insertAdjacentElement('afterend', notice);
       image.hidden = true;
     }

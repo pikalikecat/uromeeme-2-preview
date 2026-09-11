@@ -1,0 +1,23 @@
+/* Header and announcement remain one in-flow sticky unit. */
+html { scroll-padding-top:calc(var(--m19-sticky-height, 240px) + 16px); }
+.m19-home-preview .site-top-r48 { position:sticky; top:0; z-index:100; background:#fff; box-shadow:0 3px 12px #00483e12; padding-top:env(safe-area-inset-top, 0px); }
+.m19-home-preview .site-top-r48 .header { background:#fff; }
+.m19-home-preview .skip { position:fixed; z-index:110; }
+.m19-home-preview .announcement-window { display:grid; align-items:center; }
+.m19-home-preview .announcement-window > * { grid-area:1 / 1; min-width:0; }
+.m19-home-preview .announcement-sizing-r48 { display:grid; visibility:hidden; pointer-events:none; user-select:none; }
+.m19-home-preview .announcement-sizing-r48 > span { grid-area:1 / 1; line-height:1.6; overflow-wrap:anywhere; }
+.m19-home-preview .site-top-r48 .menu-panel { top:100%; overflow-y:auto; overscroll-behavior:contain; max-height:calc(100vh - var(--m19-sticky-height, 240px) - 16px); max-height:calc(100dvh - var(--m19-sticky-height, 240px) - 16px); }
+.m19-home-preview .site-top-r48 .production-nav .nav-children { max-height:calc(100vh - var(--m19-sticky-height, 240px) - 16px); overflow-y:auto; }
+.m19-home-preview .contact-layout a { color:inherit; text-underline-offset:.2em; }
+@media(max-width:48rem) {
+ .m19-home-preview .site-top-r48 .header { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:.5rem 1rem; padding:.5rem 4%; }
+ .m19-home-preview .site-top-r48 .header .brand { grid-area:1 / 1; }
+ .m19-home-preview .site-top-r48 .brand-image { width:clamp(9rem,42vw,15rem); }
+ .m19-home-preview .site-top-r48 .header > .menu { grid-area:1 / 2; }
+ .m19-home-preview .site-top-r48 .header-actions-r26 { grid-area:2 / 1 / 3 / -1; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); width:100%; margin:0; gap:.65rem; }
+ .m19-home-preview .site-top-r48 .header-actions-r26 .action { min-height:44px; padding:.5rem; font-size:.95rem; line-height:1.3; }
+ .m19-home-preview .site-top-r48 .announcement { font-size:.875rem; padding:.5rem 4%; gap:.6rem; }
+ .m19-home-preview .site-top-r48 .announcement strong { padding-inline-end:.6rem; }
+}
+@media print { .m19-home-preview .site-top-r48 { position:static; } }
