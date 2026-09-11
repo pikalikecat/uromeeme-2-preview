@@ -1,0 +1,16 @@
+/* R19 editorial placeholders, never production testimonials or article data. */
+.m19-home-preview .editorial-grid { display:grid; gap:2rem; margin-top:2rem; }
+.m19-home-preview .editorial-grid--reviews { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.m19-home-preview .editorial-grid--articles { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.m19-home-preview .editorial-card { min-width:0; padding:clamp(1.5rem,3vw,2.5rem); border:1px solid #b4cec5; border-radius:1.25rem; background:#fff; overflow-wrap:anywhere; line-height:1.8; }
+.m19-home-preview .editorial-card h3 { margin:1rem 0; color:#00483e; font-size:1.25rem; line-height:1.6; }
+.m19-home-preview .layout-tag { color:#536760; font-size:.875rem; }
+.m19-home-preview .editorial-placeholder { margin-block:1.5rem 2rem; }
+.m19-home-preview .editorial-card dl { border-top:1px solid #d6e6e0; padding-top:1rem; }
+.m19-home-preview .editorial-card dt { font-weight:600; }
+.m19-home-preview .editorial-card dd { margin:0 0 .75rem; }
+.m19-home-preview .editorial-image { aspect-ratio:16/10; display:grid; place-items:center; border-radius:4rem 4rem .75rem .75rem; background:#edf5f2; color:#536760; margin-bottom:1.5rem; }
+.m19-home-preview .contact-layout dl { padding:1.5rem 0; border-block:1px solid #b4cec5; }
+.m19-home-preview .contact-layout dd { line-height:1.8; overflow-wrap:anywhere; }
+@media(max-width:60rem) { .m19-home-preview .editorial-grid--articles { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:48rem) { .m19-home-preview .editorial-grid { grid-template-columns:minmax(0,1fr); gap:1.5rem; } }

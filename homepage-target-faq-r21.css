@@ -1,0 +1,16 @@
+/* Native details/summary: functional without JavaScript or height animation. */
+.m19-home-preview .faq-list-r21 { margin-top:2rem; border-top:1px solid #a9c7bb; }
+.m19-home-preview .faq-list-r21 .faq-item { border-top:0; padding:0; }
+.m19-home-preview .faq-list-r21 summary { display:flex; align-items:center; justify-content:space-between; gap:1.5rem; list-style:none; min-height:3.5rem; padding:1.5rem 1rem; font-size:1.125rem; line-height:1.7; color:#00483e; }
+.m19-home-preview .faq-list-r21 summary::-webkit-details-marker { display:none; }
+.m19-home-preview .faq-list-r21 summary > span:first-child { min-width:0; overflow-wrap:anywhere; }
+.m19-home-preview .faq-symbol { flex:0 0 1.5rem; width:1.5rem; height:1.5rem; position:relative; }
+.m19-home-preview .faq-symbol::before,.m19-home-preview .faq-symbol::after { content:""; position:absolute; background:currentColor; }
+.m19-home-preview .faq-symbol::before { width:1rem; height:2px; top:calc(50% - 1px); left:.25rem; }
+.m19-home-preview .faq-symbol::after { width:2px; height:1rem; top:.25rem; left:calc(50% - 1px); }
+.m19-home-preview .faq-item[open] .faq-symbol::after { display:none; }
+.m19-home-preview .faq-list-r21 .faq-item[open] { background:#f5faf8; }
+.m19-home-preview .faq-answer { padding:0 1rem 1.5rem; max-width:65ch; line-height:1.9; overflow-wrap:anywhere; }
+.m19-home-preview .faq-answer a { display:inline-block; min-height:44px; padding-block:.6rem; color:#00483e; text-decoration:underline; text-underline-offset:.25em; }
+.m19-home-preview .faq-list-r21 summary:focus-visible { outline:3px solid #17324d; outline-offset:3px; }
+@media(max-width:48rem) { .m19-home-preview .faq-list-r21 summary { padding:1.25rem .5rem; gap:1rem; font-size:1rem; } .m19-home-preview .faq-answer { padding-inline:.5rem; } }

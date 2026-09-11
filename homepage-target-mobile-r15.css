@@ -1,0 +1,25 @@
+/* R15 mobile readability; scoped, additive, no content or photograph changes. */
+/* Do not style nested navigation summaries like the hamburger control. */
+.m19-home-preview .menu .nav-group > summary {
+ display:list-item; list-style:disclosure-closed inside; width:auto;
+ min-height:2.75rem; font:600 1rem/1.7 system-ui,sans-serif;
+ padding:.65rem .4rem; overflow-wrap:anywhere;
+}
+.m19-home-preview .menu .nav-group[open] > summary { list-style-type:disclosure-open; }
+.m19-home-preview .menu .nav-group > summary::-webkit-details-marker { display:inline; }
+.m19-home-preview .menu-panel { overscroll-behavior:contain; }
+.m19-home-preview .announcement p { overflow-wrap:anywhere; line-height:1.8; }
+/* Translation previously risked clipping the end of a long announcement. */
+.m19-home-preview .announcement-window { padding-inline-end:1.5rem; }
+.m19-home-preview .footer-r14__grid > * { min-width:0; overflow-wrap:anywhere; }
+@media(max-width:48rem) {
+ .m19-home-preview .announcement { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:.5rem 1rem; font-size:1rem; padding:1rem 4%; }
+ .m19-home-preview .announcement strong { grid-column:1; grid-row:1; border:0; padding:0; }
+ .m19-home-preview .announcement button { grid-column:2; grid-row:1; font-size:1rem; }
+ .m19-home-preview .announcement-window { grid-column:1/-1; grid-row:2; }
+ .m19-home-preview .name-card span { font-size:1rem; line-height:1.7; }
+}
+@media(max-width:23rem) {
+ .m19-home-preview .footer-r14__grid { grid-template-columns:minmax(0,1fr); }
+ .m19-home-preview .footer-r14__grid > div:first-child { grid-column:auto; }
+}

@@ -1,0 +1,15 @@
+/* R16 proposal only: no media changes, no fixed-height portrait cropping. */
+.m19-home-preview .team-grid { gap: 3rem 1.5rem; }
+.m19-home-preview .team-grid h3 { margin-block: 1.25rem .4rem; line-height: 1.5; }
+.m19-home-preview .team-grid p { font-size: 1rem; line-height: 1.8; }
+.m19-home-preview .doctor-photo--original { aspect-ratio: auto; display: block; overflow: visible; }
+.m19-home-preview .doctor-photo--original img { height: auto; max-width: 100%; }
+@media (max-width: 48rem) {
+ .m19-home-preview .team-grid { gap: 2.5rem 1.25rem; }
+ .m19-home-preview .names { min-width: 0; }
+ .m19-home-preview .name-card { min-width: 0; padding: 1rem .8rem; overflow-wrap: anywhere; }
+}
+@media (max-width: 26rem) {
+ .m19-home-preview .team-grid { grid-template-columns: minmax(0, 1fr); }
+ .m19-home-preview .team-grid > li { width: 100%; max-width: 20rem; margin-inline: auto; }
+}

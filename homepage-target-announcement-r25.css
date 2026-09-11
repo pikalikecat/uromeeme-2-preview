@@ -1,0 +1,6 @@
+/* R25 static notice: compact, fully readable, no motion control required. */
+.m19-home-preview .announcement { display:grid; grid-template-columns:auto minmax(0,1fr); align-items:start; gap:.75rem; padding:.65rem 5%; font-size:1rem; }
+.m19-home-preview .announcement strong { grid-column:1; grid-row:1; border:0; border-inline-end:1px solid #719a90; padding:0 .75rem 0 0; line-height:1.6; }
+.m19-home-preview .announcement-window { grid-column:2; grid-row:1; min-width:0; padding:0; overflow:visible; }
+.m19-home-preview .announcement p { margin:0; line-height:1.6; overflow-wrap:anywhere; animation:none; transform:none; }
+@media(max-width:48rem) { .m19-home-preview .announcement { padding:.65rem 4%; gap:.65rem; } }

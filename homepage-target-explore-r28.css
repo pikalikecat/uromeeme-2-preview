@@ -1,0 +1,18 @@
+/* R28: move discovery to the environment section; keep hero booking pair. */
+.m19-home-preview .explore-r28 {
+ display: inline-flex; align-items: center; gap: .85rem;
+ min-height: 2.75rem; margin-top: 1rem; padding-block: .35rem;
+ max-width: 100%; color: #00574f; font-size: 1rem; font-weight: 600;
+ letter-spacing: .08em; text-decoration: none;
+}
+.m19-home-preview .explore-r28__arrow {
+ display: inline-grid; place-items: center; width: 2.75rem; height: 2.75rem;
+ flex: 0 0 2.75rem; border: 1px solid #9b804a; border-radius: 50%;
+ background: #f3f9f7; line-height: 1; letter-spacing: 0;
+}
+.m19-home-preview .explore-r28:hover .explore-r28__arrow {
+ color: #fff; background: #00574f; border-color: #00574f;
+}
+.m19-home-preview .explore-r28:focus-visible {
+ outline: 2px solid #00574f; outline-offset: 5px; border-radius: .25rem;
+}

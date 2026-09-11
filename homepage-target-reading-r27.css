@@ -1,0 +1,21 @@
+/* R27: approved reading refinements; original images and previous versions retained. */
+.m19-home-preview .preview-notes-r27 { max-width: 54rem; margin-inline: auto; text-align: start; }
+.m19-home-preview .preview-notes-r27 > summary { cursor: pointer; padding: .6rem .25rem; min-height: 2.75rem; }
+.m19-home-preview .preview-notes-r27 > div { padding: .25rem .75rem; }
+.m19-home-preview .preview-notes-r27 p { margin: .5rem 0; line-height: 1.7; }
+.m19-home-preview .hero-role-r27,
+.m19-home-preview .hero-role-r27 > span { display: block; }
+.m19-home-preview .about-text-r27 { display: inline-flex; align-items: center; gap: .5rem; min-height: 2.75rem; padding: .5rem 0; justify-self: center; text-underline-offset: .3em; color: #00574f; }
+.m19-home-preview .about-text-r27:focus-visible,
+.m19-home-preview .preview-notes-r27 > summary:focus-visible { outline: 2px solid #00574f; outline-offset: 4px; }
+@media(max-width:48rem) {
+ .m19-home-preview .name-card { padding: .75rem .4rem; }
+ .m19-home-preview .hero-role-r27 > span { line-height: 1.7; }
+ .m19-home-preview .hero-actions { row-gap: .35rem; }
+ .m19-home-preview .team-grid { grid-template-columns: minmax(0,1fr); gap: 2.25rem; }
+ .m19-home-preview .team-grid > li { width: 100%; max-width: 20rem; margin-inline: auto; transform: none; }
+ .m19-home-preview .team-grid .doctor-photo { width: 76%; max-width: 15rem; margin-inline: auto; }
+ .m19-home-preview .team-grid .doctor-photo--original img { width: 100%; height: auto; }
+ .m19-home-preview .team-grid h3 { margin-block: .85rem .3rem; }
+ .m19-home-preview .team-grid p { margin-block: 0; }
+}

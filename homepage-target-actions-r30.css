@@ -1,0 +1,21 @@
+/* R30: symmetric hero action spacing; normalize button and anchor metrics. */
+.m19-home-preview .booking-actions-r26 > .action,
+.m19-home-preview .header-actions-r26 > .action {
+ box-sizing: border-box; margin: 0; align-self: stretch;
+ display: inline-flex; align-items: center; justify-content: center;
+ font-family: inherit; font-size: 1rem; font-weight: 700; line-height: 1.5;
+ min-height: 3.4rem; padding-block: .85rem; border-width: 1px;
+}
+@media(max-width:48rem) {
+ .m19-home-preview .hero-actions {
+  padding: 1rem 4%; margin: 0; row-gap: 0;
+ }
+ .m19-home-preview .hero-actions > .booking-actions-r26 {
+  width: 100%; margin: 0; align-items: stretch;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+ }
+ .m19-home-preview .hero-actions > .booking-actions-r26 > .action {
+  width: 100%; min-width: 0; min-height: 3.4rem;
+  padding: .85rem .65rem; gap: .4rem; letter-spacing: .03em;
+ }
+}

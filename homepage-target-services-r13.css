@@ -1,0 +1,10 @@
+/* R13: only the service section changes; original hero and photo CSS remain. */
+.m19-home-preview .services-r13 .service-intro { max-width: 42rem; line-height: 1.9; }
+.m19-home-preview .services-r13 .service-groups { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 3rem 4rem; margin-top: 3rem; }
+.m19-home-preview .services-r13 .service-group { min-width: 0; padding-block: 1.5rem; border-top: 1px solid #aec9bf; }
+.m19-home-preview .services-r13 .service-group h3 { color: #00483e; margin: 0 0 1rem; }
+.m19-home-preview .services-r13 .service-group ul { padding: 0; margin: 0; list-style: none; }
+.m19-home-preview .services-r13 .service-group li { padding-block: .7rem; line-height: 1.8; overflow-wrap: anywhere; }
+@media(max-width:48rem) {
+ .m19-home-preview .services-r13 .service-groups { grid-template-columns: minmax(0,1fr); gap: 1rem; margin-top: 2rem; }
+}

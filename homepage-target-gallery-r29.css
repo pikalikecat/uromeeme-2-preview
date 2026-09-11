@@ -1,0 +1,29 @@
+/* R29 offline gallery: native horizontal scrolling, no automatic playback. */
+.m19-home-preview .space-gallery-r29 { min-width:0; width:100%; }
+.m19-home-preview .space-gallery-r29__track {
+ display:flex; gap:1rem; overflow-x:auto; scroll-snap-type:x mandatory;
+ overscroll-behavior-x:contain; scrollbar-width:thin; padding-bottom:.75rem;
+}
+.m19-home-preview .space-gallery-r29__track figure {
+ flex:0 0 100%; min-width:0; margin:0; scroll-snap-align:start; scroll-snap-stop:always;
+}
+.m19-home-preview .space-gallery-r29__placeholder {
+ aspect-ratio:4 / 3; display:grid; place-items:center; padding:1rem;
+ border:1px solid #aec9bf; border-radius:7rem 7rem 1rem 1rem;
+ background:linear-gradient(140deg,#f5faf8,#dceee8); color:#00574f; text-align:center;
+}
+.m19-home-preview .space-gallery-r29 figcaption { padding:.85rem .25rem; font-size:1rem; line-height:1.6; }
+.m19-home-preview .space-gallery-r29__controls { display:flex; justify-content:center; align-items:center; gap:1.25rem; margin-top:.5rem; }
+.m19-home-preview .space-gallery-r29__controls[hidden] { display:none; }
+.m19-home-preview .space-gallery-r29__controls button {
+ width:2.75rem; height:2.75rem; border:1px solid #9b804a; border-radius:50%;
+ background:#f5faf8; color:#00574f; font-size:1.2rem; cursor:pointer;
+}
+.m19-home-preview .space-gallery-r29__controls button:disabled { opacity:.4; cursor:default; }
+.m19-home-preview .space-gallery-r29__track:focus-visible,
+.m19-home-preview .space-gallery-r29__controls button:focus-visible { outline:2px solid #00574f; outline-offset:3px; }
+@media(max-width:48rem) {
+ .m19-home-preview .space-gallery-r29__track figure { flex-basis:90%; }
+ /* Final slide can reach the same start position as the others. */
+ .m19-home-preview .space-gallery-r29__track::after { content:""; flex:0 0 calc(10% - 1rem); }
+}

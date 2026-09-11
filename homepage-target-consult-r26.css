@@ -1,0 +1,16 @@
+/* R26: owner-provided LINE destination; no SDK, tracking or automatic navigation. */
+.m19-home-preview .header-actions-r26,
+.m19-home-preview .booking-actions-r26 { display:flex; flex-wrap:wrap; gap:.75rem; align-items:stretch; min-width:0; }
+.m19-home-preview .header-actions-r26 { flex-shrink:0; margin-inline-start:auto; }
+.m19-home-preview .header-actions-r26 .action { padding-inline:1.2rem; gap:.5rem; }
+.m19-home-preview .header .header-actions-r26 .header-book { margin:0; }
+.m19-home-preview .consultation-link { text-decoration:none; }
+@media(max-width:48rem) {
+ .m19-home-preview .booking-actions-r26 { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .m19-home-preview .booking-actions-r26 .action { min-width:0; padding-inline:.65rem; gap:.4rem; letter-spacing:.03em; }
+}
+@media(max-width:26rem) {
+ .m19-home-preview .header-actions-r26 { grid-column:1/-1; grid-row:2; width:100%; margin:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .m19-home-preview .header .header-actions-r26 .header-book { grid-column:auto; grid-row:auto; }
+ .m19-home-preview .header-actions-r26 .action { min-width:0; padding-inline:.5rem; gap:.3rem; letter-spacing:.03em; }
+}

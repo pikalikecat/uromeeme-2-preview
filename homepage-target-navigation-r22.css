@@ -1,0 +1,22 @@
+/* R22: one navigation presentation at a time; retain every existing menu item. */
+.m19-home-preview .header .brand { min-width:0; }
+.m19-home-preview .header .header-book { flex-shrink:0; }
+.m19-home-preview .header > .menu { flex-shrink:0; }
+.m19-home-preview .menu-panel { max-height:min(70vh,34rem); max-height:min(70dvh,34rem); }
+.m19-home-preview .production-nav > a,
+.m19-home-preview .production-nav > .nav-group > summary { white-space:nowrap; }
+@media(min-width:80.001rem) {
+ .m19-home-preview .header > .menu { display:none; }
+}
+@media(max-width:80rem) {
+ .m19-home-preview .header > .production-nav { display:none; }
+ .m19-home-preview .header > .menu { display:block; }
+ .m19-home-preview .header-book { margin-inline-start:auto; }
+}
+@media(max-width:26rem) {
+ .m19-home-preview .header { display:grid; grid-template-columns:minmax(0,1fr) auto; }
+ .m19-home-preview .header .brand { grid-column:1; grid-row:1; }
+ .m19-home-preview .header > .menu { grid-column:2; grid-row:1; }
+ .m19-home-preview .header .header-book { grid-column:1/-1; grid-row:2; width:100%; margin:0; min-height:44px; }
+}
+.m19-home-preview :is(h2,section)[id]:target { outline:2px solid #8a6624; outline-offset:.4rem; }

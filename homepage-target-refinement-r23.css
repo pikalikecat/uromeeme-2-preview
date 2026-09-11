@@ -1,0 +1,12 @@
+/* R23: screenshot-led refinement, no media edits or service destinations. */
+.m19-home-preview .environment-title-line { display:block; }
+.m19-home-preview .brand-word { white-space:nowrap; }
+.m19-home-preview section[aria-labelledby="team-title"] { padding-bottom:clamp(2.5rem,4vw,4rem); }
+.m19-home-preview .services-r13 .service-groups { row-gap:1.75rem; }
+.m19-home-preview .services-r13 .service-group { padding-bottom:1rem; }
+.m19-home-preview section[aria-labelledby="care-title"] .section-inner { padding-block:clamp(3rem,4.5vw,4.5rem); }
+.m19-home-preview section[aria-labelledby="schedule-title"] { background:#fff; border-top:1px solid #d6e6e0; }
+@media(max-width:48rem) {
+ .m19-home-preview .services-r13 .service-groups { row-gap:1rem; }
+ .m19-home-preview section[aria-labelledby="team-title"] { padding-bottom:2.5rem; }
+}

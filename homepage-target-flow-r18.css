@@ -1,0 +1,17 @@
+/* R18 whole-page rhythm: native document order, no JS reordering. */
+.m19-home-preview .section-inner,
+.m19-home-preview .structure { padding-block: clamp(3.5rem, 7vw, 6.5rem); }
+.m19-home-preview .environment-r14 { border-block: 1px solid #d6e6e0; }
+.m19-home-preview .services-r13 .service-intro { margin-bottom: 2rem; }
+.m19-home-preview .section-inner > .draft-label { max-width: 65ch; line-height: 1.8; }
+.m19-home-preview .empty-panel { padding: clamp(1.5rem, 3vw, 2.5rem); line-height: 1.8; }
+.m19-home-preview .schedule-r14 table { border: 1px solid #aec9bf; }
+.m19-home-preview .cta-r14__inner { padding-block: clamp(4rem, 8vw, 7rem); }
+.m19-home-preview .footer-r14 { padding-block: 3.5rem 2rem; }
+@media (max-width: 48rem) {
+ .m19-home-preview .section-inner,
+ .m19-home-preview .structure { padding-inline: 6%; padding-block: 3.5rem; }
+ .m19-home-preview .schedule-r14 th { padding: 1rem .5rem; font-size: .95rem; }
+ .m19-home-preview .cta-r14__inner { padding-inline: 6%; }
+ .m19-home-preview .footer-r14__grid { gap: 2rem 1.5rem; }
+}
