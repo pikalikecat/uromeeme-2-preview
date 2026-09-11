@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="base"><stop stop-color="#f7fbfa"/><stop offset=".55" stop-color="#e4f2ef"/><stop offset="1" stop-color="#54a09f"/></linearGradient>
+ <linearGradient id="wave"><stop stop-color="#a7d3cc" stop-opacity=".12"/><stop offset="1" stop-color="#217c7e" stop-opacity=".65"/></linearGradient>
+ <linearGradient id="gold"><stop stop-color="#e9d6a3"/><stop offset=".5" stop-color="#ba9143"/><stop offset="1" stop-color="#f3e5bc"/></linearGradient>
+ <radialGradient id="light"><stop stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+</defs>
+<path fill="url(#base)" d="M0 0h1600v1100H0z"/>
+<path fill="url(#wave)" d="M0 1100C520 1000 740 380 1600 150v950z"/>
+<path fill="#e7f5f1" opacity=".48" d="M0 0h1150C650 100 530 640 0 950z"/>
+<ellipse cx="370" cy="390" rx="650" ry="660" fill="url(#light)"/>
+<path fill="none" stroke="url(#gold)" stroke-width="3" d="M650 1100C660 480 850-260 1570 90"/>
+<path fill="url(#wave)" d="M970 1100c80-340 300-430 630-520v520z"/>
+<path fill="none" stroke="url(#gold)" stroke-width="5" d="M970 1100c80-340 300-430 630-520"/>
+<path fill="none" stroke="url(#gold)" stroke-width="5" d="M-100 800C220 750 460 880 550 1200"/>
+</svg>

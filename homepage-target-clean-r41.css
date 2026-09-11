@@ -1,0 +1,33 @@
+/* R41 replaces the defective bitmap backdrop; all art is resolution independent. */
+.m19-home-preview .hero {
+ background:#f5faf8 url("homepage-target-clean-r41.svg") center/100% 100% no-repeat;
+ gap:0; padding:0 5%; isolation:isolate;
+}
+.m19-home-preview .hero .intro { background:none; padding:0; }
+.m19-home-preview .hero .eyebrow { color:#8b6c31; font-size:.8rem; letter-spacing:.22em; }
+.m19-home-preview .hero h1 { color:#004d43; }
+.m19-home-preview .portrait--original { margin:0;box-shadow:none;border:0;border-radius:0;background:none; }
+.m19-home-preview .portrait--original img { border-radius:0;object-fit:cover;object-position:50% 22%; }
+@media(min-width:48.001rem){
+ .m19-home-preview .hero { grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);grid-template-rows:1fr auto 1fr;min-height:38rem; }
+ .m19-home-preview .hero .intro { grid-column:1;grid-row:1;align-self:end;padding-top:3rem;padding-right:1.5rem; }
+ .m19-home-preview .hero h1 { font-size:clamp(2.1rem,3.5vw,4rem);line-height:1.5;margin:1.4rem 0 2rem; }
+ .m19-home-preview .hero-actions { grid-column:1;grid-row:2;align-self:start;margin:0;padding:0; }
+ .m19-home-preview .portrait--original { grid-column:2;grid-row:1/4;align-self:end;width:100%;aspect-ratio:1/1.18; }
+ .m19-home-preview .names { grid-column:2;grid-row:3;align-self:end;margin:0 0 1.5rem;gap:1rem; }
+ .m19-home-preview .name-card { padding:.8rem 1rem; }
+}
+@media(max-width:48rem){
+ .m19-home-preview .hero { grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto auto;min-height:0;padding:0;row-gap:0;background-image:url("homepage-target-mobile-r41.svg");background-size:100% 100%; }
+ .m19-home-preview .hero .intro { grid-column:1;grid-row:1;padding:2.2rem 5% 0;text-align:center;background:none; }
+ .m19-home-preview .hero .eyebrow { font-size:.7rem;letter-spacing:.2em;line-height:1.8;max-width:22rem;margin:0 auto; }
+ .m19-home-preview .hero h1 { font-size:clamp(1.45rem,6vw,2.8rem);line-height:1.6;margin:1.15rem 0 .4rem;letter-spacing:0; }
+ .m19-home-preview .portrait--original { grid-column:1;grid-row:2;align-self:end;width:100%;max-width:none;margin:0;aspect-ratio:1/1.13; }
+ .m19-home-preview .portrait--original img { object-position:50% 28%; }
+ .m19-home-preview .names { grid-column:1;grid-row:3;margin:0;padding:1.15rem 4% .65rem;background:#fff;gap:0; }
+ .m19-home-preview .names .name-card { padding:.35rem .4rem;background:none;box-shadow:none;border:0;border-radius:0; }
+ .m19-home-preview .names .name-card + .name-card { border-left:1px solid #c4a467; }
+ .m19-home-preview .names .name-card strong { font-size:clamp(1.35rem,5.5vw,2rem); }
+ .m19-home-preview .hero-actions { grid-column:1;grid-row:4;background:white;padding:1rem 4%;margin:0; }
+ .m19-home-preview .hero-role-r27 { padding:0;border:0; }
+}

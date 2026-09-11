@@ -1,0 +1,11 @@
+.m19-home-preview .announcement { grid-template-columns:auto minmax(0,1fr); }
+.m19-home-preview .reviews-track-r31 { scrollbar-width:none; -ms-overflow-style:none; }
+.m19-home-preview .reviews-track-r31::-webkit-scrollbar { display:none; }
+.m19-home-preview .schedule-grid-r32 { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-block:2rem; }
+.m19-home-preview .schedule-grid-r32 article { border:1px solid #b6d4c9;border-radius:1rem;padding:1.25rem;background:#f5faf8; }
+.m19-home-preview .schedule-grid-r32 h3 { margin:0 0 1rem; }
+.m19-home-preview .schedule-grid-r32 dl { margin:0; }
+.m19-home-preview .schedule-grid-r32 dt { font-weight:600;margin-top:.8rem; }
+.m19-home-preview .schedule-grid-r32 dd { margin:0;line-height:1.7; }
+@media(max-width:48rem){.m19-home-preview .schedule-grid-r32{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:26rem){.m19-home-preview .schedule-grid-r32{grid-template-columns:minmax(0,1fr);}}

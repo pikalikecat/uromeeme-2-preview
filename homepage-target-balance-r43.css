@@ -1,0 +1,50 @@
+/* R43: smaller authentic portraits, approved supporting copy, reference name cards. */
+.m19-home-preview .hero-message-r43 { margin-top:1.65rem; }
+.m19-home-preview .hero-rule-r43 { display:block;width:3rem;height:1px;background:#b29b66; }
+.m19-home-preview .hero-message-r43 p {
+ margin:1rem 0 0;color:#677e7a;
+ font-family:"Noto Serif TC","PMingLiU",serif;
+ font-size:clamp(1rem,1.3vw,1.3rem);line-height:1.9;letter-spacing:.16em;
+}
+.m19-home-preview .names .name-card strong {
+ font-family:"Noto Serif TC","PMingLiU",serif;font-weight:700;color:#004b43;
+}
+.m19-home-preview .names .hero-role-r27 { color:#33433f; }
+@media(min-width:64rem){
+ .m19-home-preview .hero { height:clamp(42rem,50vw,52rem);min-height:42rem; }
+ .m19-home-preview .hero .intro { top:16%;width:45%;left:5.5%; }
+ .m19-home-preview .hero h1 { font-size:clamp(2.1rem,3.3vw,3.3rem);line-height:1.5; }
+ .m19-home-preview .hero-actions { top:auto;bottom:19%;left:5.5%; }
+ .m19-home-preview .portrait--original {
+  width:48%;max-width:48rem;right:3%;top:5%;height:95%;
+ }
+ .m19-home-preview .portrait--original img {
+  width:100%;height:auto;top:0;image-rendering:auto;
+ }
+ .m19-home-preview .names {
+  left:auto;right:4%;width:46%;max-width:46rem;bottom:9%;
+  gap:1rem;align-items:stretch;
+ }
+ .m19-home-preview .names .name-card {
+  flex:0 1 46%;min-width:0;padding:1rem 1.2rem;
+  border:1px solid #e9e2d1;border-radius:1.05rem;
+  background:#fffffff7;box-shadow:0 8px 24px #1c4b4314;
+ }
+ .m19-home-preview .names .name-card strong { font-size:clamp(1.35rem,1.8vw,1.8rem); }
+ .m19-home-preview .names .hero-role-r27 { margin-top:.35rem; }
+ .m19-home-preview .names .hero-role-r27 > span { font-size:.9rem;line-height:1.7; }
+ .m19-home-preview .names .name-card::after {
+  content:"";display:block;width:2.3rem;height:1px;background:#b49a60;margin-top:.65rem;
+ }
+}
+@media(min-width:48.001rem) and (max-width:63.999rem){
+ .m19-home-preview .hero-message-r43 { margin-top:1rem; }
+ .m19-home-preview .hero-message-r43 p { font-size:1rem;letter-spacing:.08em; }
+}
+@media(max-width:48rem){
+ .m19-home-preview .hero-message-r43 { margin-top:1rem; }
+ .m19-home-preview .hero-rule-r43 { margin-inline:auto;width:2.4rem; }
+ .m19-home-preview .hero-message-r43 p { margin:.7rem 0 .5rem;font-size:.95rem;line-height:1.8;letter-spacing:.1em; }
+ .m19-home-preview .names .name-card strong { color:#004b43; }
+ .m19-home-preview .names .hero-role-r27 > span { color:#33433f; }
+}

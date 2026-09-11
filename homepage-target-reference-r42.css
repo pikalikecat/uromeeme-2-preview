@@ -1,0 +1,52 @@
+/* B reference reconstruction. Text/actions stay HTML; photo retains original RGB. */
+.m19-home-preview .hero {
+ position:relative; background:#f6faf8 url("homepage-target-reference-r42.png") center/cover no-repeat;
+}
+.m19-home-preview .hero-gold-r42 { color:#967e4a; }
+.m19-home-preview .hero .name-card {
+ background:#fffffff5; border:1px solid #e6e1d6; border-radius:1.1rem;
+ box-shadow:0 8px 22px #1c4b4310;
+}
+@media(min-width:64rem) {
+ .m19-home-preview .hero {
+  display:block; min-height:42rem; height: min(66.667vw,64rem);
+  padding:0; overflow:hidden;
+ }
+ .m19-home-preview .hero .intro {
+  position:absolute; left:5.5%; top:19%; width:43%; padding:0;
+ }
+ .m19-home-preview .hero .eyebrow { font-size:.7rem; letter-spacing:.22em; }
+ .m19-home-preview .hero h1 {
+  font-size:clamp(2.35rem,3.7vw,3.8rem); line-height:1.4;
+  margin:1.1rem 0 0; letter-spacing:0;
+ }
+ .m19-home-preview .hero-actions {
+  position:absolute; left:5.5%; top:55%; padding:0;margin:0; z-index:3;
+ }
+ .m19-home-preview .portrait--original {
+  position:absolute; right:4%; top:0; width:62%; height:100%;
+  max-width:none; aspect-ratio:auto; margin:0; overflow:hidden;
+ }
+ .m19-home-preview .portrait--original img {
+  position:absolute; top:-4%; width:100%; height:auto; max-width:none;
+  object-fit:initial; border-radius:0;
+ }
+ .m19-home-preview .names {
+  position:absolute; left:43%; right:8%; bottom:16%; margin:0;
+  display:flex; justify-content:space-between; gap:1.5rem; background:none;padding:0;
+ }
+ .m19-home-preview .names .name-card { flex:0 1 42%;padding:.8rem 1rem; }
+ .m19-home-preview .names .name-card strong { font-size:clamp(1.25rem,1.85vw,1.8rem); }
+ .m19-home-preview .hero-role-r27 { border:0;padding:0;margin:.25rem 0 0;line-height:1.6; }
+ .m19-home-preview .hero-role-r27 > span { display:inline;font-size:.85rem; }
+ .m19-home-preview .hero-role-r27 > span + span::before { content:"／"; }
+}
+@media(max-width:48rem) {
+ .m19-home-preview .hero { background-position:60% center;background-size:auto 100%; }
+ .m19-home-preview .hero .intro { background:linear-gradient(#f7fbfaf5,#f7fbfa80);padding-top:2rem; }
+ .m19-home-preview .hero h1 { font-size:clamp(1.45rem,6vw,2.7rem);margin-bottom:0; }
+ .m19-home-preview .portrait--original { aspect-ratio:1/1.17;overflow:hidden;position:relative; }
+ .m19-home-preview .portrait--original img { position:absolute;top:-8%;width:100%;height:auto;object-fit:initial; }
+ .m19-home-preview .names { background:#fff; }
+ .m19-home-preview .names .name-card { box-shadow:none;border:0;border-radius:0;background:none; }
+}

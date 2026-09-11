@@ -1,0 +1,33 @@
+/* B art direction. Authentic original photo retained pending approved cutout. */
+.m19-home-preview .hero {
+ background:#f6faf8 url("homepage-target-b-background-r35.png") center/cover no-repeat;
+}
+.m19-home-preview .portrait--original {
+ border-radius:1.25rem; box-shadow:0 10px 40px #00574f0c;
+}
+.m19-home-preview .hero .eyebrow { letter-spacing:.24em; }
+@media(min-width:48.001rem) {
+ .m19-home-preview .hero {
+  grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
+  column-gap:clamp(1.5rem,3vw,3rem);
+  padding-inline:5%; padding-block:clamp(3rem,5vw,5rem);
+ }
+ .m19-home-preview .hero h1 {
+  font-size:clamp(2.25rem,3.7vw,4.2rem); line-height:1.45;
+  max-width:16em; margin-block:1.4rem 2rem;
+ }
+ .m19-home-preview .hero .name-card {
+  background:#fffffff2;border:1px solid #e4ddc9;
+  box-shadow:0 10px 24px #175f4c0d;
+ }
+}
+@media(max-width:48rem) {
+ .m19-home-preview .hero {
+  background-position:62% center; padding-top:2rem; row-gap:1rem;
+ }
+ .m19-home-preview .portrait--original { border-radius:1rem; }
+ .m19-home-preview .hero .intro {
+  background:linear-gradient(90deg,#f7fbfacf,#f7fbfa80);
+ }
+ .m19-home-preview .hero-actions { padding:1rem 4%; }
+}
