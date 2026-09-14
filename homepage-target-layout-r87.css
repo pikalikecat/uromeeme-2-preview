@@ -1,0 +1,9 @@
+.m19-home-preview .services-r55 .panel[hidden]{display:none!important}
+.m19-home-preview .services-r55 .grid{grid-auto-flow:row}
+.m19-home-preview .care-r59 .card{padding-bottom:94px}
+.m19-home-preview .care-r59 .care-card-nav-r87{position:absolute;right:26px;bottom:24px;display:flex;gap:10px;z-index:5}
+.m19-home-preview .care-r59 .care-card-nav-r87 button{display:grid;place-items:center;width:46px;height:46px;min-width:46px;border-radius:50%;border:1px solid #ad945c;background:#ffffffe0;color:#075448;font-size:24px;line-height:1;cursor:pointer;touch-action:manipulation}
+.m19-home-preview .care-r59 .card:not(.active) .care-card-nav-r87{visibility:hidden}
+.m19-home-preview .care-r59 .care-card-nav-r87 button:focus-visible{outline:2px solid #075448;outline-offset:4px}
+@media(hover:hover){.m19-home-preview .care-r59 .care-card-nav-r87 button:hover{background:#e6f0e7;border-color:#876c32}}
+@media(max-width:760px){.m19-home-preview .care-r59 .card{padding-bottom:88px}.m19-home-preview .care-r59 .care-card-nav-r87{right:20px;bottom:20px}.m19-home-preview .care-r59 .care-card-nav-r87 button{width:44px;height:44px;min-width:44px}}

@@ -1,0 +1,19 @@
+.m19-home-preview .reviews-r79 .review-heading-r91{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.m19-home-preview .reviews-r79 .review-heading-r91 h2{margin:0}
+.m19-home-preview .reviews-r79 .review-nav-r91{display:flex;gap:10px;flex-shrink:0}
+.m19-home-preview .review-nav-r91 button{width:46px;height:46px;border:1px solid #b59b65;border-radius:50%;background:#fff;color:#005448;font-size:23px}
+.m19-home-preview .review-nav-r91 button:disabled{opacity:.3;cursor:default}
+.m19-home-preview .reviews-r79 .reviews-track-r31{padding-top:10px;padding-bottom:22px}
+.m19-home-preview .reviews-r79 .review-card-r79{position:relative;border-color:#d5e1db;box-shadow:0 8px 20px rgba(0,72,62,.055);transition:transform .2s,box-shadow .2s}
+.m19-home-preview .reviews-r79 .review-card-r79::before{content:'';position:absolute;top:0;left:22px;width:38px;height:2px;background:#b49a62}
+.m19-home-preview .review-profile-r91{display:flex;align-items:center;gap:10px}
+.m19-home-preview .review-avatar-r91{display:grid;place-items:center;flex:0 0 38px;height:38px;border-radius:50%;background:#eaf1eb;color:#005448;font-size:14px;font-weight:600}
+.m19-home-preview .review-profile-r91>div{min-width:0}
+.m19-home-preview .reviews-r79 .review-card-r79 h3{font-size:18px}
+.m19-home-preview .review-guide-r91{display:inline-block;color:#806025;background:#f7f1e4;border-radius:4px;padding:1px 5px;font-size:11px;margin-right:5px}
+.m19-home-preview .review-rating-r91{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:12px 0}
+.m19-home-preview .reviews-r79 .review-rating-r91 .stars-r31,.m19-home-preview .reviews-r79 .review-rating-r91 .review-date-r79{margin:0}
+.m19-home-preview .reviews-r79 .review-rating-r91 .review-date-r79{font-size:12px}
+@media(hover:hover){.m19-home-preview .reviews-r79 .review-card-r79:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(0,72,62,.1)}.m19-home-preview .review-nav-r91 button:not(:disabled):hover{background:#005448;color:white}}
+@media(max-width:48rem){.m19-home-preview .reviews-r79 .review-heading-r91{gap:10px}.m19-home-preview .review-nav-r91{gap:6px}.m19-home-preview .review-nav-r91 button{width:44px;height:44px}.m19-home-preview .reviews-r79 .review-heading-r91 h2{font-size:clamp(24px,6.5vw,34px)}.m19-home-preview .reviews-r79 .review-card-r79{flex-basis:88%}}
+@media(prefers-reduced-motion:reduce){.m19-home-preview .reviews-r79 .review-card-r79{transition:none}.m19-home-preview .reviews-r79 .review-card-r79:hover{transform:none}}

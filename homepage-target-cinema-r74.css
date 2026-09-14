@@ -1,0 +1,2 @@
+/* Remove the legacy full-background fade: it was erasing the emblem's left outline. */
+.m19-home-preview .cinema-r62 .cinema-art{mask-image:none;-webkit-mask-image:none}

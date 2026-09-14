@@ -1,0 +1,29 @@
+/* r73: depth and hierarchy without adding decorative clutter. */
+.m19-home-preview .cinema-r62{
+ background:radial-gradient(ellipse at 74% 40%,rgba(112,172,148,.24),transparent 42%),radial-gradient(ellipse at 66% 76%,rgba(33,107,88,.20),transparent 46%),linear-gradient(115deg,#04352e 3%,#0b443a 55%,#164e42 79%,#07382f 100%);
+}
+.m19-home-preview .cinema-r62 .eyebrow{
+ display:flex;align-items:center;gap:16px;line-height:1.7;
+}
+.m19-home-preview .cinema-r62 .eyebrow::before{
+ content:"";display:block;width:38px;height:1px;flex:0 0 38px;
+ background:linear-gradient(90deg,#e0c990,#9e8449);opacity:.85;
+}
+.m19-home-preview .cinema-r62 .cta-r14__actions .action:not(.primary){
+ background:transparent;color:#f0e3c3;border:1px solid #b5a071;
+ box-shadow:none;transition:background .25s,border-color .25s,color .25s;
+}
+.m19-home-preview .cinema-r62 .cta-r14__actions .action.primary{
+ background:#f3faf6;color:#06473b;border:1px solid #f3faf6;
+ box-shadow:0 5px 20px #002c222e;
+}
+@media(hover:hover){
+ .m19-home-preview .cinema-r62 .cta-r14__actions .action:not(.primary):hover{background:#ddc78f14;border-color:#e8d3a0;color:#fff4dc}
+ .m19-home-preview .cinema-r62 .cta-r14__actions .action.primary:hover{background:#fff;border-color:#fff}
+}
+.m19-home-preview .cinema-r62 .cta-r14__actions .action:focus-visible{outline:2px solid #edd6a0;outline-offset:5px}
+@media(max-width:760px){
+ .m19-home-preview .cinema-r62{background:radial-gradient(ellipse at 50% 72%,rgba(106,162,139,.22),transparent 43%),linear-gradient(145deg,#04392f,#104a3d 72%,#04372e)}
+ .m19-home-preview .cinema-r62 .eyebrow{gap:10px}
+ .m19-home-preview .cinema-r62 .eyebrow::before{width:24px;flex-basis:24px}
+}

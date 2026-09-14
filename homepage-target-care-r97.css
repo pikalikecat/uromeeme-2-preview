@@ -1,0 +1,8 @@
+.m19-home-preview .care-r59 .care-long-r97{grid-template-columns:minmax(0,1fr) 120px;column-gap:22px}
+.m19-home-preview .care-r59 .care-long-r97 .icon{width:110px;height:110px;padding:20px}
+.m19-home-preview .care-r59 .care-long-r97 .body{white-space:normal;font-size:16px;line-height:1.85}
+.m19-home-preview .care-r59 .care-long-r97 .body p{margin:0 0 16px}
+.m19-home-preview .care-r59 .care-long-r97 .body p:last-child{margin-bottom:0}
+.m19-home-preview .care-r59 .care-quote-r97{margin:0 0 20px;padding:0 0 0 16px;border-left:2px solid #b79a63;color:#786136}
+.m19-home-preview .care-r59 .care-quote-r97 cite{display:block;font-size:14px;margin-top:8px}
+@media(max-width:760px){.m19-home-preview .care-r59 .care-long-r97{grid-template-columns:minmax(0,1fr)}.m19-home-preview .care-r59 .care-long-r97 .icon{width:78px;height:78px;padding:15px}.m19-home-preview .care-r59 .care-long-r97 .body{font-size:15px}.m19-home-preview .care-r59 .care-long-r97 h3{font-size:24px}}

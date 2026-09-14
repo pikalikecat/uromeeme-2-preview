@@ -1,0 +1,12 @@
+/* Shorter collapsed cards; expanded reviews keep their complete existing excerpt. */
+.m19-home-preview .reviews-r79 .reviews-track-r31{margin-top:24px}
+.m19-home-preview .reviews-r79 .review-card-r79{padding:18px 22px}
+.m19-home-preview .reviews-r79 .review-card-r79 h3{font-size:20px;line-height:1.35}
+.m19-home-preview .reviews-r79 .review-meta-r79{margin:4px 0 0;line-height:1.5}
+.m19-home-preview .reviews-r79 .stars-r31{margin:10px 0 4px;line-height:1.4}
+.m19-home-preview .reviews-r79 .review-date-r79{margin:0 0 10px;line-height:1.5}
+.m19-home-preview .reviews-r79 .review-card-r79 blockquote{font-size:16px;line-height:1.7;margin-bottom:0}
+.m19-home-preview .reviews-r79 .review-card-r79 blockquote.is-collapsed-r89{-webkit-line-clamp:3}
+.m19-home-preview .reviews-r79 .review-source-r79{margin:0 0 8px;line-height:1.4}
+.m19-home-preview .reviews-r79 .review-original-r79{padding-top:8px}
+@media(max-width:48rem){.m19-home-preview .reviews-r79 .review-card-r79{padding:16px 18px}}

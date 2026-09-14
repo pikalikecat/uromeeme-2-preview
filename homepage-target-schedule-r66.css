@@ -1,0 +1,6 @@
+/* Schedule titles only; keep the original timetable and other sections intact. */
+.m19-home-preview .schedule-r61 .doctor{flex-wrap:wrap;justify-content:center;column-gap:5px;row-gap:2px;max-width:100%;white-space:normal;line-height:1.5}
+.m19-home-preview .schedule-r61 .schedule-name-r66{white-space:nowrap}
+.m19-home-preview .schedule-r61 .schedule-role-r66{font-size:12px;white-space:nowrap;color:#526f65;font-weight:400;letter-spacing:0}
+.m19-home-preview .schedule-r61 .person .doctor{justify-content:flex-end}
+@media(min-width:821px) and (max-width:1100px){.m19-home-preview .schedule-r61 .doctor{font-size:15px}.m19-home-preview .schedule-r61 .schedule-role-r66{flex-basis:100%;font-size:11px}}

@@ -1,0 +1,18 @@
+.m19-home-preview .footer.footer-r96{padding:44px 0 0;background:#00483e}
+.m19-home-preview .footer-r96 .footer-r14__grid{width:90%;max-width:1152px;grid-template-columns:2fr 1fr 1fr;gap:32px;margin:0 auto}
+.m19-home-preview .footer-r96 .footer-r14__grid>div:first-child{grid-column:auto}
+.m19-home-preview .footer-r96 .footer-r14__grid>div>p{font-size:15px;line-height:1.8;color:#deebe5;margin:0 0 18px}
+.m19-home-preview .footer-r96 nav a{font-size:14px;text-decoration:none;color:#dceae4}
+.m19-home-preview .footer-r96 nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.m19-home-preview .footer-r96 .nhi-r96{display:inline-flex;align-items:center;gap:12px;padding:10px 16px 10px 10px;background:#f6faf7;border:1px solid #e0e9e1;border-radius:12px;color:#005448}
+.m19-home-preview .footer-r96 .nhi-r96 img{display:block;width:64px;height:auto;object-fit:contain;max-width:100%}
+.m19-home-preview .footer-r96 .nhi-r96 span{font-size:14px;line-height:1.7}
+.m19-home-preview .footer-r96 .nhi-r96 small{font-size:12px;color:#52685c}
+.m19-home-preview .footer-back-r96{max-width:1152px;width:90%;margin:8px auto 12px;text-align:right}
+.m19-home-preview .footer-back-r96 a{font-size:12px;min-height:44px;text-decoration:none}
+.m19-home-preview .footer-declaration-r96{background:#003c34;border-top:1px solid #ffffff20;padding:20px 5% 18px}
+.m19-home-preview .footer-declaration-inner-r96{max-width:1152px;margin:0 auto}
+.m19-home-preview .footer-r96 .footer-legal-r92{border:0;margin:0;padding:0;font-size:12px;line-height:1.8;font-weight:400;color:#c4d7cd}
+.m19-home-preview .footer-r96 .footer-legal-r92 p{margin:0 0 6px}
+.m19-home-preview .footer-r96 .footer-bottom-r92{display:block;max-width:none;border:0;margin:10px 0 0;padding:0;color:#c4d7cd;font-size:11px;line-height:1.8;text-align:center}
+@media(max-width:640px){.m19-home-preview .footer.footer-r96{padding-top:30px}.m19-home-preview .footer-r96 .footer-r14__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 20px}.m19-home-preview .footer-r96 .footer-r14__grid>div:first-child{grid-column:1/-1}.m19-home-preview .footer-r96 .nhi-r96 img{width:56px}.m19-home-preview .footer-declaration-r96{padding:18px 5% 20px}.m19-home-preview .footer-r96 .footer-bottom-r92{text-align:left}}

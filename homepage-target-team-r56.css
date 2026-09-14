@@ -1,0 +1,22 @@
+/* r56: team-only layout. Original photo pixels and metadata untouched. */
+.m19-home-preview .team-r56{max-width:1340px;margin-inline:auto;padding:64px 36px 76px;background:linear-gradient(180deg,#fff,#f8fbf9)}
+.m19-home-preview .team-r56 .team-heading-r56{margin-bottom:34px}
+.m19-home-preview .team-r56 .eyebrow{font-size:13px;color:#8a6624;letter-spacing:.22em;margin:0 0 12px}
+.m19-home-preview .team-r56 #team-title{font-family:"Noto Serif TC","PMingLiU",serif;font-size:clamp(30px,3.1vw,46px);line-height:1.4;font-weight:600;margin:0}
+.m19-home-preview .team-r56 .team-heading-line-r56{display:block;width:58px;height:1px;background:#b49b62;margin-top:22px}
+.m19-home-preview .team-r56 .team-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 22px;list-style:none;margin:0;padding:0;align-items:stretch}
+.m19-home-preview .team-r56 .team-grid>li{padding:0;margin:0;max-width:none;width:100%;min-width:0;transform:none;text-align:left;border:1px solid #dce7df;border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 5px 22px #163c2a05}
+.m19-home-preview .team-r56 .team-grid .doctor-photo{display:block;position:relative;width:100%;max-width:none;margin:0;aspect-ratio:4/5;overflow:hidden;border:0;border-radius:0;background:#eaf0ec}
+.m19-home-preview .team-r56 .team-grid .doctor-photo img{position:absolute;display:block;width:100%;height:100%;max-width:none;left:0;top:0;object-fit:cover;object-position:center 20%}
+/* Frame occupies ~11% of each source side; crop via layout, never edit originals. */
+.m19-home-preview .team-r56 .team-grid .photo-framed-r56 img{width:132%;height:auto;left:-16%;top:-15%;object-fit:initial}
+.m19-home-preview .team-r56 .team-grid .doctor-3-r56 img{top:-20%}
+.m19-home-preview .team-r56 .team-grid .doctor-6-r56 img{top:-17%}
+.m19-home-preview .team-r56 .team-grid .doctor-7-r56 img{top:-19%}
+.m19-home-preview .team-r56 .doctor-caption-r56{position:relative;min-height:125px;padding:20px 23px 19px;background:radial-gradient(ellipse at 112% 0%,#e5eee570,transparent 65%),#fff;border-top:1px solid #e6ece5}
+.m19-home-preview .team-r56 .team-grid h3{font-family:"Noto Serif TC","PMingLiU",serif;color:#00483e;font-size:26px;letter-spacing:.06em;font-weight:600;line-height:1.4;margin:0 0 7px}
+.m19-home-preview .team-r56 .team-grid p{font-size:14px;line-height:1.7;color:#5d6d66;margin:0;min-height:24px;overflow-wrap:normal}
+.m19-home-preview .team-r56 .doctor-rule-r56{display:block;height:1px;width:34px;background:linear-gradient(90deg,#a98a49,#dccb9f);margin-top:15px}
+@media(max-width:1050px){.m19-home-preview .team-r56 .team-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:760px;margin-inline:auto;gap:24px}.m19-home-preview .team-r56{padding-inline:28px}}
+@media(max-width:600px){.m19-home-preview .team-r56{padding:40px 18px 48px}.m19-home-preview .team-r56 .team-grid{gap:18px 12px}.m19-home-preview .team-r56 .team-grid>li{border-radius:16px}.m19-home-preview .team-r56 .doctor-caption-r56{padding:15px 12px;min-height:121px}.m19-home-preview .team-r56 .team-grid h3{font-size:22px}.m19-home-preview .team-r56 .team-grid p{font-size:12px;min-height:41px}.m19-home-preview .team-r56 .doctor-rule-r56{margin-top:10px;width:26px}}
+@media(max-width:350px){.m19-home-preview .team-r56 .team-grid{grid-template-columns:1fr;max-width:260px}.m19-home-preview .team-r56 .team-grid p{min-height:0}}
