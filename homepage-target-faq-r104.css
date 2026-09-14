@@ -1,0 +1,8 @@
+.m19-home-preview .faq-r104 .faq-item summary{min-height:64px;gap:18px;align-items:center}
+.m19-home-preview .faq-r104 .faq-symbol{flex-shrink:0}
+.m19-home-preview .faq-r104 .faq-answer{line-height:1.85}
+.m19-home-preview .faq-r104 .faq-answer p{max-width:900px}
+.m19-home-preview .faq-contact-r104{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:28px}
+.m19-home-preview .faq-contact-r104 p{margin:0;color:#537365}
+.m19-home-preview .faq-contact-r104 a{display:inline-flex;align-items:center;min-height:46px;padding:10px 24px;border-radius:30px;background:#005448;color:white;text-decoration:none}
+@media(max-width:600px){.m19-home-preview .faq-r104 .faq-item summary{padding:18px 16px;font-size:17px;line-height:1.6}.m19-home-preview .faq-r104 .faq-answer{padding:0 16px 20px;font-size:15px}}
