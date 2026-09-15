@@ -1,1 +1,3 @@
 .integrated-banner{width:calc(100vw - 20px);max-width:none;position:relative;left:50%;transform:translateX(-50%);white-space:normal}.integrated-banner iframe{display:block;width:100%;height:1000px;border:0;background:#f8faf7}.integrated-banner noscript img{max-width:100%;height:auto}@media(max-width:800px){.integrated-banner iframe{height:1320px}}
+/* R26: content-sized iframe; the page owns vertical scrolling. */
+.integrated-banner #treatment-banner{box-sizing:content-box;border:0}

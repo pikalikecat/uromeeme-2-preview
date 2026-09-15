@@ -1,0 +1,59 @@
+.comparison-cards{display:none}
+.treatment-original .comparison-scroll{white-space:normal}
+.treatment-original .native-comparison{width:100%;min-width:0;table-layout:fixed;white-space:normal;font-size:16px;line-height:1.7}
+.treatment-original .native-comparison caption{padding:16px;text-align:left;font-weight:700;color:#00483e}
+.treatment-original .native-comparison th,.treatment-original .native-comparison td{padding:18px 16px;white-space:normal;overflow-wrap:anywhere;vertical-align:top}
+.treatment-original .native-comparison thead tr>:first-child{width:17%}
+.treatment-original .comparison-legacy-hint{display:none}
+@media(max-width:900px){
+ .treatment-original .comparison-enhanced{display:none}
+ .treatment-original .comparison-cards{display:block;margin:24px 0 36px;white-space:normal}
+ .treatment-original .comparison-cards h3{font-size:24px;margin:0 0 8px}
+ .treatment-original .comparison-help{font-size:15px;color:#5e7367;margin:0 0 18px}
+ .comparison-cards details{margin:12px 0;border:1px solid #c5d7cd;border-radius:16px;background:#fff;overflow:hidden}
+ .comparison-cards summary{padding:18px 20px;color:#00483e;font-size:18px;font-weight:700;line-height:1.5;cursor:pointer;min-height:56px}
+ .comparison-cards summary:focus-visible{outline:3px solid #ad945c;outline-offset:-4px}
+ .comparison-cards details[open] summary{background:#eaf3ee;border-bottom:1px solid #d4e2d9}
+ .comparison-cards dl{margin:0;padding:4px 18px 8px}
+ .comparison-cards .comparison-choice{padding:16px 0;border-bottom:1px solid #dce7df}
+ .comparison-cards .comparison-choice:last-child{border-bottom:0}
+ .comparison-cards dt{font-size:17px;font-weight:700;color:#00594e;line-height:1.5;margin:0 0 8px}
+ .comparison-cards dd{font-size:16px;line-height:1.85;margin:0;color:#314b45;overflow-wrap:anywhere}
+}
+
+/* R33: quiet champagne emphasis shared by mobile and desktop. */
+.treatment-original table.native-comparison tbody tr>td.comparison-own,
+.treatment-original table.native-comparison thead tr>th.comparison-own,
+.treatment-original .comparison-cards .comparison-own{
+ background:#faf8f2!important;
+ box-shadow:none!important;
+ border-left:2px solid #b79b61!important;
+ color:#284b40!important;
+}
+.treatment-original table.native-comparison thead tr>th.comparison-own{border-top:1px solid #d8cbb0!important;color:#005448!important}
+.treatment-original table.native-comparison tbody tr>td:not(.comparison-own),
+.treatment-original table.native-comparison thead tr>th:not(.comparison-own){background:#fff!important;color:#50665e!important;box-shadow:none!important}
+.treatment-original .native-comparison thead .comparison-own::before,
+.treatment-original .comparison-cards .comparison-own dt::before{
+ content:'津久療程';display:block;margin-bottom:7px;color:#806c40;
+ font:500 12px/1.5 "Microsoft JhengHei",sans-serif;letter-spacing:.12em;
+}
+.treatment-original .native-comparison thead th+th::before{
+ content:'vs.';display:block;margin-bottom:7px;color:#806c40;
+ font:italic 500 13px/1.5 Georgia,serif;letter-spacing:.04em;
+ background:linear-gradient(#ddd6c6,#ddd6c6) left center/calc(50% - 22px) 1px no-repeat,linear-gradient(#ddd6c6,#ddd6c6) right center/calc(50% - 22px) 1px no-repeat;
+}
+@media(max-width:900px){
+ .treatment-original .comparison-cards dl{padding:18px 16px}
+ .treatment-original .comparison-cards .comparison-choice{position:relative;padding:18px 16px;border:0;border-radius:0;background:#fff}
+ .treatment-original .comparison-cards .comparison-own{border-radius:0 8px 8px 0}
+ .treatment-original .comparison-cards .comparison-choice:not(.comparison-own) dt,
+ .treatment-original .comparison-cards .comparison-choice:not(.comparison-own) dd{color:#50665e}
+ .treatment-original .comparison-cards .comparison-choice+.comparison-choice{margin-top:40px}
+ .treatment-original .comparison-cards .comparison-choice+.comparison-choice::before{
+  content:'vs.';position:absolute;top:-30px;left:0;width:100%;text-align:center;
+  color:#806c40;font:italic 500 14px/20px Georgia,serif;
+  background:linear-gradient(#ddd6c6,#ddd6c6) left center/calc(50% - 22px) 1px no-repeat,linear-gradient(#ddd6c6,#ddd6c6) right center/calc(50% - 22px) 1px no-repeat;
+ }
+ .treatment-original .comparison-cards .comparison-own dt{color:#005448}
+}

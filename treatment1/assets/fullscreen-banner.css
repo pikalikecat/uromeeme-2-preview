@@ -1,9 +1,17 @@
 .review{display:none}
 .intro-exit{display:none;position:fixed;right:18px;top:calc(16px + env(safe-area-inset-top));z-index:30;background:#15241ecc;color:#fff;border:1px solid #c2aa7988;border-radius:30px;padding:10px 18px;min-height:44px;cursor:pointer}
 .intro .intro-exit{display:block}
-.intro .scene{height:100vh;height:100dvh;padding:0!important}
-.intro .scene .viewport{padding:0!important}
+
+
 .first-slot{left:calc(25% + 32.5px - 215px)}
 @media(max-width:800px){.first-slot{left:2%;width:96%;height:215px;bottom:30px}.model-layer::before{inset:-6% -3%;background:radial-gradient(ellipse,#fff7cdcc 5%,#ead49977 35%,#b8d8c955 57%,transparent 74%);filter:blur(12px);opacity:1}.ambient .model-layer::before{animation:device-radiance 4s ease-in-out infinite}.model-layer canvas{filter:drop-shadow(0 0 8px #f5dda46b)}.intro .model-layer canvas{filter:none}}
 @keyframes device-radiance{0%,100%{opacity:.65;transform:scale(.96)}50%{opacity:1;transform:scale(1.07)}}
 @media(prefers-reduced-motion:reduce){.intro-exit{display:none!important}.model-layer::before{animation:none!important}}
+
+
+/* Hide decorative card strokes behind the opening without changing layout. */
+body.intro-fullscreen{background:#f8faf7!important}
+body.intro-fullscreen .blackout{inset:-2px!important;background:#000!important;border:0!important;outline:0!important;box-shadow:none!important}
+body.intro-building .scene .viewport{visibility:hidden}
+body.intro .model-layer,body.intro .model-layer canvas{border-color:transparent!important;outline:none!important;box-shadow:none!important}
+

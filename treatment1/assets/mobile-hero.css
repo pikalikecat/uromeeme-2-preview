@@ -1,0 +1,25 @@
+/* R26: reserve a real in-flow mobile docking slot before the gold number. */
+.mobile-model-slot{display:none}
+@media(max-width:800px){
+ .m19-home-preview .scene .card{height:auto;display:grid;grid-template-columns:1fr 1fr;column-gap:8px;padding:33px 20px 30px}
+ .copy{grid-column:1/-1;min-width:0}
+ .mobile-model-slot{display:block;position:relative;width:100%;height:210px;margin:8px auto 16px;pointer-events:none}
+ .first-slot{display:none}
+ .people{position:relative;grid-column:1/-1;top:auto;right:auto;width:calc(100% + 40px);margin:28px -20px 0;height:auto;aspect-ratio:1/1.05}
+ .doctor-nameplate{position:relative;top:auto;left:auto;right:auto;width:100%;margin-top:-8px;align-self:start}
+ .doctor-role{font-size:10px}.doctor-name{font-size:18px}
+ .number-stage{max-width:100%}
+ .revealed .copy{animation:none}
+}
+/* R27: title and version form one reading group. */
+@media(max-width:800px){
+ .m19-home-preview .scene .hero-display-title{margin-bottom:0}
+ .number-stage{margin-top:0;margin-bottom:0}
+ .mobile-model-slot{margin:8px auto 12px}
+}
+/* R28: a single card must not inherit carousel motion during resize. */
+.m19-home-preview .scene .track{transition:none!important}
+.m19-home-preview .scene .card{transition:none!important}
+body.intro-fullscreen{overflow:hidden}
+body.intro-fullscreen .scene{position:relative;top:var(--landing-top,0px);overflow:visible}
+body.intro-fullscreen .blackout{position:fixed;inset:0}
