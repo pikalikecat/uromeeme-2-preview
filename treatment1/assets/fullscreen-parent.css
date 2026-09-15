@@ -1,0 +1,5 @@
+html.intro-locked{overflow:hidden;overscroll-behavior:none}
+.intro-locked body{position:fixed;top:var(--intro-scroll-top);left:0;right:0;overflow:hidden}
+.intro-locked .integrated-banner{position:fixed;inset:0;left:0;transform:none;width:100vw;height:100vh;height:100dvh;z-index:2147483646;background:#000}
+.intro-locked .integrated-banner iframe{height:100%!important;width:100%;border:0!important;border-radius:0}
+.treatment-original .doctor-profiles .original-col[style*="span:2"],.treatment-original .doctor-profiles .original-col[style*="span:2"] p{text-align:center}

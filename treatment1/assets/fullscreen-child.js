@@ -1,0 +1,1 @@
+(()=>{function skip(){document.getElementById('skip').click();}document.querySelector('.intro-exit').addEventListener('click',skip);document.addEventListener('keydown',e=>{if(e.key==='Escape')skip();});window.addEventListener('message',e=>{if(e.source===parent&&e.data?.type==='m19-intro-cancel')skip();});})();

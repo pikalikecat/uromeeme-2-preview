@@ -1,0 +1,19 @@
+/* Presentation only: centered copy and a warm, slowly changing gold finish. */
+.copy{text-align:center;width:50%}
+.number-stage{position:relative;margin:0 auto;isolation:isolate}
+.metal-number{width:100%;text-align:center}
+.metal-number span{width:100%;text-align:center}
+.benefits{margin-inline:auto;text-align:center}
+.benefits span:first-child,.benefits span:last-child{padding-inline:18px}
+.number-stage::before{content:"";position:absolute;inset:10% -10% 0;border-radius:50%;background:radial-gradient(ellipse,#fff1b6b3 0%,#e6c36f55 33%,#e8d29b22 55%,transparent 72%);filter:blur(15px);z-index:-1;pointer-events:none}
+.number-stage::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 2px 17px at 20% 23%,#fffdf0 15%,#ffe5a588 50%,transparent 100%),radial-gradient(ellipse 17px 2px at 20% 23%,#fffdf0 15%,#ffe5a588 50%,transparent 100%),radial-gradient(ellipse 2px 12px at 81% 70%,#fffef2 15%,#e9c76c88 50%,transparent 100%),radial-gradient(ellipse 12px 2px at 81% 70%,#fffef2 15%,#e9c76c88 50%,transparent 100%);opacity:.65}
+.face{background-image:linear-gradient(112deg,#725122 0%,#bd9447 16%,#f7df9f 28%,#fffdf0 33%,#ebc572 38%,#a97c32 51%,#fbe9b5 64%,#fff6d8 69%,#b78a3d 79%,#755120 100%);background-size:260% 100%;filter:drop-shadow(0 1px 0 #fff7ce) drop-shadow(1px 2px 1px #74501d77) drop-shadow(0 0 9px #f4cc7566)}
+.ambient .face{animation:version-gold-flow 4.8s ease-in-out infinite}
+.ambient .number-stage::before{animation:version-halo 5.5s ease-in-out infinite}
+.ambient .number-stage::after{animation:version-sparkle 4.2s ease-in-out infinite}
+@keyframes version-gold-flow{0%,100%{background-position:95% 50%}50%{background-position:5% 50%}}
+@keyframes version-halo{0%,100%{opacity:.55;transform:scale(.93)}50%{opacity:.95;transform:scale(1.06)}}
+@keyframes version-sparkle{0%,100%{opacity:.25}42%{opacity:.9}75%{opacity:.4}}
+@media(max-width:800px){.copy{width:100%}.benefits span:first-child,.benefits span:last-child{padding-inline:10px}.number-stage::before{inset:8% -5% 0}}
+@media(prefers-reduced-motion:reduce){.number-stage::before{opacity:.6}.number-stage::after{opacity:.4}}
+.paused .number-stage::after{animation-play-state:paused!important}

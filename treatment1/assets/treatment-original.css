@@ -1,0 +1,26 @@
+.treatment-original{--ink:#00483e;--gold:#9a7c4c;max-width:1180px;margin:auto;padding:56px 32px 100px;color:#314b45;font:17px/1.9 Arial,"Microsoft JhengHei",sans-serif;white-space:pre-line;overflow-wrap:anywhere}
+.treatment-original h1,.treatment-original h2,.treatment-original h3{font-family:"Noto Serif TC","PMingLiU",serif;color:var(--ink);white-space:normal;scroll-margin-top:180px;text-wrap:pretty}
+.treatment-original h1{font-size:clamp(30px,3.4vw,48px);line-height:1.45;margin:0 0 24px;font-weight:700}
+.treatment-original h2{font-size:clamp(25px,2.6vw,34px);line-height:1.6;margin:28px 0 22px;padding-bottom:18px;border-bottom:1px solid #dce7e1}
+.treatment-original h3{font-size:23px;line-height:1.6;margin:26px 0 12px}
+.treatment-original p{margin:16px 0;white-space:normal}.treatment-original ul{padding-left:26px;white-space:normal}.treatment-original li{margin:10px 0}
+.treatment-original a:not(.original-button){color:#006455;text-decoration-thickness:1px;text-underline-offset:4px}
+.treatment-original .original-section{padding:28px 0 40px;border-bottom:1px solid #dce7e1}
+.treatment-original .original-row{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;white-space:normal;margin:24px 0}
+.treatment-original .original-col{grid-column:span var(--column-span,12);min-width:0;white-space:pre-line}
+.treatment-original .original-row:has(>.original-col[style*="span:4"])>.original-col{padding:22px;border:1px solid #dce7e1;border-radius:20px;background:#f8fbf9}
+.treatment-original .original-gap{height:14px}.treatment-original .original-button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:8px 28px;margin:8px 12px 8px 0;border:1px solid #005448;border-radius:40px;background:#005448;color:#fff;text-decoration:none;font-weight:600;white-space:normal}
+.treatment-original .original-button+.original-button{background:white;color:#005448}
+.treatment-original img{display:block;max-width:100%;height:auto;object-fit:contain;margin:24px auto;border-radius:14px}
+.treatment-original .media-pending{display:flex;align-items:center;justify-content:center;min-height:180px;margin:20px 0;border:1px dashed #a7bcb0;border-radius:20px;background:#f3f8f5;color:#586c63;white-space:normal}
+.treatment-original .original-ux_banner .media-pending{min-height:260px}
+.treatment-original .original-video{min-height:150px;display:grid;place-items:center;background:#f1f7f4;border-radius:20px;border:1px solid #dce7e1;margin:24px 0;white-space:normal;padding:24px}
+.treatment-original iframe{width:100%;max-width:100%;height:300px;border:1px solid #dce7e1!important;border-radius:20px}.treatment-original .preview-only{font:14px/1.7 Arial,"Microsoft JhengHei",sans-serif;color:#63746c}
+.treatment-original a:focus-visible{outline:3px solid #a18a5a;outline-offset:5px}
+@media(max-width:700px){.treatment-original{padding:32px 20px 90px;font-size:16px;line-height:1.85}.treatment-original .original-row{display:block}.treatment-original .original-col{margin:16px 0}.treatment-original h3{font-size:21px}.treatment-original .original-ux_banner .media-pending{min-height:160px}}
+@media(prefers-reduced-motion:reduce){.m19-home-preview *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.treatment-original .original-attachment{margin:28px 0}.treatment-original .original-banner-media img{width:100%;height:auto;border-radius:20px;margin:12px 0 28px}.treatment-original .original-image-link{display:block}.treatment-original .original-attachment img{max-height:none}.treatment-original .original-col .original-attachment img{max-width:100%}
+
+/* Original treatment1 section headings are centered; external CSS also works under preview CSP. */
+.treatment-original h2{text-align:center}

@@ -1,0 +1,1 @@
+(()=>{function size(){parent.postMessage({type:'m19-banner-height',height:Math.ceil(document.body.getBoundingClientRect().height)},'*');}new ResizeObserver(size).observe(document.body);window.addEventListener('load',size);})();

@@ -1,0 +1,1 @@
+(()=>{const cards=document.querySelectorAll('.feature-cards>.original-col[style*="span:4"]');if(!('IntersectionObserver' in window))return;const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('feature-reveal');observer.unobserve(e.target);}});},{threshold:.15});cards.forEach(c=>observer.observe(c));})();

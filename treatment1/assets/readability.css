@@ -1,0 +1,39 @@
+/* Restore source layout with external rules; do not relax the preview CSP. */
+.treatment-original{line-height:1.75}
+.treatment-original .original-ux_text{white-space:pre-line}
+.treatment-original .original-row{white-space:normal}
+.treatment-original .original-col[style*="span:4"]{grid-column:span 4}
+.treatment-original .original-col[style*="span:6"]{grid-column:span 6}
+.treatment-original .original-col[style*="span:2"]{grid-column:span 2}
+.treatment-original .original-col[style*="span:12"]{grid-column:span 12}
+.treatment-original h2{margin:32px 0 18px;padding-bottom:14px;line-height:1.45}
+.treatment-original h3{margin:24px 0 10px;line-height:1.5}
+.treatment-original p{margin:12px 0}
+.treatment-original li{margin:6px 0}
+.treatment-original .original-section{padding:22px 0 30px}
+.treatment-original p[style*="text-align: center"],.treatment-original .reviews-cta+.original-row .original-col{text-align:center}
+.treatment-original .reviews-cta+.original-row .original-button{margin:6px}
+.treatment-original .original-row.feature-cards{gap:22px;align-items:stretch}
+.treatment-original .original-row.feature-cards>.original-col{position:relative;isolation:isolate;overflow:hidden;padding:30px 24px;border:1px solid #b6cbbb;border-radius:28px 8px 28px 8px;background:radial-gradient(ellipse at 110% 0%,#98bda780,transparent 60%),linear-gradient(135deg,#fff 25%,#edf5ee 78%,#d4e4d9);box-shadow:0 14px 35px #153d2910;transition:box-shadow .35s ease,border-color .35s ease}
+.treatment-original .original-row.feature-cards>.original-col::before{content:"";position:absolute;inset:10px;border:1px solid #c2aa7966;border-radius:20px 4px 20px 4px;pointer-events:none;z-index:-1}
+.treatment-original .original-row.feature-cards>.original-col::after{content:"";position:absolute;inset:0;transform:translateX(-130%);background:linear-gradient(110deg,transparent 28%,#fff9dc66 49%,transparent 70%);pointer-events:none}
+.treatment-original .original-row.feature-cards>.original-col h3{text-align:center;color:#896c34;font-size:23px;margin:0 0 16px}
+.treatment-original .original-row.feature-cards>.original-col p{text-align:center;margin:0;line-height:1.8}
+.treatment-original .original-col.feature-reveal::after{animation:feature-sweep 1.6s ease both}
+.treatment-original .original-col.feature-reveal:nth-child(2)::after{animation-delay:.15s}
+.treatment-original .original-col.feature-reveal:nth-child(3)::after{animation-delay:.3s}
+@keyframes feature-sweep{to{transform:translateX(130%)}}
+@media(hover:hover){.treatment-original .original-row.feature-cards>.original-col:hover{border-color:#ac8e52;box-shadow:0 16px 38px #84652722}}
+.treatment-original .doctor-profiles{margin-top:28px;padding:36px 28px;border:1px solid #d8e5dc;border-radius:28px;background:linear-gradient(135deg,#f8faf7,#eef5ef)}
+.treatment-original .doctor-profiles>.original-ux_text h2{border:0;padding:0;margin:12px 0}
+.treatment-original .doctor-profiles .original-row{align-items:center;gap:32px;margin:32px 0}
+.treatment-original .doctor-profiles .original-ux_text>span{display:block}
+.treatment-original .doctor-profiles .original-ux_text>span:first-child{font-size:24px;color:#896c34;margin-bottom:12px}
+.treatment-original .doctor-profiles .original-ux_text>span+span{font-size:27px;color:#00483e;line-height:1.45;margin-bottom:18px}
+.treatment-original .doctor-profiles .original-attachment{margin:0}
+.treatment-original .doctor-profiles img{margin:0 auto;width:100%;max-width:520px}
+.treatment-original .doctor-profiles .original-row:has(>.original-col[style*="span:2"]){display:flex;justify-content:center}
+.treatment-original .doctor-profiles a[href="https://uromeeme.com/about-us/"]{display:inline-flex;padding:9px 30px;border:1px solid #ad945c;border-radius:28px;text-decoration:none;background:#fff}
+@media(max-width:900px){.treatment-original .original-row.feature-cards{display:grid;grid-template-columns:1fr}.treatment-original .original-col[style*="span:4"]{grid-column:1}}
+@media(max-width:700px){.treatment-original .doctor-profiles{padding:24px 16px}.treatment-original .doctor-profiles .original-row{display:flex;flex-direction:column;gap:18px}.treatment-original .doctor-profiles .original-col{width:100%;margin:0}.treatment-original .doctor-profiles .original-row:has(img[data-attachment-id="13073"])>.original-col:has(img){order:-1}.treatment-original .doctor-profiles .original-ux_text>span{text-align:center}.treatment-original .doctor-profiles .original-ux_text>span+span{font-size:24px}.treatment-original{line-height:1.75}}
+@media(prefers-reduced-motion:reduce){.treatment-original .original-col::after{animation:none!important;display:none}}

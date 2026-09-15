@@ -1,0 +1,25 @@
+.treatment-original .native-module{margin:28px 0 40px;white-space:normal}
+.treatment-original .native-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;list-style:none;padding:0;margin:0}
+.treatment-original .native-grid li{position:relative;display:flex;align-items:center;gap:20px;min-height:145px;margin:0;padding:25px;border:1px solid #c2cfc4;border-radius:25px 7px 25px 7px;background:radial-gradient(ellipse at 100% 0%,#b8d1bf77,transparent 70%),linear-gradient(135deg,#fff,#f0f6ef);box-shadow:0 12px 28px #153d2910}
+.treatment-original .native-grid li::before{content:"";position:absolute;inset:8px;border:1px solid #c2aa7955;border-radius:18px 3px 18px 3px;pointer-events:none}
+.native-number{font:500 42px/1 Georgia,serif;color:#9d7c3c}
+.treatment-original .native-grid p{font-size:20px;line-height:1.6;color:#00483e;margin:0}
+.treatment-original .benefit-grid .native-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+.treatment-original .benefit-grid li{flex-direction:column;text-align:center;gap:15px;padding:26px 18px}
+.treatment-original .benefit-grid p{font-size:18px}
+.comparison-scroll{overflow-x:auto;border:1px solid #b8cbbb;border-radius:24px;box-shadow:0 14px 34px #153d2910;-webkit-overflow-scrolling:touch}
+.comparison-scroll:focus-visible{outline:3px solid #ad945c;outline-offset:4px}
+.treatment-original .native-comparison{border-collapse:separate;border-spacing:0;width:100%;min-width:900px;table-layout:fixed;font-size:16px;line-height:1.8;color:#314b45}
+.native-comparison caption{padding:18px;background:#eef5ef;color:#00483e;font-weight:700;letter-spacing:.06em;text-align:center}
+.native-comparison th,.native-comparison td{padding:20px;border-bottom:1px solid #d7e3d9;border-right:1px solid #d7e3d9;vertical-align:middle;overflow-wrap:anywhere;text-align:left}
+.native-comparison thead th{background:#005448;color:#fff;text-align:center;font-size:20px}
+.native-comparison thead td{background:#f2f5ed;width:135px}
+.native-comparison tbody th{color:#00483e;background:#f2f5ed;font-weight:700}
+.native-comparison tbody td{background:#fff}
+.native-comparison tbody tr:nth-child(even) td{background:#f0f6f1}
+.native-comparison tbody td:nth-child(2){background:#faf8ed!important;border-left:2px solid #c2aa79}
+.native-comparison thead th:nth-child(2){background:linear-gradient(135deg,#005448,#44765d);box-shadow:inset 0 3px #c2aa79}
+.treatment-original .table-hint{display:none;font-size:13px;color:#687b70;text-align:right}
+@media(max-width:1000px){.treatment-original .benefit-grid .native-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.treatment-original .table-hint{display:block}}
+@media(max-width:700px){.treatment-original .native-grid,.treatment-original .benefit-grid .native-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.treatment-original .native-grid li{flex-direction:column;text-align:center;padding:22px 12px;gap:12px;min-height:160px}.treatment-original .native-grid p{font-size:16px}.native-number{font-size:34px}.native-comparison tbody th{position:sticky;left:0;z-index:1}.native-comparison thead td{width:100px}.native-comparison th,.native-comparison td{padding:15px}.treatment-original .native-comparison{min-width:780px}}
+@media(max-width:350px){.treatment-original .native-grid,.treatment-original .benefit-grid .native-grid{grid-template-columns:1fr}}

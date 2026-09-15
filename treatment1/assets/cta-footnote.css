@@ -1,0 +1,12 @@
+.treatment-original .original-col:has(>.original-button){text-align:center}
+.treatment-original .original-col>.original-button{margin:6px}
+/* Restore source emphasis; retain the source text and its inline semantics. */
+.treatment-original span[style*="color: #ed1c24"]{color:#ed1c24}
+.treatment-original span[style*="font-size: 90%; color: #999999"]{font-size:90%;color:#858b88}
+.treatment-original .reference-note{display:block;margin-top:3.5rem;margin-bottom:1.5rem;font-size:14px!important;line-height:1.7;color:#777e7a!important;font-weight:400;white-space:normal;overflow-wrap:anywhere}
+/* Empty original spacer columns are layout, not feature cards. */
+.treatment-original .original-row:has(>.original-col[style*="span:4"]):not(.feature-cards){display:flex;justify-content:center;gap:0}
+.treatment-original .original-row:has(>.original-col[style*="span:4"]):not(.feature-cards)>.original-col{padding:0;margin:0;border:0;border-radius:0;background:none;box-shadow:none}
+.treatment-original .original-row:has(>.original-col[style*="span:4"]):not(.feature-cards)>.original-col:not(:has(.original-button)){display:none}
+.treatment-original .original-row:has(>.original-col[style*="span:4"]):not(.feature-cards)>.original-col:has(.original-button){width:100%;text-align:center}
+@media(max-width:700px){.treatment-original .reference-note{font-size:13px!important;margin-top:3.5rem}}

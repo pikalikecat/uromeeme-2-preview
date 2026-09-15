@@ -1,0 +1,2 @@
+/* Remove the large ellipse overlay on mobile; keep the base gradient and frame. */
+@media(max-width:760px){.m19-home-preview .care-r59 .card::after{content:none;display:none}}
