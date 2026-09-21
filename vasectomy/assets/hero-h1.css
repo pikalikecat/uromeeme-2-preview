@@ -1,0 +1,10 @@
+/* One semantic and visual title. Its spans preserve the exact source text. */
+.vasectomy-page .vas-static-r32 h1#vas-title{font-family:"Noto Serif TC","PMingLiU",serif;font-size:48px!important;font-weight:700!important;line-height:1.45!important;color:#00483e!important;max-width:none;margin:28px 0!important;text-wrap:balance}
+#vas-title>span{display:block}
+#vas-title .h1-location{font-size:28px;line-height:1.6;margin-bottom:18px;letter-spacing:.025em}
+#vas-title .h1-method{font-size:46px}
+#vas-title .h1-treatment{font-size:52px;letter-spacing:.025em;color:#896c34;background:linear-gradient(115deg,#806432,#b09458 45%,#7f6434);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+@media(min-width:801px) and (max-width:1100px){#vas-title .h1-location{font-size:24px}#vas-title .h1-method{font-size:35px}#vas-title .h1-treatment{font-size:38px}}
+@media(max-width:800px){.vasectomy-page .vas-static-r32 h1#vas-title{margin:24px 0!important}#vas-title .h1-location{font-size:23px;margin-bottom:12px}#vas-title .h1-method{font-size:33px}#vas-title .h1-treatment{font-size:36px;letter-spacing:0}}
+@media(max-width:350px){#vas-title .h1-location{font-size:21px}#vas-title .h1-method{font-size:29px}#vas-title .h1-treatment{font-size:31px}}
+@media(forced-colors:active){#vas-title .h1-treatment{background:none;-webkit-text-fill-color:CanvasText;color:CanvasText}}

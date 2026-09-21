@@ -1,0 +1,35 @@
+/* Shared treatment typography. Verified against published treatment1 R33.
+   Keep page-specific hero layout and all source heading semantics intact. */
+.treatment-original{--treatment-font-body:Arial,"Microsoft JhengHei",sans-serif;--treatment-font-heading:"Noto Serif TC","PMingLiU",serif;font-family:var(--treatment-font-body);font-size:17px;font-weight:400;line-height:1.75}
+.treatment-original h1,.treatment-original h2,.treatment-original h3{font-family:var(--treatment-font-heading);font-weight:700;color:#00483e}
+.treatment-original .vas-content{font-family:var(--treatment-font-body);font-size:17px;font-weight:400;line-height:1.75}
+.treatment-original .vas-content h2{font-size:clamp(25px,2.6vw,34px);line-height:1.45;margin:32px 0 18px;padding-bottom:14px;border-bottom:1px solid #dce7e1;text-align:center}
+.treatment-original .vas-content h2:after{display:none}
+.treatment-original .vas-content h3,.treatment-original .faq-entry summary h3{font-family:var(--treatment-font-heading);font-size:23px;font-weight:700;line-height:1.5;color:#00483e}
+.treatment-original .vas-content h3{margin:24px 0 10px}
+.treatment-original .faq-entry summary h3{margin:0}
+.treatment-original strong,.treatment-original b{font-weight:700}
+.treatment-original .original-button{font-family:var(--treatment-font-body);font-size:17px;font-weight:600;line-height:1.75}
+.treatment-original .native-grid p{font-family:var(--treatment-font-body);font-size:20px;font-weight:400;line-height:1.6}
+.treatment-original .benefit-grid .native-grid p{font-size:18px}
+.treatment-original .native-comparison{font-family:var(--treatment-font-body);font-size:16px;font-weight:400;line-height:1.7}
+.treatment-original .native-comparison th{font-weight:700}
+.treatment-original .comparison-cards{font-family:var(--treatment-font-body)}
+.treatment-original .comparison-cards summary{font-size:18px;font-weight:700;line-height:1.5}
+.treatment-original .comparison-cards dt{font-size:17px;font-weight:700;line-height:1.5}
+.treatment-original .comparison-cards dd{font-size:16px;font-weight:400;line-height:1.85}
+.treatment-original .source-footnote{font-family:var(--treatment-font-body);font-size:14px;font-weight:400;line-height:1.7;color:#777e7a}
+.treatment-original .physician-row .original-ux_text:first-child>span:first-child{font-family:var(--treatment-font-body);font-size:24px;font-weight:400;color:#896c34}
+.treatment-original .physician-row .original-ux_text:first-child>span+span{font-family:var(--treatment-font-body);font-size:27px;line-height:1.45;color:#00483e}
+@media(max-width:700px){
+ .treatment-original,.treatment-original .vas-content{font-size:16px;line-height:1.75}
+ .treatment-original .vas-content h3,.treatment-original .faq-entry summary h3{font-size:21px}
+ .treatment-original .original-button{font-size:16px}
+ .treatment-original .native-grid p,.treatment-original .benefit-grid .native-grid p,.treatment-original [data-added="image-12862"] .native-grid p{font-size:16px;line-height:1.6}
+ .treatment-original .source-footnote{font-size:13px}
+ .treatment-original .physician-row .original-ux_text:first-child>span+span{font-size:24px}
+}
+
+/* R33 inline links: explicit underline, independent of browser/reset defaults. */
+.treatment-original a:not(.original-button){color:#006455;text-decoration-line:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.treatment-original a:focus-visible{outline:3px solid #a18a5a;outline-offset:5px}
