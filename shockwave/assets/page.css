@@ -1,0 +1,97 @@
+/* Only this isolated shockwave page; shared shell and frozen banner remain separate. */
+.m19-home-preview{background:#fffefa;color:#314b45}
+.m19-home-preview main.sw-page{max-width:none;margin:0;padding:0 0 64px;font-family:Arial,"Microsoft JhengHei",sans-serif}
+.sw-page *{box-sizing:border-box}
+.sw-page :is(a,summary,button):focus-visible{outline:3px solid #806c40;outline-offset:5px}
+.sw-page section[id]{scroll-margin-top:calc(var(--m19-sticky-height,120px) + 24px)}
+.sw-page #banner-wrap{font-family:Arial,"Microsoft JhengHei",sans-serif}
+.sw-jump{max-width:1115px;margin:0 auto 64px;padding:0 16px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.sw-jump a{color:#00483e;text-decoration:none;min-height:44px;padding:10px 20px;border:1px solid #d7e3d9;border-radius:24px;background:#fff;font-size:15px}
+.sw-jump a:hover{background:#edf4ee;border-color:#b79b61}
+.sw-content{max-width:1235px;margin:0 auto;padding:0 60px}
+.sw-section{margin:0 auto 88px;font-size:18px;line-height:1.85;overflow-wrap:anywhere;min-width:0}
+.sw-section h2{font-family:"Noto Serif TC","PMingLiU",serif;color:#00483e;font-size:32px;line-height:1.6;text-align:center;margin:0 0 36px;letter-spacing:.035em;font-weight:700;text-wrap:balance}
+.sw-section h2:after{content:"";display:block;background:#b79b61;width:44px;height:1px;margin:22px auto 0}
+.sw-section h3{font-size:22px;color:#00483e;font-weight:700;line-height:1.7;margin:28px 0 14px}
+.sw-section p{margin:18px 0;font-weight:400}
+.sw-section p:first-child{margin-top:0}
+.sw-section strong,.sw-section b{font-weight:700}
+.sw-section :is(ul,ol){padding-left:26px;margin:20px 0}
+.sw-section li{margin:9px 0}
+.sw-section a{color:#005448;text-underline-offset:4px}
+.sw-intro{max-width:950px;padding:34px 40px;border-left:2px solid #b79b61;background:linear-gradient(100deg,#faf8f2,#f7faf7);border-radius:3px 24px 3px 24px}
+.sw-intro p{margin:18px 0}
+.sw-video-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.sw-video-link{display:flex;align-items:center;justify-content:center;min-height:144px;border:1px solid #c5d7cd;border-radius:24px 6px;background:linear-gradient(130deg,#fff,#eaf3ec);text-decoration:none;padding:32px;text-align:center;font-size:20px}
+.sw-video-link:before{content:"▶";font-size:22px;margin-right:14px;color:#806c40}
+.sw-media{margin:32px auto;width:100%;max-width:680px;text-align:center}
+.sw-media img{display:block;width:100%;height:auto;border-radius:20px 5px}
+.sw-media a{display:block}
+#evaluation>.sw-media{max-width:580px}
+.sw-poster-native{padding:32px;margin:34px 0;background:#f4f8f3;border:1px solid #d7e3d9;border-radius:24px 6px}
+.sw-section .sw-poster-title{font:700 27px/1.6 "Noto Serif TC","PMingLiU",serif;color:#00483e;text-align:center;margin:0 0 16px}
+.sw-poster-intro,.sw-poster-ending{text-align:center}
+.sw-section .sw-points{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;list-style:none;padding:0;margin:26px 0}
+.sw-points li{margin:0;padding:12px 20px;border:1px solid #c2aa7970;border-radius:18px 4px;background:#fffefa;text-align:center;color:#00483e}
+.sw-section .sw-steps{list-style:none;counter-reset:step;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:0;margin:28px 0}
+.sw-steps li{counter-increment:step;background:white;border:1px solid #c5d7cd;border-radius:20px 4px;padding:26px 22px;margin:0;text-align:center}
+.sw-steps li:before{content:"0" counter(step);display:block;font:28px Georgia,serif;color:#a4894e;margin-bottom:16px}
+.sw-section .sw-assessment-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;list-style:none;counter-reset:assessment;padding:0}
+.sw-assessment-list li{counter-increment:assessment;position:relative;padding:28px 24px 28px 60px;margin:0;background:linear-gradient(120deg,#fffefa,#eef5ed);border:1px solid #d7e3d9;border-radius:24px 6px;box-shadow:0 8px 26px #153d2905}
+.sw-assessment-list li:before{content:counter(assessment,decimal-leading-zero);position:absolute;top:27px;left:20px;color:#a4894e;font:22px Georgia,serif}
+.sw-section .sw-evaluation-list{list-style:none;padding:0}
+.sw-evaluation-list li{background:#f8faf7;border-left:2px solid #b79b61;padding:24px 28px;margin:18px 0;border-radius:0 18px 18px 0}
+.sw-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:30px 0}
+.sw-info-card{padding:28px;background:linear-gradient(145deg,#fff,#eff5ed);border:1px solid #d7e3d9;border-radius:24px 6px;min-width:0}
+.sw-info-card h3{font-size:21px;text-align:center;margin:0 0 20px}
+.sw-info-card p{margin:0}
+#reasons .sw-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sw-reassurance{margin:46px 0 0;padding:48px 36px;background:linear-gradient(110deg,#edf4ec,#faf8f2);border:1px solid #d7e3d9;border-radius:28px 6px;text-align:center}
+.sw-reassurance p{margin:14px 0;color:#00483e;font-size:22px}
+.sw-video video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#183e35;border-radius:20px;margin:30px auto}
+.sw-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin:36px 0 0}
+.sw-section a.sw-cta{display:inline-flex;justify-content:center;align-items:center;padding:12px 32px;min-width:174px;min-height:52px;border:1px solid #00483e;border-radius:99px;color:#fff;background:#00483e;text-decoration:none;font-size:17px}
+.sw-section a.sw-cta.secondary{background:#fffefa;color:#00483e}
+.sw-section .sw-note{font-size:14px;line-height:1.8;color:#777e7a;font-weight:400}
+.sw-section .sw-citation{margin-top:56px}
+.sw-comparison-wrap{overflow-x:auto;margin:24px 0}
+.sw-comparison-wrap table{border-collapse:collapse;width:100%;font-size:17px;line-height:1.8;min-width:720px;background:#fff}
+.sw-comparison-wrap caption{font-size:16px;padding:12px;color:#806c40;text-align:left}
+.sw-comparison-wrap th,.sw-comparison-wrap td{border:1px solid #d7e3d9;padding:20px 16px;vertical-align:top;text-align:left;font-weight:400;width:20%}
+.sw-comparison-wrap thead th{font-weight:700;background:#edf4ee;color:#00483e;text-align:center}
+.sw-comparison-wrap tbody th{font-weight:700;color:#00483e}
+.sw-comparison-wrap tbody tr:first-child{background:#faf8f2}
+.sw-comparison-wrap tbody tr:first-child th{border-left:2px solid #b79b61}
+.sw-comparison-cards{display:none}
+.sw-source-detail{font-size:14px;color:#61736a;margin-top:24px}
+.sw-source-detail>summary{padding:12px;min-height:44px;cursor:pointer}
+.sw-source-detail .sw-media{max-width:none}
+.sw-physicians{max-width:1115px}
+.sw-section .sw-physician-intro{text-align:center;font-size:21px;font-weight:400;margin:0 0 36px}
+.sw-physician-card{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;align-items:center;background:#fff;border:1px solid #d7e3d9;border-radius:24px 6px;padding:34px;margin:26px 0}
+.sw-physician-copy{min-width:0}
+.sw-section .sw-physician-name{color:#a4894e;font-size:24px;margin:0 0 18px}
+.sw-section .sw-motto{font:700 27px/1.65 "Noto Serif TC","PMingLiU",serif;color:#00483e;margin:0 0 22px}
+.sw-physician-card img{width:100%;height:auto;border-radius:15px;display:block}
+.sw-physician-card:nth-of-type(2) img{grid-column:1;grid-row:1}
+.sw-physician-card:nth-of-type(2) .sw-physician-copy{grid-column:2;grid-row:1}
+.sw-more{display:block;width:max-content;border:1px solid #00483e;border-radius:30px;min-height:44px;padding:9px 34px;margin:32px auto;text-decoration:none}
+.sw-faq{border:1px solid #d7e3d9;border-radius:20px 5px;margin:16px 0;background:#fff}
+.sw-faq[open]{background:#f2f7f0}
+.sw-faq summary{padding:23px 26px;cursor:pointer;min-height:48px}
+.sw-faq summary h3{display:inline;font-size:20px;margin:0;line-height:1.75}
+.sw-answer{padding:0 28px 20px}
+.sw-section .sw-medical-note{font-size:14px;line-height:1.9;color:#777e7a;text-align:center;font-weight:400;margin:36px auto 0;max-width:950px}
+#visit{background:#faf8f2;border:1px solid #e5decf;border-radius:28px 6px;padding:42px;white-space:normal}
+#visit>p{white-space:normal}
+.sw-directions .sw-direction-label{margin:28px 0 8px;color:#806c40}.sw-directions p{margin:8px 0}
+#visit h3{margin-top:36px;text-align:left}
+.sw-map-link{display:block;width:fit-content;margin:24px auto;padding:12px 24px;border:1px solid #b79b61;border-radius:28px;text-decoration:none;min-height:44px;text-align:center}
+@media(max-width:1050px){.sw-content{padding:0 32px}.sw-card-grid{grid-template-columns:1fr}.sw-section{margin-bottom:66px}.sw-jump{margin-bottom:44px}.sw-physician-card{gap:30px;padding:28px}}
+@media(max-width:900px){.sw-comparison-wrap.is-enhanced table{display:none}.sw-comparison-wrap.is-enhanced .sw-comparison-cards{display:block}.sw-comparison-cards details{border:1px solid #d7e3d9;border-radius:20px 5px;background:#fff;margin-bottom:16px;overflow:hidden}.sw-comparison-cards summary{cursor:pointer;min-height:48px;padding:20px;text-align:center;font-weight:700;color:#00483e}.sw-comparison-cards dl{margin:0;padding:0 18px 20px}.sw-comparison-cards dl>div{padding:18px 16px;border-bottom:1px solid #e4ece6}.sw-comparison-cards dl>div:first-child{background:#faf8f2;border-left:2px solid #b79b61}.sw-comparison-cards dt{font-weight:700;color:#00483e;margin-bottom:8px}.sw-comparison-cards dd{margin:0}.sw-comparison-cards small{font-weight:400;color:#806c40;margin-left:10px;font-size:13px}}
+@media(max-width:760px){.sw-content{padding:0 16px}.sw-section{font-size:17px;line-height:1.85}.sw-section h2{font-size:27px;margin-bottom:28px}.sw-section h3{font-size:21px}.sw-intro{padding:24px}.sw-video-links{grid-template-columns:1fr;gap:16px}.sw-video-link{min-height:110px;padding:24px}.sw-section .sw-steps{grid-template-columns:1fr}.sw-steps li{padding:20px}.sw-section .sw-assessment-list{gap:14px}.sw-assessment-list li{padding:24px 20px 24px 50px}.sw-assessment-list li:before{left:16px}.sw-poster-native{padding:24px 20px}.sw-card-grid,#reasons .sw-card-grid{grid-template-columns:1fr}.sw-physician-card{grid-template-columns:1fr;gap:20px;padding:22px}.sw-physician-card img,.sw-physician-card:nth-of-type(2) img{grid-column:1;grid-row:1;max-width:420px;margin:auto}.sw-physician-card .sw-physician-copy,.sw-physician-card:nth-of-type(2) .sw-physician-copy{grid-column:1;grid-row:2}.sw-section .sw-motto{font-size:25px}.sw-section .sw-physician-name{font-size:24px}.sw-faq summary{padding:20px}.sw-faq summary h3{font-size:18px}.sw-answer{padding:0 20px 20px}#visit{padding:28px 22px}.sw-section .sw-note{font-size:13px}.sw-jump{gap:8px}.sw-jump a{font-size:14px;padding:9px 15px}.sw-section a.sw-cta{min-width:150px}.sw-reassurance{padding:30px 22px}}
+@media(max-width:450px){.sw-section .sw-assessment-list{grid-template-columns:1fr}.sw-section h2{font-size:25px}.sw-points li{width:100%;padding:10px 14px}.sw-jump{margin-bottom:36px}.sw-section{margin-bottom:56px}}
+@media(prefers-reduced-motion:reduce){.sw-page *{scroll-behavior:auto!important}}
+
+/* Permit the inherited desktop header to reflow at 200% text, without changing its normal layout. */
+@media(min-width:1121px){.m19-home-preview .site-top-r48 .header{flex-wrap:wrap}.m19-home-preview .site-top-r48 .production-nav{flex-wrap:wrap;min-width:0}}
