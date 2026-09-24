@@ -2,8 +2,8 @@
 (()=>{const root=document.querySelector(".care-r59");if(!root)return;const viewport=root.querySelector('.viewport'),track=root.querySelector('.track'),cards=[...track.children],labels=cards.map(c=>c.querySelector('h3').textContent),status=root.querySelector('.status');let index=0,start=null,dragged=false;
 
 cards.forEach((card,i)=>{
- const nav=document.createElement('div');nav.className='care-card-nav-r87';nav.setAttribute('role','group');nav.setAttribute('aria-label','診所特色換頁');
- for(const [delta,label,symbol] of [[-1,'上一張診所特色','←'],[1,'下一張診所特色','→']]){
+ const nav=document.createElement('div');nav.className='care-card-nav-r87';nav.setAttribute('role','group');nav.setAttribute('aria-label','九大堅持換頁');
+ for(const [delta,label,symbol] of [[-1,'上一張九大堅持','←'],[1,'下一張九大堅持','→']]){
   const button=document.createElement('button');button.type='button';button.textContent=symbol;button.setAttribute('aria-label',label);button.dataset.step=delta;
   button.addEventListener('click',e=>{e.stopPropagation();show(index+delta);cards[index].querySelector('[data-step="'+delta+'"]').focus({preventScroll:true});});nav.append(button);
  }

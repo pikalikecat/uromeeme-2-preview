@@ -1,0 +1,36 @@
+/* Remove the large ellipse overlay on mobile; keep the base gradient and frame. */
+@media(max-width:760px){.m19-home-preview .care-r59 .card::after{content:none;display:none}}
+/* 2026-09-24 user review: remove only the inner ellipse gold border; retain gradient. */
+.m19-home-preview .care-r59 .card::after{border:0}
+/* Five decorative faceted stars; no rating/certification semantics. */
+.m19-home-preview .care-r59 .commitment-stars{position:absolute;right:30px;top:28px;width:210px;display:flex;align-items:center;gap:0;pointer-events:none;perspective:650px;filter:drop-shadow(0 6px 5px #64481733)}
+.m19-home-preview .care-r59 .quality-star{width:20%;height:auto;overflow:visible;transform:rotate(-9deg);transform-origin:50% 55%}
+.m19-home-preview .care-r59 .quality-star:nth-child(2),.m19-home-preview .care-r59 .quality-star:nth-child(4){width:21%;transform:translateY(-7px) rotate(5deg)}
+.m19-home-preview .care-r59 .quality-star:nth-child(3){width:24%;transform:translateY(-12px)}
+.m19-home-preview .care-r59 .card.active.enter .quality-star{animation:commitment-star-arrive 1.05s cubic-bezier(.2,.7,.2,1) both}
+.m19-home-preview .care-r59 .card.active.enter .quality-star:nth-child(2){animation-delay:35ms}
+.m19-home-preview .care-r59 .card.active.enter .quality-star:nth-child(3){animation-delay:70ms}
+.m19-home-preview .care-r59 .card.active.enter .quality-star:nth-child(4){animation-delay:105ms}
+.m19-home-preview .care-r59 .card.active.enter .quality-star:nth-child(5){animation-delay:140ms}
+@keyframes commitment-star-arrive{0%{opacity:.25;transform:translate(-35px,28px) rotateY(-150deg) rotate(-28deg) scale(.65)}60%{opacity:1;transform:translate(0,-10px) rotateY(20deg) rotate(8deg) scale(1.08)}100%{opacity:1}}
+.m19-home-preview .care-r59 .care-new-commitment .body p{margin:0;line-height:1.85}
+@media(max-width:760px){.m19-home-preview .care-r59 .commitment-stars{right:20px;top:30px;width:135px}}
+@media(prefers-reduced-motion:reduce){.m19-home-preview .care-r59 .card.active.enter .quality-star{animation:none}.m19-home-preview .care-r59 .track,.m19-home-preview .care-r59 .card{transition:none}}
+/* Reserve a dedicated top band so stars never cover copy or icons. */
+.m19-home-preview .care-r59 .card{padding-top:110px}
+@media(max-width:760px){.m19-home-preview .care-r59 .card{padding-top:94px}.m19-home-preview .care-r59 .commitment-stars{top:23px}}
+/* Unified couture ornament: a broken gold rail cradles the five faceted stars. */
+.m19-home-preview .care-r59 .card>.gold{display:none}
+.m19-home-preview .care-r59 .commitment-ensemble{position:absolute;inset:18px 20px auto;height:88px;pointer-events:none;transform-origin:right top;opacity:.6}
+.m19-home-preview .care-r59 .card.active .commitment-ensemble{opacity:1}
+.m19-home-preview .care-r59 .commitment-ensemble .commitment-stars{top:13px;right:29px;width:210px;filter:drop-shadow(0 4px 3px #79531b35)}
+.m19-home-preview .care-r59 .ensemble-rail{position:absolute;left:8px;right:249px;top:34px;height:1px;background:linear-gradient(90deg,#b4975c55,#c4a160 30%,#fff1c8 68%,#ae8342);transform-origin:right center}
+.m19-home-preview .care-r59 .ensemble-rail::after{content:"";position:absolute;right:-4px;top:-2px;width:5px;height:5px;transform:rotate(45deg);background:#d1ad69;box-shadow:0 0 6px #fff5d8}
+.m19-home-preview .care-r59 .ensemble-corner{position:absolute;right:0;top:34px;width:24px;height:79px;border-top:1px solid #c6a465;border-right:1px solid #c6a465;border-radius:0 17px 0 0;mask-image:linear-gradient(#000 30%,transparent);transform-origin:left top}
+.m19-home-preview .care-r59 .card.active.enter .commitment-ensemble{animation:ensemble-settle 1.2s cubic-bezier(.2,.75,.2,1) both}
+.m19-home-preview .care-r59 .card.active.enter .ensemble-rail{animation:ensemble-draw 1.2s cubic-bezier(.2,.75,.2,1) both}
+.m19-home-preview .care-r59 .card.active.enter .ensemble-corner{animation:ensemble-draw 1.2s cubic-bezier(.2,.75,.2,1) both}
+@keyframes ensemble-settle{0%{opacity:.15;transform:perspective(700px) translateY(14px) rotateX(-25deg)}65%{opacity:1;transform:perspective(700px) translateY(-2px) rotateX(3deg)}100%{opacity:1;transform:none}}
+@keyframes ensemble-draw{0%{opacity:0;scale:.08 1;filter:brightness(1.7)}60%{opacity:1;filter:brightness(1.4)}100%{opacity:1;scale:1;filter:brightness(1)}}
+@media(max-width:760px){.m19-home-preview .care-r59 .commitment-ensemble{inset:14px 16px auto}.m19-home-preview .care-r59 .commitment-ensemble .commitment-stars{top:14px;right:22px;width:135px}.m19-home-preview .care-r59 .ensemble-rail{top:29px;right:167px;left:4px}.m19-home-preview .care-r59 .ensemble-corner{top:29px;width:18px;height:61px}}
+@media(prefers-reduced-motion:reduce){.m19-home-preview .care-r59 .card.active.enter .commitment-ensemble,.m19-home-preview .care-r59 .card.active.enter .ensemble-rail,.m19-home-preview .care-r59 .card.active.enter .ensemble-corner{animation:none}}
