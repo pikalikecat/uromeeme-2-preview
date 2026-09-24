@@ -34,3 +34,30 @@
 @keyframes ensemble-draw{0%{opacity:0;scale:.08 1;filter:brightness(1.7)}60%{opacity:1;filter:brightness(1.4)}100%{opacity:1;scale:1;filter:brightness(1)}}
 @media(max-width:760px){.m19-home-preview .care-r59 .commitment-ensemble{inset:14px 16px auto}.m19-home-preview .care-r59 .commitment-ensemble .commitment-stars{top:14px;right:22px;width:135px}.m19-home-preview .care-r59 .ensemble-rail{top:29px;right:167px;left:4px}.m19-home-preview .care-r59 .ensemble-corner{top:29px;width:18px;height:61px}}
 @media(prefers-reduced-motion:reduce){.m19-home-preview .care-r59 .card.active.enter .commitment-ensemble,.m19-home-preview .care-r59 .card.active.enter .ensemble-rail,.m19-home-preview .care-r59 .card.active.enter .ensemble-corner{animation:none}}
+/* LGBTQ+ only: translucent spectral glass; shared motion remains untouched. */
+.m19-home-preview .care-r59 .card.care-rainbow{background:radial-gradient(ellipse at 6% 7%,#ffffffed,transparent 65%),linear-gradient(115deg,#f8e8efdb 0%,#fff0d9d9 20%,#faf6d7d9 36%,#dcefe4d9 53%,#deedf9de 73%,#eae0f4e3 100%);border-color:#c9c7dc;box-shadow:inset 0 1px 1px #fff,0 20px 50px #5e48791a}
+.m19-home-preview .care-r59 .card.care-rainbow::before{background:radial-gradient(ellipse at 98% 0%,#c4b2e178,transparent 50%),linear-gradient(130deg,#ffffff80,transparent 60%)}
+.m19-home-preview .care-r59 .card.care-rainbow::after{background:linear-gradient(110deg,#ffffff99,transparent 40%,#a4c5e533)}
+.m19-home-preview .care-r59 .care-rainbow .ensemble-rail{background:linear-gradient(90deg,#d88fa8,#e4b076,#d8c873,#83bca6,#86b4d9,#b198d0)}
+.m19-home-preview .care-r59 .care-rainbow .ensemble-rail::after{background:#ae98c9;box-shadow:0 0 8px #fff}
+.m19-home-preview .care-r59 .care-rainbow .ensemble-corner{border-color:#b19aca}
+.m19-home-preview .care-r59 .care-rainbow .commitment-stars{filter:drop-shadow(0 4px 4px #696c9830)}
+.m19-home-preview .care-r59 .care-rainbow .quality-star:nth-child(1){filter:hue-rotate(305deg) saturate(.65)}
+.m19-home-preview .care-r59 .care-rainbow .quality-star:nth-child(2){filter:hue-rotate(0deg) saturate(.65)}
+.m19-home-preview .care-r59 .care-rainbow .quality-star:nth-child(3){filter:hue-rotate(75deg) saturate(.6)}
+.m19-home-preview .care-r59 .care-rainbow .quality-star:nth-child(4){filter:hue-rotate(160deg) saturate(.65)}
+.m19-home-preview .care-r59 .care-rainbow .quality-star:nth-child(5){filter:hue-rotate(225deg) saturate(.6)}
+.m19-home-preview .care-r59 .care-rainbow .icon{background:linear-gradient(135deg,#ffffffda,#e9dff26b 35%,#d4ede789 70%,#ffffffa1);border-color:#ffffffd9;stroke:#66517c;box-shadow:inset 0 2px 2px #fff,0 12px 35px #8c82a31c}
+.m19-home-preview .care-r59 .care-rainbow.active h3{background:linear-gradient(110deg,#315e56,#5c4c76 70%,#315e56);background-clip:text;-webkit-background-clip:text}
+.m19-home-preview .care-r59 .care-rainbow .topic,.m19-home-preview .care-r59 .care-rainbow .care-quote-r97{color:#71587c}
+.m19-home-preview .care-r59 .care-rainbow .care-quote-r97{border-left-color:#b89ac4}
+.m19-home-preview .care-r59 .care-rainbow .care-card-nav-r87 button{border-color:#b7a6c7;background:linear-gradient(135deg,#ffffffed,#edf1f7d9)}
+/* Stronger Pride spectrum, retaining transparent white glass highlights. */
+.m19-home-preview .care-r59 .card.care-rainbow{background:radial-gradient(ellipse at 15% 18%,#ffffffed 0%,#ffffffa8 28%,transparent 67%),linear-gradient(120deg,#e938505e 0%,#ff94155e 19%,#ffe32970 36%,#13b66a66 53%,#167bdd6b 73%,#7935c678 100%);border-color:#ab8bc4}
+.m19-home-preview .care-r59 .card.care-rainbow::before{background:radial-gradient(ellipse at 100% 0%,#763cd052,transparent 57%),linear-gradient(130deg,#ffffff70,transparent 65%)}
+.m19-home-preview .care-r59 .care-rainbow .ensemble-rail{height:1.5px;background:linear-gradient(90deg,#e52c43,#f98919,#edcc16,#15a857,#237bd6,#8337ba)}
+.m19-home-preview .care-r59 .care-rainbow .quality-star:nth-child(1){filter:hue-rotate(305deg) saturate(1.65)}
+.m19-home-preview .care-r59 .care-rainbow .quality-star:nth-child(2){filter:hue-rotate(0deg) saturate(1.5)}
+.m19-home-preview .care-r59 .care-rainbow .quality-star:nth-child(3){filter:hue-rotate(75deg) saturate(1.5)}
+.m19-home-preview .care-r59 .care-rainbow .quality-star:nth-child(4){filter:hue-rotate(160deg) saturate(1.6)}
+.m19-home-preview .care-r59 .care-rainbow .quality-star:nth-child(5){filter:hue-rotate(225deg) saturate(1.55)}
