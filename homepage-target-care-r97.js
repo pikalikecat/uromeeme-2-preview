@@ -16,3 +16,4 @@ viewport.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowL
 viewport.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;if(e.pointerType==='mouse'&&e.button!==0)return;start={x:e.clientX,y:e.clientY};dragged=false;viewport.setPointerCapture(e.pointerId);viewport.classList.add('dragging')});
 viewport.addEventListener('pointerup',e=>{if(e.target.closest('button')&&!start)return;if(!start)return;const dx=e.clientX-start.x,dy=e.clientY-start.y;dragged=Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy);if(dragged)show(index+(dx<0?1:-1));else{const target=document.elementFromPoint(e.clientX,e.clientY)?.closest('.card');if(target&&cards.includes(target))show(cards.indexOf(target))}start=null;viewport.classList.remove('dragging')});viewport.addEventListener('pointercancel',()=>{start=null;viewport.classList.remove('dragging')});window.addEventListener('resize',position);show(0);
 })();
+

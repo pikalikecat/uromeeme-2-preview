@@ -61,3 +61,16 @@
 .m19-home-preview .care-r59 .care-rainbow .quality-star:nth-child(3){filter:hue-rotate(75deg) saturate(1.5)}
 .m19-home-preview .care-r59 .care-rainbow .quality-star:nth-child(4){filter:hue-rotate(160deg) saturate(1.6)}
 .m19-home-preview .care-r59 .care-rainbow .quality-star:nth-child(5){filter:hue-rotate(225deg) saturate(1.55)}
+/* Mobile team only: native horizontal swipe, desktop/tablet grid untouched. */
+@media(max-width:760px){
+ .m19-home-preview .team-r56 .team-grid{display:flex;flex-wrap:nowrap;gap:16px;max-width:none;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:2px;padding:2px 2px 16px;margin:0;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#9baf9e #edf3ef}
+ .m19-home-preview .team-r56 .team-grid>li{flex:0 0 min(68vw,270px);width:min(68vw,270px);scroll-snap-align:start;scroll-snap-stop:normal}
+}
+/* Preserve original photo; display left 80%, excluding right stools and mirror. */
+.m19-home-preview .space-r81 .space-gallery-r29__track figure.waiting-left-crop{position:relative;overflow:hidden;aspect-ratio:16/15;border-radius:20px;align-self:start}
+.m19-home-preview .space-r81 .waiting-left-crop .clinic-photo-r51{position:absolute;left:0;top:0;width:125%;max-width:none;height:100%;aspect-ratio:auto;object-fit:fill;border-radius:0}
+@media(max-width:768px){.m19-home-preview .space-r81 .space-gallery-r29__track figure.waiting-left-crop{border-radius:16px}}
+/* Counter typography aligned with hero; existing responsive sizes unchanged. */
+.m19-home-preview .counter-section{font-family:"Noto Serif TC","PMingLiU",serif}
+.m19-home-preview .counter-section #counter-title,.m19-home-preview .counter-section p,.m19-home-preview .counter-section strong,.m19-home-preview .counter-section span{font-family:"Noto Serif TC","PMingLiU",serif}
+.m19-home-preview .care-r59 .care-rainbow .care-quote-r97{margin-bottom:1.85em}
