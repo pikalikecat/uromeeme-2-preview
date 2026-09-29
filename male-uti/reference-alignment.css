@@ -1,0 +1,129 @@
+/* R2 — geometry, type and component styling aligned with shockwave R4 (52100).
+   Content remains infection-page-specific. R1 and the reference are unchanged. */
+.m19-home-preview{color:#314b45}
+.m19-home-preview main.uti-page{padding-bottom:64px}
+.uti-content{max-width:1235px;margin:0 auto;padding:0 60px}
+.uti-content>.uti-section{max-width:none;margin:0 auto 88px;padding:0;font-size:18px;line-height:1.85}
+.uti-content>.uti-section h2{font-size:32px;line-height:1.6;letter-spacing:.035em;margin:0 0 36px;text-wrap:balance}
+.uti-content>.uti-section h3{font-size:22px;line-height:1.7;margin:28px 0 14px}
+.uti-content>.uti-section p{margin:18px 0;font-weight:400}
+.uti-content>.uti-section p:first-child{margin-top:0}
+.uti-content>.uti-section strong,.uti-content>.uti-section b{font-weight:700}
+.uti-content .kicker,.disease-number{display:none}
+.uti-banner{padding:36px 48px 0}
+.uti-hero{padding:46px 62px;min-height:680px;grid-template-columns:1.03fr 1fr;gap:24px}
+.uti-page h1{font-size:64px;line-height:1.3;letter-spacing:.035em}
+.uti-page h1 span:first-child{font-size:27px;letter-spacing:.06em;margin-bottom:18px}
+.uti-page .eyebrow{margin-bottom:24px}
+.uti-jump{margin-bottom:64px;padding:0 16px}
+.uti-jump a{border-radius:24px}
+.uti-content>.uti-intro{max-width:950px;padding:34px 40px;background:linear-gradient(100deg,#faf8f2,#f7faf7);border-left:2px solid #b79b61;border-radius:3px 24px 3px 24px}
+.uti-intro p:last-child{margin-bottom:0}
+.uti-actions{gap:16px;margin:36px 0 0}
+.uti-actions a{padding:12px 32px;min-width:174px;min-height:52px;font-size:17px}
+.uti-hero .uti-actions{margin-top:25px;gap:14px}
+.uti-hero .uti-actions a{padding:13px 22px}
+
+/* Symptoms echo R4's mint assessment panel and champagne-lined information cards. */
+.uti-content>#symptoms{position:relative;isolation:isolate;padding:54px 52px 42px;border:1px solid #b7cec0;border-radius:36px 8px;background:radial-gradient(ellipse at 100% 0%,#a5c7b895,transparent 55%),linear-gradient(120deg,#fff 15%,#edf5ee 68%,#d8e8de);box-shadow:0 20px 55px #00483e0c}
+#symptoms:before{content:"";position:absolute;inset:12px;border:1px solid #c2aa7970;border-radius:26px 4px;pointer-events:none;z-index:-1}
+.uti-page .symptom-cards{gap:20px;margin:36px 0 0}
+.symptom-cards li{display:block;padding:32px 18px 28px;border:1px solid #c2aa7970;border-radius:24px 5px;background:linear-gradient(155deg,#ffffffeb,#eef5eece);box-shadow:0 9px 26px #17433208;text-align:center;font:700 23px/1.7 "Noto Serif TC","PMingLiU",serif}
+.symptom-cards li:before{margin:0 0 22px;font:24px/1.2 Georgia,serif;letter-spacing:.12em;color:#a4894e}
+.symptom-cards li:after{content:"";display:block;width:32px;height:1px;background:#b79b6180;margin:18px auto 0}
+.anatomy-grid{gap:48px;border-top:0;padding-top:0}
+.original-anatomy{border-color:#d7e3d9;border-radius:24px 6px}
+.anatomy-copy>p{border:0;padding:0}
+.condition-links a{border-color:#d7e3d9;border-radius:20px 5px;background:#f4f8f3}
+
+/* R4 uses open reading sections, not a second layer of enclosing chapter cards. */
+.uti-content>.disease{border:0;border-radius:0;box-shadow:none;background:transparent;padding:0}
+.disease-heading{display:block;border:0;padding:0;margin:0}
+.uti-content .disease-heading h2{text-align:center}
+.disease-heading h2:after{display:block}
+.disease-block{margin:28px 0}
+.disease-block h3{border:0;padding-left:0}
+.treatment-block{padding:24px 28px;border:1px solid #d7e3d9;border-left:2px solid #b79b61;border-radius:24px 5px;background:linear-gradient(120deg,#faf8f2,#edf5ee);margin:28px 0}
+.uti-content .treatment-block h3:first-child{margin-top:0}
+.back-link{color:#61736a;font-size:14px}
+
+/* Service cards borrow the R4 reasons treatment, without its therapy claims. */
+.care-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.care-card{display:block;position:relative;isolation:isolate;padding:32px 36px 38px;overflow:hidden;border:1px solid #b8cebf;border-radius:34px 7px;background:radial-gradient(ellipse at 108% 0%,#97bbaa9e,transparent 62%),linear-gradient(130deg,#fff 18%,#ecf4ec 76%,#daeade);box-shadow:0 18px 44px #00483e0c}
+.care-card:last-child{grid-column:1/-1}
+.care-card:before{content:"";position:absolute;top:12px;left:26px;right:26px;height:1px;background:#b79b6190;pointer-events:none}
+.care-card .chapter-number{display:block;font:28px/1 Georgia,serif;color:#a4894e;letter-spacing:.1em;margin-bottom:22px;padding:0}
+.uti-content .care-card p{color:#456256;font-size:18px;line-height:1.9;margin:0}
+.care-card p strong,.care-card p b{font:700 25px/1.65 "Noto Serif TC","PMingLiU",serif;letter-spacing:.01em;color:#00483e}
+
+/* Image 1: exact R4 alternating text/portrait card geometry. */
+.doctor-grid{display:block}
+.doctor-card{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;align-items:center;background:#fff;border:1px solid #d7e3d9;border-radius:24px 6px;padding:34px;margin:26px 0;overflow:visible}
+.doctor-card>.doctor-copy{grid-column:1;grid-row:1;padding:0;min-width:0}
+.doctor-card>img{grid-column:2;grid-row:1;width:100%;height:auto;display:block;border-radius:15px}
+.doctor-card:nth-child(2)>img{grid-column:1;grid-row:1}
+.doctor-card:nth-child(2)>.doctor-copy{grid-column:2;grid-row:1}
+.uti-content .doctor-copy h3{font-family:Arial,"Microsoft JhengHei",sans-serif;color:#a4894e;font-size:24px;font-weight:400;line-height:1.85;margin:0 0 18px}
+.uti-content .doctor-copy p:nth-child(2){font:700 27px/1.65 "Noto Serif TC","PMingLiU",serif;color:#00483e;margin:0 0 22px}
+.uti-content .doctor-copy p:last-child{font-size:18px;line-height:1.85;color:#314b45;margin:18px 0}
+.uti-content .doctor-more{margin:32px auto}
+.doctor-more a{display:block;width:max-content;max-width:100%;border:1px solid #00483e;border-radius:30px;min-height:44px;padding:9px 34px;margin:0 auto;text-decoration:none}
+
+/* Image 2: R4 plain centered fine print; no ivory box or gold left rule. */
+.uti-content>#medical-notice{max-width:950px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;margin:36px auto 88px;color:#777e7a;text-align:center;font-size:14px;line-height:1.9}
+.uti-content>#medical-notice p{margin:0;font-weight:400}
+
+/* Service location is the original R4 warm neutral, linear directions layout. */
+.uti-content>#visit{padding:42px;background:#faf8f2;border:1px solid #e5decf;border-radius:28px 6px}
+.visit-place{text-align:left;margin:0}
+.uti-content .visit-place p{font:400 18px/1.85 Arial,"Microsoft JhengHei",sans-serif;color:#314b45;margin:18px 0}
+.map-link{display:block;width:fit-content;max-width:100%;margin:24px auto;padding:12px 24px;border:1px solid #b79b61;border-radius:28px;text-align:center;font-size:18px}
+.uti-content>#visit>h3{margin-top:36px;text-align:left}
+.transit-grid{display:block}
+.transit-card{padding:0;border:0;border-radius:0;background:transparent;font-size:18px;line-height:1.85;margin:28px 0 8px}
+.uti-content .transit-card p{margin:8px 0}
+.transit-card strong{color:#806c40;font-size:18px}
+@media(max-width:1050px){
+ .uti-content{padding:0 32px}.uti-content>.uti-section{margin-bottom:66px}.uti-jump{margin-bottom:44px}
+ .uti-banner{padding:24px 24px 0}.uti-hero{grid-template-columns:1fr;padding:38px 36px 34px;min-height:0;gap:12px}.uti-page h1{font-size:56px}
+ .doctor-card{gap:30px;padding:28px}
+}
+@media(max-width:760px){
+ .uti-content{padding:0 16px}.uti-content>.uti-section{font-size:17px;line-height:1.85}
+ .uti-content>.uti-section h2{font-size:27px;margin-bottom:28px}.uti-content>.uti-section h3{font-size:21px}
+ .uti-content>.uti-intro{padding:24px}.uti-jump{gap:8px}.uti-jump a{font-size:14px;padding:9px 15px}
+ .uti-actions a{min-width:150px}.uti-content>#symptoms{padding:38px 26px 32px}
+ .uti-page .symptom-cards{gap:12px}.symptom-cards li{font-size:20px;padding:24px 10px}
+ .care-grid{grid-template-columns:1fr}.care-card:last-child{grid-column:auto}.care-card{padding:30px 26px}.uti-content .care-card p{font-size:17px}.care-card p strong,.care-card p b{font-size:24px}
+ .doctor-card{grid-template-columns:1fr;gap:20px;padding:22px}
+ .doctor-card>img,.doctor-card:nth-child(2)>img{grid-column:1;grid-row:1;max-width:420px;margin:auto}
+ .doctor-card>.doctor-copy,.doctor-card:nth-child(2)>.doctor-copy{grid-column:1;grid-row:2}
+ .uti-content .doctor-copy h3{font-size:24px;margin-top:0}.uti-content .doctor-copy p:nth-child(2){font-size:25px}.uti-content .doctor-copy p:last-child{font-size:17px}
+ .uti-content>#medical-notice{font-size:14px;margin-bottom:66px}
+ .uti-content>#visit{padding:28px 22px}.uti-content .visit-place p,.map-link,.transit-card,.transit-card strong{font-size:17px}
+ .anatomy-grid{grid-template-columns:1fr;gap:24px}
+}
+@media(max-width:600px){
+ .uti-banner{padding:16px 16px 0}.uti-hero{padding:34px 22px 26px;gap:18px}.uti-page h1{font-size:40px;line-height:1.4}.uti-page h1 span:first-child{font-size:19px;margin-bottom:17px}
+ .uti-hero .uti-actions a{min-width:0;font-size:16px;min-height:48px;padding:11px 14px;flex:1 1 120px}
+ .treatment-block{padding:18px 22px 22px}
+}
+@media(max-width:500px){
+ .uti-page .symptom-cards{grid-template-columns:1fr;margin:26px 0 0}.symptom-cards li{display:flex;align-items:center;gap:18px;text-align:left;padding:20px 22px}.symptom-cards li:before{margin:0;font-size:20px}.symptom-cards li:after{display:none}
+}
+@media(max-width:450px){.uti-content>.uti-section h2{font-size:25px}.uti-content>.uti-section{margin-bottom:56px}.uti-jump{margin-bottom:36px}.uti-content>#medical-notice{margin-bottom:56px}}
+@media(max-width:350px){.uti-page h1{font-size:35px}.uti-page h1 span:first-child{font-size:17px}.uti-hero .uti-actions a{flex-basis:100%}.uti-actions a{min-width:0;flex-basis:100%}}
+
+/* User-approved reference composition, infection-specific original heading retained. */
+.uti-hero .hero-copy{text-align:center;font-family:"Noto Serif TC","PMingLiU",serif}
+.uti-hero .hero-copy .eyebrow{display:flex;align-items:center;justify-content:center;gap:18px;color:#9c793e;font-size:18px;letter-spacing:.22em;margin:0 0 42px}
+.uti-hero .hero-copy .eyebrow::before,.uti-hero .hero-copy .eyebrow::after{content:"";width:36px;height:1px;background:linear-gradient(90deg,transparent,#b79b61);flex-shrink:0}
+.uti-hero .hero-copy .eyebrow::after{transform:rotate(180deg)}
+.uti-hero .hero-copy h1{margin:0;color:#00483e;font-family:inherit;font-size:clamp(36px,4.3vw,64px);line-height:1.35}
+.uti-hero .hero-copy h1 span:first-child{color:#00483e;font-size:clamp(25px,2.5vw,36px);margin-bottom:14px}
+.uti-hero .hero-copy .gold-rule{width:86px;height:3px;margin:30px auto;background:linear-gradient(90deg,transparent,#b29c66,transparent)}
+.uti-hero .hero-subtitle{display:flex;flex-wrap:wrap;justify-content:center;gap:0;color:#92733f;border-top:1px solid #b79b6140;border-bottom:1px solid #b79b6140;padding:20px 0;margin:0 0 34px;font-size:19px;line-height:1.9}
+.uti-hero .hero-subtitle span{white-space:nowrap}.uti-hero .hero-subtitle span+span::before{content:"．";padding:0 5px}
+.uti-hero .uti-actions{justify-content:center}.uti-hero .uti-actions a{min-width:155px;border-radius:999px;padding:16px 24px;font-family:Arial,"Microsoft JhengHei",sans-serif}
+@media(max-width:600px){.uti-hero .hero-copy .eyebrow{font-size:14px;gap:10px;letter-spacing:.12em;margin-bottom:28px}.uti-hero .hero-copy .eyebrow::before,.uti-hero .hero-copy .eyebrow::after{width:22px}.uti-hero .hero-subtitle{font-size:16px;padding:16px 0}.uti-hero .uti-actions a{min-width:0;padding:14px 18px}.uti-hero .hero-copy h1{font-size:40px}}
+.uti-hero .hero-visual img{width:100%;height:auto;max-height:none}.uti-hero .hero-legend{display:none}@media(max-width:600px){.uti-hero .hero-visual{margin-left:auto;margin-right:auto;justify-self:center}}
