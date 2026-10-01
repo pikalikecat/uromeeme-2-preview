@@ -1,0 +1,30 @@
+/* R6 effect vocabulary, new female-page artwork coordinates. Decoration only:
+   the approved artwork and its pedestal never translate, scale, tilt or crop. */
+.female-fx{display:none;position:absolute;inset:0;pointer-events:none;isolation:isolate;overflow:hidden}
+.female-fx-ready .female-fx{display:block}
+.fx-svg{position:absolute;inset:0;display:block;width:100%;height:100%;overflow:hidden}
+.fx-ambient{position:absolute;inset:1% 2% 5%;background:radial-gradient(ellipse at 28% 35%,#fffdf44d,transparent 34%),radial-gradient(ellipse at 80% 42%,#fffffa38,transparent 27%);opacity:.16;mix-blend-mode:screen;animation:female-breathe 8s ease-in-out infinite}
+.fx-reflection{opacity:0;animation:female-reflection 12s ease-in-out infinite}
+.fx-rim{fill:none;stroke:#fff0c2;stroke-width:2.1;stroke-linecap:round;stroke-dasharray:65 935;stroke-dashoffset:1000;opacity:0;filter:drop-shadow(0 0 1.6px #fff2bb);animation:female-rim 14s ease-in-out infinite}
+.fx-rim-right{animation-delay:-5s}.fx-rim-base{animation-delay:-9s;animation-duration:16s;stroke-width:1.8}
+.fx-glint{opacity:0;animation:female-glint 13s ease-in-out infinite}.fx-glint path{stroke:#fff7dc;stroke-width:1;stroke-linecap:round}.fx-glint-b{animation-delay:-4.7s}.fx-glint-c{animation-delay:-8.4s}
+.hero[data-fx-paused="true"] .female-fx *,.hero[data-fx-active="false"] .female-fx *{animation-play-state:paused!important}
+.female-fx-controls{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px 14px;margin:14px auto 0;max-width:1320px;color:#526b60;font-size:12px;line-height:1.8}
+.female-fx-controls[hidden]{display:none}
+.female-fx-controls button{min-width:0;min-height:44px;padding:8px 16px;font-size:13px;font-weight:400;border-color:#c2cfc3;box-shadow:none}
+.female-fx-controls button[aria-pressed="true"]{background:#edf4ee;border-color:#a4894e}
+.female-fx-controls button:disabled{cursor:default;opacity:.7}
+.female-fx-controls p{margin:0;max-width:36em;overflow-wrap:anywhere}
+.female-fx-ready .hero .source-cta a{transition:box-shadow .22s ease,transform .22s ease}
+.female-fx-ready .hero .source-cta a:hover,.female-fx-ready .hero .source-cta a:focus-visible{transform:translateY(-1px);box-shadow:0 10px 26px #153d2926,inset 0 1px 0 #ffffff55}
+@keyframes female-breathe{0%,100%{opacity:.12}50%{opacity:.42}}
+@keyframes female-reflection{0%,15%{transform:translateX(0);opacity:0}23%{opacity:.48}50%{opacity:.35}62%,100%{transform:translateX(740px);opacity:0}}
+@keyframes female-rim{0%{stroke-dashoffset:1000;opacity:0}12%,65%{opacity:.58}84%,100%{stroke-dashoffset:0;opacity:0}}
+@keyframes female-glint{0%,15%,47%,100%{opacity:0}31%{opacity:.58}}
+@media(max-width:800px){.female-fx{opacity:.72}.female-fx-controls{padding:0 12px;gap:4px 10px}.female-fx-controls p{text-align:center}}
+@media(prefers-reduced-motion:reduce){.female-fx-ready .female-fx{display:none}.female-fx *{animation:none!important}.female-fx-ready .hero .source-cta a{transition:none!important;transform:none!important}}
+/* R4: visible controls removed at user request; a single short pass replaces
+   indefinite auto-motion. Stop by 4.5s, without replay when scrolling back. */
+.female-fx-ready .hero:not([data-fx-state="playing"]) .female-fx{display:none}
+.female-fx-ready .female-fx *{animation-duration:4.2s;animation-delay:0s;animation-iteration-count:1;animation-fill-mode:both}
+@keyframes female-breathe{0%,100%{opacity:0}50%{opacity:.42}}

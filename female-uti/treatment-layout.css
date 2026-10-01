@@ -1,0 +1,52 @@
+/* Four reading panels; original clinical text is unchanged. */
+#treatments .treatment-panels{max-width:880px;margin:36px auto 54px;display:grid;gap:24px}
+#treatments .treatment-panel{border:1px solid #c8d9cf;border-radius:22px;background:#fff;padding:28px 32px;box-shadow:0 8px 28px #00483e05;min-width:0}
+#treatments .treatment-panel>p{margin:0;padding:22px 0;border-top:1px solid #e2e9df;overflow-wrap:anywhere}
+#treatments .treatment-panel>p:first-child{padding-top:0;border:0}
+#treatments .treatment-panel>p:last-child{padding-bottom:0}
+#treatments .treatment-panel>p:first-child>span:first-child{display:block;padding:0 0 12px;color:#00483e;font-size:22px}
+#treatments .treatment-panel>p:first-child>span:first-child+br{display:none}
+#treatments .treatment-panel:nth-child(even){background:#f7faf6}
+#treatments .treatment-comparison{margin:36px auto;max-width:1160px}
+#treatments .desktop-comparison{border:1px solid #b7cebf;border-radius:24px;overflow:hidden}
+#treatments .native-comparison{border-collapse:collapse;width:100%;table-layout:fixed;font-size:17px;line-height:1.8;text-align:left}
+#treatments .native-comparison caption{background:#edf5ee;padding:20px 24px;text-align:left;font-weight:700;color:#00483e;font-size:20px}
+#treatments .native-comparison th,#treatments .native-comparison td{padding:22px 18px;border-bottom:1px solid #d6e2d6;vertical-align:top;overflow-wrap:anywhere}
+#treatments .native-comparison thead th{background:#faf8f2;text-align:center;color:#00483e;font-size:19px;border-top:1px solid #d8cbb0}
+#treatments .native-comparison tr>:first-child{width:19%;background:#f1f5ec;text-align:left;color:#00483e;border-right:2px solid #b79b61}
+#treatments .native-comparison td{background:#fff;color:#314b45}
+#treatments .native-comparison td:nth-child(even){background:#faf8f2}
+#treatments .native-comparison tbody tr:last-child>*{border-bottom:0}
+#treatments .mobile-comparison{display:none}
+@media(max-width:900px){
+ #treatments .treatment-panel{padding:22px 20px;border-radius:18px}
+ #treatments .desktop-comparison{display:none}
+ #treatments .mobile-comparison{display:block}
+ #treatments .mobile-comparison details{border:1px solid #c5d7cd;border-radius:16px;background:#fff;overflow:hidden;margin:14px 0}
+ #treatments .mobile-comparison summary{padding:18px 20px;background:#edf5ee;color:#00483e;font-weight:700;cursor:pointer;min-height:48px}
+ #treatments .mobile-comparison summary:focus-visible{outline:3px solid #a4894e;outline-offset:-4px}
+ #treatments .mobile-comparison dl{margin:0;padding:0 20px}
+ #treatments .mobile-comparison dl>div{padding:16px 0;border-bottom:1px solid #dce7df}
+ #treatments .mobile-comparison dl>div:last-child{border:0}
+ #treatments .mobile-comparison dt{color:#00483e;font-weight:700;overflow-wrap:anywhere}
+ #treatments .mobile-comparison dd{margin:6px 0 0;overflow-wrap:anywhere}
+}
+/* Requested emphasis is editorial hierarchy, not an efficacy ranking. */
+#treatments .treatment-panel{padding:30px;box-shadow:none}
+#treatments .treatment-panel>p+p{margin-top:8px}
+#treatments .treatment-panel>p>b:first-child{display:block;color:#00483e;font-size:19px;line-height:1.65;margin-bottom:10px}
+#treatments .treatment-panel>p>b:first-child br{display:none}
+#treatments .treatment-panel>p.treatment-focus{margin:24px 0 0;padding:0 24px 24px;border:1px solid #b79b61;border-radius:16px;background:linear-gradient(120deg,#edf6ef,#faf8f2);box-shadow:0 8px 24px #00483e09;overflow:hidden}
+#treatments .treatment-panel>p.treatment-focus>b:first-child{margin:0 -24px 20px;padding:18px 24px;color:#fffefa;background:#005448;font-size:21px;letter-spacing:.02em;border-bottom:2px solid #b79b61}
+#treatments .treatment-panel.regeneration-focus{border-color:#b79b61;background:linear-gradient(120deg,#edf6ef,#faf8f2);overflow:hidden;box-shadow:0 8px 24px #00483e09}
+#treatments .regeneration-focus>p:first-child>span:first-child{margin:-30px -30px 22px;padding:20px 30px;background:#005448;color:#fffefa;border-bottom:2px solid #b79b61;letter-spacing:.02em}
+#treatments .regeneration-focus>p:first-child>span:first-child br{display:none}
+@media(max-width:900px){
+ #treatments .treatment-panel{padding:22px 18px}
+ #treatments .treatment-panel>p.treatment-focus{padding:0 16px 20px}
+ #treatments .treatment-panel>p.treatment-focus>b:first-child{margin:0 -16px 16px;padding:16px;font-size:19px}
+ #treatments .regeneration-focus>p:first-child>span:first-child{margin:-22px -18px 20px;padding:18px;font-size:21px}
+}
+
+#treatments .treatment-panel>p[data-source="B065"]>b:first-child{display:inline;margin-bottom:0}
+

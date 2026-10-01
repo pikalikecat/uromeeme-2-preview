@@ -1,0 +1,27 @@
+/* Decorative reading progress, not prescribed treatment order. */
+#infection .treatment-list{position:relative;padding-left:38px;box-sizing:border-box}
+#infection .treatment-list::before,#infection .treatment-list::after{content:"";position:absolute;left:10px;top:32px;width:2px;height:var(--reading-track,calc(100% - 64px));background:#e1e8df;pointer-events:none}
+#infection .treatment-list::after{bottom:auto;height:var(--reading-fill,0px);max-height:calc(100% - 64px);background:linear-gradient(#b79b61,#467d6f);transition:height .35s ease}
+#infection .treatment-list>p{position:relative;transition:background .35s,box-shadow .35s,border-color .35s}
+#infection .treatment-list>p::before{content:"";position:absolute;left:-36px;top:27px;width:12px;height:12px;border:2px solid #c0b18e;border-radius:50%;background:#fffefa;box-sizing:border-box;z-index:1;transition:background .35s,box-shadow .35s}
+#infection .treatment-list>p.is-reached::before{background:#a4894e;border-color:#a4894e;box-shadow:0 0 0 5px #b79b6118}
+#infection .treatment-list>p.is-active{background:#edf5ee;border-color:#467d6f;box-shadow:0 5px 20px #00483e0b}
+#infection .treatment-list>p.is-active::before{background:#00594d;border-color:#00594d;box-shadow:0 0 0 6px #00594d14}
+/* Match the saved homepage's stationary announcement and 5-second rotation. */
+.site-shell .site-top-r48 .announcement{grid-template-columns:auto minmax(0,1fr) auto;align-items:start;padding:.65rem 5%;gap:.75rem;font-size:1rem}
+.site-shell .announcement strong{grid-area:auto;border-inline-end:1px solid #719a90;padding-right:.75rem;line-height:1.6}
+.site-shell .site-top-r48 .announcement-window{display:grid;grid-area:auto;overflow:hidden}
+.site-shell .announcement-window>*{grid-area:1/1}
+.site-shell.ticker-ready #announcement-copy{animation:none;transform:none;width:auto;white-space:normal;line-height:1.6}
+.announcement-sizing{visibility:hidden;display:grid;pointer-events:none}
+.announcement-sizing span{grid-area:1/1;line-height:1.6}
+.site-shell .site-top-r48 #ticker-pause{grid-area:auto;min-height:32px;font-size:12px;padding:3px 8px}
+@media(max-width:768px){
+ .site-shell .site-top-r48 .announcement{font-size:.875rem;padding:.5rem 4%;gap:.6rem;grid-template-columns:auto minmax(0,1fr)}
+ .site-shell .site-top-r48 #ticker-pause{grid-column:2;justify-self:end}
+ #infection .treatment-list{padding-left:26px}
+ #infection .treatment-list::before,#infection .treatment-list::after{left:6px}
+ #infection .treatment-list>p{padding:18px 16px}
+ #infection .treatment-list>p::before{left:-28px}
+}
+@media(prefers-reduced-motion:reduce){#infection .treatment-list::after,#infection .treatment-list>p,#infection .treatment-list>p::before{transition:none}}
