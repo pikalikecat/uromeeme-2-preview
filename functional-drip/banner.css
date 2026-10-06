@@ -1,0 +1,56 @@
+/* Read-only STI R6 baseline: 1320px hero, 680px height, 36px rounding,
+   14/26px inset borders, deep green/champagne/ivory/mint palette.
+   The unchanged source image is displayed through a CSS artwork viewport;
+   all visible heading/CTA/caption text is native HTML, not baked-in text. */
+:root{color-scheme:light;--green:#00483e;--gold:#a4894e;--ivory:#fffefa}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ivory);color:var(--green);font-family:Arial,"Microsoft JhengHei",sans-serif}
+main{max-width:1840px;margin:auto;padding:36px 48px 48px}
+.hero{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:12px;align-items:center;max-width:1320px;min-height:680px;margin:auto;padding:58px 48px;border:1px solid #b5cdbd;border-radius:36px;background:radial-gradient(ellipse at 98% 9%,#a2c7b6a8,transparent 39%),radial-gradient(ellipse at 0% 100%,#dcece1bd,transparent 58%),linear-gradient(105deg,#fff 11%,#f8fcf9 49%,#c5dfd2 100%);box-shadow:0 22px 65px #153d2915}
+.hero:before,.hero:after{content:"";position:absolute;z-index:-1;pointer-events:none;inset:14px;border:1px solid #cdbb9490;border-radius:27px}
+.hero:after{inset:26px;border-color:#ffffffa8;border-radius:18px}
+.copy{min-width:0;padding:10px 0;text-align:center}
+.eyebrow{font:18px/1.8 "PMingLiU",serif;color:#806c40;letter-spacing:.22em;margin:0 0 54px}
+.eyebrow:before,.eyebrow:after{content:"";display:inline-block;width:28px;height:1px;background:#b79b61;margin:0 12px;vertical-align:middle}
+h1{font:700 clamp(30px,3.4vw,50px)/1.4 "Noto Serif TC","PMingLiU",serif;letter-spacing:.025em;margin:0;overflow-wrap:anywhere}
+h1 span{display:block;color:var(--gold);font-size:1.22em;margin-top:8px}
+.rule{width:85px;height:3px;background:linear-gradient(90deg,transparent,#b79b61,transparent);margin:32px auto 54px}
+.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.actions a{font:600 18px/1.5 Arial,"Microsoft JhengHei",sans-serif;min-width:168px;max-width:100%;min-height:58px;padding:14px 27px;color:var(--green);border:1px solid #b79b61;border-radius:99px;background:var(--ivory);cursor:pointer;overflow-wrap:anywhere;box-shadow:0 8px 22px #153d2910}
+.actions a.primary{color:#fff;border-color:#005448;background:#005448}
+.actions a:hover{box-shadow:0 8px 24px #153d2928}
+.actions a:focus-visible{outline:3px solid #806c40;outline-offset:5px}
+.cta-note{font-size:12px;line-height:1.8;color:#53685c;margin:14px auto 0;max-width:400px;overflow-wrap:anywhere}
+.visual{margin:0;min-width:0;align-self:center}
+/* Source image 1747×900. Visible rectangle x=910..1645, y=60..767.
+   Model/plinth bounds fit inside this rectangle. Only the old mockup's
+   text and outer UI frame are outside it. Source PNG is byte-identical. */
+.art-window{position:relative;width:100%;aspect-ratio:735/707;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 4%,#000 97%,transparent),linear-gradient(180deg,transparent,#000 3%,#000 97%,transparent);mask-composite:intersect}
+.art-window img{display:block;position:absolute;max-width:none;width:237.68707483%;height:auto;left:-123.80952381%;top:-8.48656294%}
+figcaption{font:14px/1.8 "Microsoft JhengHei",sans-serif;color:#5d7468;text-align:center;margin:14px 0 0;letter-spacing:.09em;overflow-wrap:anywhere}
+.preview-note{max-width:1000px;text-align:center;margin:26px auto 0;color:#53685c;font-size:13px;line-height:1.8}
+.preview-note p{margin:5px 0;overflow-wrap:anywhere}
+@media(max-width:1050px){main{padding:24px}.hero{grid-template-columns:1fr;padding:42px 32px 36px;min-height:0;gap:30px}.copy{padding:0}.eyebrow{margin-bottom:30px}.rule{margin:26px auto 30px}.visual{width:100%;max-width:560px;margin:auto}h1{font-size:40px}}
+@media(max-width:800px){main{padding:16px}.hero{padding:34px 24px 28px;border-radius:26px;gap:24px}.hero:before{inset:9px;border-radius:18px}.hero:after{inset:18px;border-radius:12px}.eyebrow{font-size:14px;letter-spacing:.15em;margin-bottom:26px}.eyebrow:before,.eyebrow:after{width:20px;margin:0 8px}h1{font-size:36px}.visual{max-width:480px}.actions a{font-size:16px;padding:12px 20px;min-height:52px;min-width:144px}.rule{margin-bottom:28px}}
+@media(max-width:400px){main{padding:12px}.hero{padding:32px 18px 25px;gap:18px}h1{font-size:30px}.eyebrow{font-size:12px;letter-spacing:.08em}.eyebrow:before,.eyebrow:after{width:10px;margin:0 6px}.actions{gap:10px}.actions a{flex:1 1 8em;min-width:0;font-size:15px;padding:11px 12px;min-height:48px}.cta-note{font-size:11px}.visual{width:100%}figcaption{font-size:12px;margin-top:12px}.preview-note{font-size:12px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* R2: actual female R8 / chair R1 baseline, adapted only for native links and drip artwork.
+   Drip source 1536x1024; viewport x=800..1536, y=0..960 preserves bag, stand and tube endpoint. */
+.actions a{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;transition:box-shadow .2s}
+.visual{width:100%;max-width:420px;justify-self:center}
+.art-window{aspect-ratio:736/960;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 94%,transparent),linear-gradient(180deg,transparent,#000 3%,#000 94%,transparent);mask-composite:intersect}
+.art-window img{width:208.695652174%;height:auto;left:-108.695652174%;top:0}
+h1 span{font-size:1.05em}
+.skip{position:absolute;top:-100px;left:20px;z-index:10;padding:12px;background:#fff}.skip:focus{top:12px}
+a:focus-visible{outline:3px solid #806c40;outline-offset:5px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-width:1050px){.visual{max-width:400px}}
+@media(max-width:800px){.visual{max-width:340px}}
+@media(max-width:400px){h1{font-size:28px}.visual{max-width:280px}}
+/* R3 true alpha cutout: no artwork rectangle or masking. */
+.art-window{aspect-ratio:2/3;overflow:visible;mask-image:none;max-height:570px}
+.art-window img{position:static;max-width:100%;width:100%;height:100%;object-fit:contain;left:auto;top:auto}
+.visual{max-width:380px}
+.hero{background:radial-gradient(ellipse at 16% 6%,#fff0d280,transparent 52%),radial-gradient(ellipse at 94% 15%,#a9c8b394,transparent 52%),linear-gradient(110deg,#fffefa,#eef5ed 58%,#d3e6d9)}
+@media(max-width:1050px){.visual{max-width:340px}}
+@media(max-width:400px){.visual{max-width:270px}}

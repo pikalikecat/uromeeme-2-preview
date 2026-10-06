@@ -1,0 +1,20 @@
+/* Decorative frame glints, never an illustration of treatment effects. */
+.art-window{position:relative}.gold-fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}.gold-fx use{fill:none;stroke-linecap:round;stroke-linejoin:round}.halo{stroke:#efcf83;stroke-width:15;filter:url(#gold-soft);opacity:.23}.rim{stroke:#fff1bd;stroke-width:1.5;opacity:.45}.stream{stroke:#fff8dc;stroke-width:3;filter:drop-shadow(0 0 3px #dcb66a);opacity:.72}.stream use{stroke-dasharray:65 935;animation:gold-flow 9s linear infinite}.stream .late{animation-delay:-4.5s;animation-duration:11s}.stream .stand-stream{animation-duration:13s;stroke-width:2.5}.fx-toggle{display:block;margin:12px auto 0;border:1px solid #b79b6170;background:#fffefa99;border-radius:999px;color:#5d7468;font:13px/1.6 Arial,"Microsoft JhengHei",sans-serif;padding:5px 14px;min-height:32px;cursor:pointer}.fx-toggle:focus-visible{outline:3px solid #806c40;outline-offset:4px}.visual[data-paused="true"] .gold-fx *{animation-play-state:paused!important}@keyframes gold-flow{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}@media(prefers-reduced-motion:reduce){.stream use{animation:none!important;stroke-dasharray:none;opacity:.16}.halo{opacity:.14}.fx-toggle{display:none}}
+/* R6: denser, brighter flowing accents; slow staggered glints, not rapid flashing. */
+.halo{stroke-width:20;opacity:.40;animation:gold-breathe 5.8s ease-in-out infinite}
+.rim{stroke:#f9df9b;stroke-width:2;opacity:.68}
+.stream{stroke-width:4;opacity:.95;filter:drop-shadow(0 0 5px #e5b957)}
+.stream use{stroke-dasharray:100 220 45 310 85 240;animation-duration:5.8s}
+.stream .late{animation-duration:6.7s;animation-delay:-2.6s}
+.stream .stand-stream{stroke-width:3.6;animation-duration:7.2s}
+.stream-secondary{stroke:#edc46e;stroke-width:7;opacity:.48;filter:drop-shadow(0 0 5px #f0ce80)}
+.stream-secondary use{stroke-dasharray:38 362 65 535;animation:gold-flow 8.2s linear infinite;animation-delay:-3.4s}
+.stream-secondary .late{animation-direction:reverse;animation-delay:-5.1s}
+.glint{fill:#fff7dd;filter:drop-shadow(0 0 7px #edc46e);opacity:.15;animation:gold-glint 4.8s ease-in-out infinite}
+.g2{animation-delay:-1.3s}.g3{animation-delay:-2.4s}.g4{animation-delay:-3.6s}.g5{animation-delay:-.7s}
+@keyframes gold-breathe{0%,100%{opacity:.28}50%{opacity:.48}}
+@keyframes gold-glint{0%,100%{opacity:.1}35%{opacity:.2}50%{opacity:.85}70%{opacity:.2}}
+@media(prefers-reduced-motion:reduce){.halo,.stream use,.stream-secondary use,.glint{animation:none!important}.stream use,.stream-secondary use{stroke-dasharray:none;opacity:.16}.halo{opacity:.18}.glint{opacity:.18}}
+
+/* R7: travelling gold accents move to the tubing; stand retains static rim only. */
+.stream .tube-stream{stroke-width:3;animation-duration:7.2s}.stream-secondary .tube-stream{stroke-width:4;animation-duration:8.2s}.halo{animation:none;opacity:.36}

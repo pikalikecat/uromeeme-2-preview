@@ -1,0 +1,1 @@
+(()=>{const visual=document.querySelector('.visual'),reduce=matchMedia('(prefers-reduced-motion: reduce)');function sync(){visual.dataset.paused=String(reduce.matches||document.hidden)}reduce.addEventListener('change',sync);document.addEventListener('visibilitychange',sync);sync()})();
