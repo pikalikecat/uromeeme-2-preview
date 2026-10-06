@@ -1,0 +1,82 @@
+/* Local R6 integration; shared source stylesheet and other pages remain intact. */
+.hero h1,.hero h1 span{color:#a4894e}
+.site-shell.m19-home-preview{position:relative;top:0;z-index:100;margin:0;padding:0!important;background:#fff;box-shadow:0 3px 12px #00483e12}
+.header-ready .site-shell{position:sticky}
+.site-shell.m19-home-preview .site-top-r48{position:relative;top:auto;box-shadow:none}
+.site-shell .header{padding:18px 32px;gap:20px}
+.site-shell .brand-image{width:230px}
+.site-shell .header-actions-r26>.action{font-size:14px;padding:10px 16px;min-height:48px;white-space:normal}
+.site-shell .header-actions-r26{gap:10px}
+.site-shell .header .brand{flex-shrink:0}
+.site-shell .production-nav{font-size:15px;min-width:0}
+.site-shell .nav-children a[aria-current="page"]{color:#8a6624;font-weight:700;background:#f4f7ef}
+.site-shell .nav-children a,.site-shell .menu-panel a{text-decoration:none}
+.site-shell .menu-panel{z-index:5;max-width:calc(100vw - 24px)}
+.site-shell.nav-compact .header>.production-nav{display:none}
+.site-shell.nav-compact .header>.menu{display:block}
+.site-shell .announcement{grid-template-columns:auto minmax(0,1fr) auto;align-items:center;font-size:14px;padding:7px 32px;gap:14px}
+.site-shell .announcement-window{display:block;overflow:hidden;min-width:0}
+.site-shell #announcement-copy{white-space:normal;line-height:1.8}
+.site-shell.ticker-ready #announcement-copy{width:max-content;white-space:nowrap;animation:female-ticker 22s linear infinite;animation-delay:-6s}
+.site-shell #ticker-pause{display:none;min-width:0;min-height:44px;font-size:12px;padding:6px 12px;line-height:1.5;border-radius:99px;box-shadow:none;white-space:normal}
+.site-shell.ticker-ready #ticker-pause{display:block}
+.site-shell[data-ticker-paused="true"] #announcement-copy,.site-shell .announcement:hover #announcement-copy,.site-shell .announcement:focus-within #announcement-copy{animation-play-state:paused}
+.site-shell[data-document-hidden="true"] #announcement-copy{animation-play-state:paused}
+.site-shell.header-tall{position:relative}
+html.female-local{scroll-padding-top:var(--female-header-height,0px);scroll-padding-bottom:0}
+.site-shell .site-top-r48 .menu-panel,.site-shell .site-top-r48 .production-nav .nav-children{max-height:max(140px,calc(100dvh - var(--m19-sticky-height,180px) - 16px))}
+.skip:focus{position:fixed;z-index:120}
+@keyframes female-ticker{from{transform:translateX(var(--ticker-window,600px))}to{transform:translateX(calc(-1 * var(--ticker-text,360px)))}}
+@media(max-width:1280px){.site-shell .header{gap:14px;flex-wrap:wrap}.site-shell .brand-image{width:220px}}
+@media(max-width:800px){
+ .site-shell .site-top-r48 .header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 16px;padding:12px 18px}
+ .site-shell .site-top-r48 .brand-image{width:190px;max-width:100%}
+ .site-shell .site-top-r48 .header>.menu{grid-area:1/2}
+ .site-shell .site-top-r48 .header>.menu>summary{width:44px;min-height:44px}
+ .site-shell .site-top-r48 .header .header-actions-r26{grid-area:2/1/3/-1;width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .site-shell .site-top-r48 .header .header-actions-r26>.action{white-space:normal;min-height:44px;font-size:14px;line-height:1.5;padding:8px 12px;overflow-wrap:anywhere}
+ .site-shell .site-top-r48 .announcement{grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;padding:8px 18px;font-size:13px}
+ .site-shell .announcement strong{grid-area:1/1;border:0}
+ .site-shell .announcement button{grid-area:1/2}
+ .site-shell .announcement .announcement-window{grid-area:2/1/3/-1}
+}
+@media(prefers-reduced-motion:reduce){.site-shell.ticker-ready #announcement-copy{animation:none!important;transform:none!important;white-space:normal;width:auto}.site-shell #ticker-pause{opacity:.7}}
+
+/* User correction: only 女性 is green; eyebrow matches bph-r2 reference. */
+.hero h1 .female-prefix{color:#00483e;font:inherit}
+.hero .eyebrow{font-family:Arial,"Microsoft JhengHei",sans-serif;font-weight:400;font-size:14px;line-height:1.75;letter-spacing:.2em;display:flex;align-items:center;justify-content:center;gap:14px}
+.hero .eyebrow::before,.hero .eyebrow::after{width:36px;height:1px;margin:0;flex-shrink:0;background:linear-gradient(90deg,transparent,#b79b61)}
+.hero .eyebrow::after{transform:rotate(180deg)}
+@media(max-width:800px){.hero .eyebrow{font-size:12px;gap:10px;letter-spacing:.12em}.hero .eyebrow::before,.hero .eyebrow::after{width:24px}}
+
+/* Match STI R6 physician heading font, scoped to this heading only. */
+.female-demo #physicians>h2{font-family:"Noto Serif TC","PMingLiU",serif;font-weight:700}
+
+/* Full shared physician-section alignment, scoped to this page. */
+.female-demo #physicians{width:min(1115px,calc(100vw - 80px));max-width:none;margin-left:50%;transform:translateX(-50%)}
+.female-demo #physicians>h2{font-size:32px;line-height:1.6;margin-bottom:34px}
+.female-demo #physicians>h2:after{width:44px;margin:24px auto 0}
+.female-demo #physicians .doctor{gap:48px;padding:34px;margin:30px 0;border-radius:24px 6px}
+.female-demo #physicians .doctor>div{align-self:center;min-width:0}
+.female-demo #physicians .doctor h3{margin:16px 0 24px;text-align:left;font:400 24px/1.8 Arial,"Microsoft JhengHei",sans-serif;color:#896c34}
+.female-demo #physicians .doctor p{margin:0 0 16px;line-height:1.75}
+.female-demo #physicians .doctor>div>p:first-of-type{font:700 27px/1.45 "Noto Serif TC","PMingLiU",serif;text-align:left;color:#00483e;margin:0 0 24px}
+.female-demo #physicians .doctor img{border-radius:15px}
+.female-demo #physicians>p[data-source="B075"]{max-width:none;text-align:center;margin:24px auto 0}
+.female-demo #physicians>p[data-source="B075"] a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 18px}
+@media(max-width:760px){
+ .female-demo #physicians{width:calc(100vw - 32px)}
+ .female-demo #physicians>h2{font-size:26px}
+ .female-demo #physicians .doctor{grid-template-columns:1fr;padding:22px;gap:20px}
+ .female-demo #physicians .doctor>div{grid-column:1;grid-row:2;order:0}
+ .female-demo #physicians .doctor .source-image{grid-column:1;grid-row:1;max-width:420px;margin:auto}
+ .female-demo #physicians .doctor h3{margin-top:0}
+ .female-demo #physicians .doctor>div>p:first-of-type{font-size:24px}
+}
+
+
+/* Reference pill link and user-supplied disclaimer. */
+.female-demo #physicians>p[data-source="B075"] a{border:1px solid #005448;border-radius:999px;min-width:136px;min-height:56px;padding:10px 26px;text-decoration:none;box-sizing:border-box;background:#fffefa;font:400 18px/1.5 Arial,"Microsoft JhengHei",sans-serif}
+.female-demo #physicians>p[data-source="B075"] a:hover{background:#edf5ee}
+.female-demo #physicians>p.physician-disclaimer{max-width:none;margin:88px auto 0;text-align:center;font-size:12px;line-height:1.8;color:#61736a}
+@media(max-width:760px){.female-demo #physicians>p.physician-disclaimer{margin-top:56px;padding:0 10px}}

@@ -1,0 +1,58 @@
+/* R3: original raster assets untouched; decorative CSS-only optical effects. */
+.pen-visual{left:56%;width:30%;max-width:420px;isolation:isolate}
+.pen-visual:before{content:"";position:absolute;inset:-28% -22%;background:radial-gradient(ellipse at 48% 52%,#fff5cc9c 0%,#e8dcff75 24%,#9770e834 42%,transparent 65%);filter:blur(18px);z-index:-1;animation:aura 6s ease-in-out infinite}
+.pen-visual img{filter:drop-shadow(0 0 5px #fdf0b8c2) drop-shadow(0 0 18px #ae83e76e) drop-shadow(0 18px 17px #063c322b)}
+.pen-shimmer{position:absolute;inset:0;mask:url("assets/pen-cutout-r2.png") center/contain no-repeat;background:linear-gradient(110deg,transparent 30%,#fff1b82b 39%,#fffcdfb3 45%,#d6c2ff88 49%,transparent 58%);background-size:320% 100%;animation:shimmer 7s ease-in-out infinite;mix-blend-mode:screen;pointer-events:none}
+.spark{position:absolute;width:7px;height:7px;background:#fff5cf;border-radius:50%;box-shadow:0 0 8px 3px #fff0a7a8,0 0 18px 7px #bea0ef60;animation:spark 5.5s ease-in-out infinite;pointer-events:none}
+.spark:after{content:"";position:absolute;inset:-5px;background:linear-gradient(transparent 44%,#fff8d4 49%,transparent 56%);transform:rotate(90deg)}
+.s1{left:11%;top:18%;animation-delay:-1s}.s2{left:43%;top:37%;width:4px;height:4px;animation-delay:-3s}.s3{left:77%;top:70%;animation-delay:-4s}.s4{left:90%;top:83%;width:4px;height:4px;animation-delay:-2s}
+.effects-toggle{position:absolute;bottom:27px;left:55%;z-index:4;border:1px solid #b79b6170;background:#fffef3c9;color:#435c50;border-radius:99px;padding:8px 14px;min-height:44px;font:12px/1.5 "Microsoft JhengHei",sans-serif;cursor:pointer}
+.effects-toggle:focus-visible{outline:3px solid #806c40;outline-offset:4px}
+.effects-paused .fx,.effects-paused .pen-visual:before{animation-play-state:paused!important}
+@keyframes aura{0%,100%{opacity:.55;transform:scale(.95)}50%{opacity:1;transform:scale(1.08)}}
+@keyframes shimmer{0%,15%{background-position:100% 0;opacity:0}25%,65%{opacity:.65}80%,100%{background-position:0% 0;opacity:0}}
+@keyframes spark{0%,100%{opacity:.25;transform:scale(.7)}50%{opacity:.9;transform:scale(1.12)}}
+@media(max-width:1050px) and (min-width:801px){.pen-visual{left:57%;width:33%}}
+@media(max-width:800px){.pen-visual{left:auto;width:78%;max-width:360px;margin-bottom:50px}.effects-toggle{left:25px;bottom:20px}.pen-visual:before{inset:-15% -10%}}
+@media(max-width:400px){.pen-visual{width:78%;max-width:280px}.effects-toggle{left:23px}}
+@media(prefers-reduced-motion:reduce){.fx,.pen-visual:before{animation:none!important}.pen-shimmer{opacity:.15}.spark{opacity:.45}.effects-toggle{display:none}}
+/* R4 replaces star points and fog with close-fitting studio rim light. */
+.spark{display:none!important}
+.pen-visual:before{display:none;animation:none}
+.pen-visual img{filter:drop-shadow(0 0 1px #ffffffe6) drop-shadow(0 0 4px #f8edcf80) drop-shadow(0 15px 16px #08392d26)}
+.pen-shimmer{background:linear-gradient(110deg,transparent 40%,#fffef52b 46%,#fff9e678 49%,#e6d3a038 52%,transparent 59%);background-size:350% 100%;mix-blend-mode:screen;animation:studio-reflection 8s ease-in-out infinite}
+@keyframes studio-reflection{0%,12%{background-position:100% 0;opacity:0}24%,63%{opacity:.48}78%,100%{background-position:0% 0;opacity:0}}
+@media(prefers-reduced-motion:reduce){.pen-shimmer{animation:none!important;opacity:.12;background-position:50% 0}}
+/* R5: no pause control, only bounded 4.5-second entrance/interaction effects. */
+.pen-visual{pointer-events:auto}
+.pen-visual img{position:relative;z-index:2;filter:drop-shadow(0 0 2px #f7e8ff) drop-shadow(0 0 9px #bb95e93d) drop-shadow(0 15px 16px #08392d26)}
+.pen-shimmer{z-index:3;animation:none;opacity:.12}
+.vapor{position:absolute;z-index:0;pointer-events:none;border-radius:50%;height:15%;width:74%;left:12%;top:44%;transform:rotate(33deg);filter:blur(12px);background:radial-gradient(ellipse,#d1b2ee5c 0%,#c6a0e52e 42%,transparent 72%);opacity:.5}
+.v2{width:62%;height:11%;left:25%;top:54%;filter:blur(9px);transform:rotate(33deg);background:radial-gradient(ellipse,#e5d4fd70,transparent 70%)}
+.light-thread{position:absolute;z-index:1;pointer-events:none;left:5%;top:36%;width:90%;height:26%;border-radius:50%;border-top:1px solid #e7cfff96;border-bottom:1px solid transparent;transform:rotate(33deg);filter:drop-shadow(0 0 5px #af72ef85);opacity:.45}
+.t2{left:13%;top:42%;width:77%;height:28%;transform:rotate(36deg);border-top-color:transparent;border-bottom-color:#d9b8f08c}
+.t3{left:17%;top:38%;width:67%;height:24%;border-top-color:#ffefda80;transform:rotate(30deg);filter:drop-shadow(0 0 4px #dcc1f28c)}
+.effects-active .v1{animation:vapor-drift 4.5s ease-in-out 1}
+.effects-active .v2{animation:vapor-counter 4.5s ease-in-out 1}
+.effects-active .t1,.effects-active .t3{animation:thread-rise 4.5s ease-in-out 1}
+.effects-active .t2{animation:thread-counter 4.5s ease-in-out 1}
+.effects-active .pen-shimmer{animation:studio-reflection 4.5s ease-in-out 1}
+@keyframes vapor-drift{0%,100%{opacity:.4;transform:rotate(33deg) translateY(0) scale(.95)}45%{opacity:.9;transform:rotate(30deg) translateY(-22px) scale(1.12)}}
+@keyframes vapor-counter{0%,100%{opacity:.3;transform:rotate(33deg) translateY(0)}55%{opacity:.85;transform:rotate(36deg) translateY(20px) scale(1.1)}}
+@keyframes thread-rise{0%,100%{opacity:.25;transform:rotate(33deg) translateY(0)}45%{opacity:.9;transform:rotate(29deg) translateY(-12px)}}
+@keyframes thread-counter{0%,100%{opacity:.25;transform:rotate(36deg) translateY(0)}55%{opacity:.8;transform:rotate(39deg) translateY(12px)}}
+@media(prefers-reduced-motion:reduce){.effects-active .fx{animation:none!important}.vapor{opacity:.35}.light-thread{opacity:.35}}
+/* R5 refinement: more visible violet atmosphere, kept behind the readable pen. */
+.pen-visual img{filter:drop-shadow(0 0 2px #f7e8ff) drop-shadow(0 0 11px #ad75e861) drop-shadow(0 15px 16px #08392d26)}
+.vapor{height:19%;width:82%;left:8%;top:42%;filter:blur(10px);background:radial-gradient(ellipse,#b47beca6 0%,#c298eb70 35%,#d9bbf332 58%,transparent 76%);opacity:.72}
+.v2{width:70%;height:15%;left:20%;top:53%;filter:blur(8px);background:radial-gradient(ellipse,#c092f09c 0%,#d6b4f05e 45%,transparent 75%);opacity:.65}
+.light-thread{border-top-color:#ce9bffd9;filter:drop-shadow(0 0 5px #9e52e9a6);opacity:.7}
+.t2{border-top-color:transparent;border-bottom-color:#c799efcc}
+.t3{border-top-color:#efd6ffb3;filter:drop-shadow(0 0 4px #bc83eba6)}
+@keyframes vapor-drift{0%,100%{opacity:.72;transform:rotate(33deg) translateY(0) scale(.98)}45%{opacity:1;transform:rotate(30deg) translateY(-22px) scale(1.12)}}
+@keyframes vapor-counter{0%,100%{opacity:.65;transform:rotate(33deg) translateY(0)}55%{opacity:.95;transform:rotate(36deg) translateY(20px) scale(1.1)}}
+@media(prefers-reduced-motion:reduce){.vapor{opacity:.65}.light-thread{opacity:.6}}
+/* Replace outlined light threads with translucent, borderless vapor ribbons. */
+.light-thread{border:0;left:7%;top:34%;width:85%;height:22%;background:radial-gradient(ellipse at 36% 50%,#b984e978 0%,#cca5ee54 30%,#dcbcf32b 52%,transparent 75%);filter:blur(10px);opacity:.65}
+.t2{border:0;left:15%;top:48%;width:76%;height:21%;background:radial-gradient(ellipse at 62% 50%,#b47eea70 0%,#c89ce954 35%,transparent 74%);filter:blur(12px)}
+.t3{border:0;left:20%;top:40%;width:65%;height:16%;background:radial-gradient(ellipse,#e7d0fa61 0%,#c89cec40 42%,transparent 76%);filter:blur(8px)}
