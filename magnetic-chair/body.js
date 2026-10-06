@@ -1,0 +1,1 @@
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const e=document.getElementById(a.hash.slice(1));if(e){if(!e.hasAttribute('tabindex'))e.tabIndex=-1;requestAnimationFrame(()=>e.focus({preventScroll:true}))}}));

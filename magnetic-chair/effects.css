@@ -1,0 +1,11 @@
+.spark-art{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.spark-art path{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.spark-art .bloom{stroke:#fff4d2;stroke-width:14;filter:blur(7px);opacity:.65}
+.spark-art .core{stroke:#fffbea;stroke-width:2.3;filter:drop-shadow(0 0 3px #fff3c7)}
+.spark-art .pulse{opacity:0;animation:soft-pulse 9s linear infinite}
+.spark-art .p2{animation-delay:-5.3s;animation-duration:11s}
+.spark-art .p3{animation:seam-loop 3.6s linear infinite;animation-delay:-.3s}
+@keyframes seam-loop{0%,100%{opacity:.08}18%{opacity:.22}38%{opacity:.88}58%{opacity:.34}78%{opacity:.6}}
+@keyframes soft-pulse{0%,12%,36%,100%{opacity:0}16%{opacity:.22}21%{opacity:.88}26%{opacity:.34}30%{opacity:.6}35%{opacity:0}}
+.stage[data-paused="true"] .spark-art *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.spark-art .pulse{animation:none!important;opacity:.18}}
