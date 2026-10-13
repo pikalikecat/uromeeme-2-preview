@@ -1,0 +1,63 @@
+/* R11: a closed solid door rotates on a fixed left hinge INTO the room.
+   The opaque front wall is masked only at the shared doorway aperture.
+   No sliding glass. No room leakage before the door opens.
+   Default = settled scene, so no-JS and reduced-motion do not hide content. */
+.cinema-hero{--cinema-time:5500ms;--entry-shell-height:180px;--entry-copy-bottom:320px}
+.cinema-art{transform:scale(1.14);transform-origin:72% 68%}
+.entry-defs{position:absolute;pointer-events:none}
+.entry-foreplane{position:absolute;inset:0;pointer-events:none;transform:scale(1);transform-origin:77% 68%;opacity:0}
+.entry-wall{position:absolute;inset:0;z-index:2;background:#f1ece1 url('assets/conversation-room-desktop.webp') left center/300% 100% no-repeat;mask:url(#entry-wall-mask);-webkit-mask:url(#entry-wall-mask)}
+#entry-wall-mask{mask-type:luminance}
+.entry-portal{position:absolute;left:38%;top:-3%;width:78%;height:140%;z-index:3}
+.entry-portal img{display:block;width:100%;height:100%;object-fit:fill;max-width:none;clip-path:url(#entry-wood-shape)}
+.door-perspective{position:absolute;left:57.422%;top:11.28%;width:39.078%;height:117.88%;perspective:1100px;perspective-origin:50% 50%;z-index:1}
+.door-leaf{position:absolute;inset:0;transform-style:preserve-3d;transform-origin:0% 50%;transform:rotateY(0deg)}
+.door-front,.door-back{position:absolute;inset:0;backface-visibility:hidden;background:#d3ba92;border-radius:9.575% 9.575% 0 0 / 5.582% 5.582% 0 0}
+.door-front{transform:translateZ(6px);overflow:hidden;box-shadow:inset 0 0 0 1px #c2a47b,4px 9px 20px #48381e35}
+.door-front img{display:block;width:100%;height:100%;object-fit:fill;max-width:none}
+.door-front:after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(110deg,#342716bd,#4f3b2766);opacity:.08}
+.door-back{transform:rotateY(180deg) translateZ(6px);background:linear-gradient(90deg,#b5996f,#ddc6a0 35%,#bea37b)}
+.door-edge{position:absolute;top:0;width:12px;height:100%;background:linear-gradient(90deg,#8b6f48,#c2a16e 38%,#a28356);backface-visibility:hidden}
+.door-edge-left{left:0;transform-origin:0% 50%;transform:rotateY(-90deg) translateX(-6px)}
+.door-edge-right{left:100%;transform-origin:0% 50%;transform:rotateY(90deg) translateX(-6px)}
+.cinema-loading .entry-foreplane{opacity:1;transform:scale(1)}
+.cinema-loading .cinema-art{transform:scale(1)}
+.cinema-playing .entry-foreplane{animation:entry-cross-threshold var(--cinema-time) cubic-bezier(.2,.5,.25,1) both;will-change:transform}
+.cinema-playing .door-leaf{animation:entry-push-door var(--cinema-time) cubic-bezier(.25,.55,.25,1) both;will-change:transform}
+.cinema-playing .door-front:after{animation:entry-door-shade var(--cinema-time) ease-out both}
+.cinema-playing .cinema-art{animation:entry-camera-after-door var(--cinema-time) cubic-bezier(.2,.45,.25,1) both;will-change:transform}
+.cinema-playing .cinema-dusk{animation:entry-room-warmth var(--cinema-time) ease-out both}
+.cinema-playing .cinema-daylight{animation:entry-room-light var(--cinema-time) ease-in-out both}
+.cinema-playing .cinema-copy h1 span:last-child{animation:none}
+.cinema-playing .gold-line{animation:entry-reading-line var(--cinema-time) ease-out both}
+@keyframes entry-push-door{
+  0%,11%{transform:rotateY(0deg)}
+  35%{transform:rotateY(64deg)}
+  55%,100%{transform:rotateY(84deg)}
+}
+@keyframes entry-door-shade{0%,11%{opacity:.08}35%{opacity:.24}55%,100%{opacity:.38}}
+@keyframes entry-cross-threshold{
+  0%,55%{transform:scale(1);opacity:1}
+  72%{transform:scale(1.65);opacity:1}
+  97%{transform:scale(4.8);opacity:1}
+  100%{transform:scale(4.8);opacity:0}
+}
+@keyframes entry-camera-after-door{
+  0%,55%{transform:scale(1)}
+  78%{transform:scale(1.09)}
+  96%,100%{transform:scale(1.14)}
+}
+@keyframes entry-room-warmth{0%,11%{opacity:.5}55%,100%{opacity:0}}
+@keyframes entry-room-light{0%,25%{opacity:0;transform:translate3d(-20px,0,0)}70%{opacity:.6}100%{opacity:.15;transform:translate3d(0,0,0)}}
+@keyframes entry-reading-line{0%,55%{transform:scaleX(.5);opacity:.7}95%,100%{transform:scaleX(1);opacity:1}}
+@media(max-width:760px){
+  .cinema-hero{height:clamp(540px,calc(100svh - var(--entry-shell-height)),830px);min-height:540px}
+  .cinema-art{transform-origin:50% 72%}
+  .cinema-art img{object-position:50% 65%}
+  .entry-foreplane{transform-origin:50% 90%}
+  .entry-portal{left:-15%;top:calc(var(--entry-copy-bottom) + 20px - 2.04%);width:130%;height:85%}
+  .door-perspective{left:17.37%;top:calc(var(--entry-copy-bottom) + 20px + 6.63%);width:65.13%;height:71.57%;perspective:600px}
+  .cinema-readability{background:linear-gradient(180deg,#faf8f2d9 0%,#faf8f2bc 29%,#faf8f278 40%,#faf8f22b 51%,transparent 65%)}
+}
+@media(max-width:360px){.cinema-hero{height:clamp(510px,calc(100svh - var(--entry-shell-height)),830px);min-height:510px}.cinema-copy{padding-top:54px}.cinema-copy .eyebrow{margin-bottom:14px}.cinema-copy .gold-line{margin-top:13px;margin-bottom:12px}.cinema-copy .intro-next{margin-top:8px}}
+@media(prefers-reduced-motion:reduce){.cinema-art{transform:scale(1.14)}.entry-foreplane{opacity:0!important}.cinema-dusk{opacity:0!important}}

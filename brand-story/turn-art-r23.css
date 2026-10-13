@@ -1,0 +1,30 @@
+/* One shared fade, after every traced contour has finished. */
+.turn-gold .turn-gold-trace {
+  stroke-width:.72;
+  vector-effect:none;
+  filter:none;
+}
+.turn-gold .turn-gold-trace.trace-outline {stroke-width:1.0}
+.turn-chapter.turn-playing .turn-gold {
+  animation:seated-illustration-fade-r23 5000ms linear both;
+  filter:drop-shadow(0 0 4px #f9de9133);
+}
+.turn-chapter.turn-playing .turn-gold .turn-gold-trace {
+  animation:seated-contour-draw-r23 2200ms var(--trace-delay,0ms) cubic-bezier(.25,.5,.3,1) both;
+}
+@keyframes seated-contour-draw-r23 {
+  0% {stroke-dashoffset:1;opacity:0}
+  5% {opacity:1}
+  100% {stroke-dashoffset:0;opacity:1}
+}
+@keyframes seated-illustration-fade-r23 {
+  0%,74% {opacity:1}
+  100% {opacity:0}
+}
+@media(max-width:760px) {
+  .turn-gold .turn-gold-trace {stroke-width:2.0}
+  .turn-gold .turn-gold-trace.trace-outline {stroke-width:2.6}
+}
+@media(prefers-reduced-motion:reduce) {
+  .turn-chapter.turn-playing .turn-gold,.turn-chapter.turn-playing .turn-gold .turn-gold-trace {animation:none!important}
+}

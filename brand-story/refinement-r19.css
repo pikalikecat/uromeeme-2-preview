@@ -1,0 +1,109 @@
+/* Adapted from homepage care-r59 / care-r107, scoped to the three story cards. */
+.care-card {
+  padding-top:96px;
+  overflow:hidden;
+  isolation:isolate;
+  background:#fdfefb;
+  border-color:#adc5b4;
+  box-shadow:inset 0 1px 1px #fff,0 18px 42px #153d2910;
+  transition:transform .6s cubic-bezier(.22,.68,.15,1),box-shadow .6s,border-color .6s;
+}
+.care-card::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-2;
+  pointer-events:none;
+  background:radial-gradient(ellipse at 108% 0%,#6f9e88bb,transparent 48%),radial-gradient(ellipse at 3% 108%,#c6dbceaa,transparent 58%),linear-gradient(130deg,#fff 25%,#edf5ee 70%,#abcaba);
+}
+.care-card::after {
+  content:"";
+  position:absolute;
+  right:-95px;
+  top:-115px;
+  width:280px;
+  height:560px;
+  border-radius:50%;
+  transform:rotate(-32deg);
+  background:linear-gradient(110deg,#ffffff70,transparent 40%,#547b6526);
+  z-index:-1;
+  pointer-events:none;
+}
+.care-card .care-light {
+  position:absolute;inset:-1px;z-index:-1;pointer-events:none;opacity:0;
+  background:linear-gradient(120deg,transparent 20%,#dbece285 48%,#ffffffc9 53%,transparent 80%);
+  transform:translateX(-100%);
+}
+.care-card h3 {
+  color:#07533f;
+  background:linear-gradient(115deg,#00483e 12%,#426e55 42%,#aa8b4e 57%,#005444 74%);
+  background-size:220% 100%;
+  background-clip:text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.care-card p {color:#345745}
+.care-card .commitment-ensemble {
+  position:absolute;inset:20px 22px auto;height:62px;pointer-events:none;
+  transform-origin:right top;
+}
+.care-card .commitment-stars {
+  position:absolute;right:22px;top:10px;width:142px;
+  display:flex;align-items:center;gap:0;perspective:650px;
+  filter:drop-shadow(0 4px 3px #79531b35);
+}
+.care-card .quality-star {width:20%;height:auto;overflow:visible;transform:rotate(-9deg);transform-origin:50% 55%}
+.care-card .quality-star:nth-child(2),.care-card .quality-star:nth-child(4) {width:21%;transform:translateY(-4px) rotate(5deg)}
+.care-card .quality-star:nth-child(3) {width:24%;transform:translateY(-8px)}
+.care-card .ensemble-rail {
+  position:absolute;left:8px;right:184px;top:28px;height:1px;
+  background:linear-gradient(90deg,#b4975c55,#c4a160 30%,#fff1c8 68%,#ae8342);
+  transform-origin:right center;
+}
+.care-card .ensemble-rail::after {content:"";position:absolute;right:-4px;top:-2px;width:5px;height:5px;transform:rotate(45deg);background:#d1ad69;box-shadow:0 0 6px #fff5d8}
+.care-card .ensemble-corner {position:absolute;right:0;top:28px;width:18px;height:52px;border-top:1px solid #c6a465;border-right:1px solid #c6a465;border-radius:0 13px 0 0;mask-image:linear-gradient(#000 30%,transparent);transform-origin:left top}
+.care-card.care-arriving .care-light {animation:story-card-light 1.45s var(--card-delay,0ms) ease-out both}
+.care-card.care-arriving h3 {animation:story-card-title 1.65s var(--card-delay,0ms) ease-out both}
+.care-card.care-arriving .commitment-ensemble {animation:story-card-ensemble 1.2s var(--card-delay,0ms) cubic-bezier(.2,.75,.2,1) both}
+.care-card.care-arriving .quality-star {animation:story-card-star 1.05s calc(var(--card-delay,0ms) + var(--star-delay,0ms)) cubic-bezier(.2,.7,.2,1) both}
+.care-card .quality-star:nth-child(2){--star-delay:35ms}.care-card .quality-star:nth-child(3){--star-delay:70ms}.care-card .quality-star:nth-child(4){--star-delay:105ms}.care-card .quality-star:nth-child(5){--star-delay:140ms}
+.care-card:focus-visible {outline:3px solid #9d7b39;outline-offset:5px;border-color:#baa06a;box-shadow:0 22px 48px #153d2922}
+@media(hover:hover) and (pointer:fine) {
+  .care-card:hover {transform:perspective(1100px) translateY(-7px) rotateX(1deg);border-color:#baa06a;box-shadow:0 28px 54px #153d2925,inset 0 1px 1px #fff}
+  .care-card:hover .care-light {animation:story-card-light-hover 1.4s ease-out both}
+  .care-card:hover h3 {animation:story-card-title-hover 1.4s ease-out both}
+}
+@keyframes story-card-light {0%{transform:translateX(-100%);opacity:0}35%{opacity:.8}100%{transform:translateX(100%);opacity:0}}
+@keyframes story-card-light-hover {0%{transform:translateX(-100%);opacity:0}35%{opacity:.8}100%{transform:translateX(100%);opacity:0}}
+@keyframes story-card-title {from{background-position:100% 50%}to{background-position:0% 50%}}
+@keyframes story-card-title-hover {from{background-position:100% 50%}to{background-position:0% 50%}}
+@keyframes story-card-ensemble {0%{opacity:.15;transform:perspective(700px) translateY(14px) rotateX(-25deg)}65%{opacity:1;transform:perspective(700px) translateY(-2px) rotateX(3deg)}100%{opacity:1;transform:none}}
+@keyframes story-card-star {0%{opacity:.25;transform:translate(-25px,18px) rotateY(-150deg) rotate(-28deg) scale(.65)}60%{opacity:1;transform:translate(0,-8px) rotateY(20deg) rotate(8deg) scale(1.08)}100%{opacity:1}}
+/* The halo fully dissipates before the seam. The next section starts at this exact color. */
+.hope-chapter {
+  background:radial-gradient(ellipse 58% 38% at 50% 57%,#dbeace 0%,#e5eee0aa 42%,#e5eee000 100%),linear-gradient(180deg,#faf8f2 0%,#faf8f2 58%,#edf3ea 100%);
+}
+.continue-story {background:#edf3ea}
+@media(min-width:761px) and (max-width:1100px) {
+  .care-card {padding-top:92px}
+  .care-card .commitment-ensemble {inset:18px 16px auto}
+  .care-card .commitment-stars {width:120px;right:18px}
+  .care-card .ensemble-rail {right:156px}
+}
+@media(max-width:760px) {
+  .care-card {padding-top:90px}
+  .care-card .commitment-ensemble {inset:16px 22px auto}
+  .care-card .commitment-stars {width:136px;right:20px}
+  .care-card .ensemble-rail {right:174px}
+  .hope-chapter {background:radial-gradient(ellipse 80% 28% at 50% 72%,#dbeace 0%,#e5eee0aa 42%,#e5eee000 100%),linear-gradient(180deg,#faf8f2 0%,#faf8f2 58%,#edf3ea 100%)}
+}
+@media(prefers-reduced-motion:reduce) {
+  .care-card,.care-card *,.care-card::before,.care-card::after {animation:none!important;transition:none!important}
+  .care-card:hover {transform:none}
+  .care-card .care-light {display:none}
+}
+@media(forced-colors:active) {
+  .care-card h3 {background:none;color:CanvasText;-webkit-text-fill-color:CanvasText}
+  .care-card::before,.care-card::after,.care-card .care-light,.care-card .commitment-ensemble {display:none}
+  .care-card {border:1px solid CanvasText;box-shadow:none}
+}

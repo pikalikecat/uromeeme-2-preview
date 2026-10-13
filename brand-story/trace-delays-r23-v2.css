@@ -1,0 +1,15 @@
+/* Delays of paths traced from the supplied raster, all complete by 2.9s. */
+.turn-gold .turn-gold-trace:nth-of-type(1){--trace-delay:0ms}
+.turn-gold .turn-gold-trace:nth-of-type(2){--trace-delay:54ms}
+.turn-gold .turn-gold-trace:nth-of-type(3){--trace-delay:108ms}
+.turn-gold .turn-gold-trace:nth-of-type(4){--trace-delay:162ms}
+.turn-gold .turn-gold-trace:nth-of-type(5){--trace-delay:215ms}
+.turn-gold .turn-gold-trace:nth-of-type(6){--trace-delay:269ms}
+.turn-gold .turn-gold-trace:nth-of-type(7){--trace-delay:323ms}
+.turn-gold .turn-gold-trace:nth-of-type(8){--trace-delay:377ms}
+.turn-gold .turn-gold-trace:nth-of-type(9){--trace-delay:431ms}
+.turn-gold .turn-gold-trace:nth-of-type(10){--trace-delay:485ms}
+.turn-gold .turn-gold-trace:nth-of-type(11){--trace-delay:538ms}
+.turn-gold .turn-gold-trace:nth-of-type(12){--trace-delay:592ms}
+.turn-gold .turn-gold-trace:nth-of-type(13){--trace-delay:646ms}
+.turn-gold .turn-gold-trace:nth-of-type(14){--trace-delay:700ms}

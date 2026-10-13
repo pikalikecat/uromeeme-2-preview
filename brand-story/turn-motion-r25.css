@@ -1,0 +1,48 @@
+.turn-chapter {isolation:isolate;overflow:hidden}
+.turn-chapter:focus-visible {outline:2px solid #e3c98e;outline-offset:-6px}
+.turn-frame {position:relative;display:grid;grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);gap:38px;max-width:1120px;margin:auto;align-items:center}
+.turn-chapter .turn-story {width:100%;max-width:none;margin:0;position:relative;z-index:2}
+.turn-gold {width:100%;aspect-ratio:1;opacity:0;pointer-events:none}
+.turn-gold svg {display:block;width:100%;height:100%;overflow:visible;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.turn-gold-trace {--line-delay:240ms;stroke:url(#turn-gold-gradient);stroke-width:1.35;stroke-dasharray:1;stroke-dashoffset:1;opacity:0}
+.turn-gold-trace:nth-of-type(2){--line-delay:420ms}.turn-gold-trace:nth-of-type(3){--line-delay:600ms}.turn-gold-trace:nth-of-type(4){--line-delay:780ms}.turn-gold-trace:nth-of-type(5){--line-delay:960ms}.turn-gold-trace:nth-of-type(6){--line-delay:1140ms}.turn-gold-trace:nth-of-type(7){--line-delay:1320ms}
+.turn-gold-glint {stroke:#fff2bd;stroke-width:2;stroke-dasharray:.075 .925;stroke-dashoffset:1;opacity:0}
+.turn-letter {display:inline-block;white-space:pre}
+.turn-chapter {overflow-anchor:none}
+.turn-chapter.turn-playing .turn-letter {animation:turn-letter-arrive .7s var(--letter-delay,0ms) cubic-bezier(.2,.7,.2,1) both}
+.turn-chapter.turn-playing .turn-gold {opacity:1}
+.turn-chapter.turn-playing .turn-gold-trace {animation:turn-gold-draw calc(5000ms - var(--line-delay)) var(--line-delay) ease-in-out both}
+.turn-chapter.turn-playing .turn-gold-glint {animation:turn-gold-glide 3.6s .8s ease-in-out both;filter:drop-shadow(0 0 5px #f9de91aa)}
+.turn-chapter.turn-playing .turn-gold-glint-inner {animation-duration:3.2s;animation-delay:1.3s}
+
+
+
+
+
+
+
+.turn-status {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@keyframes turn-letter-arrive {from{opacity:0;transform:translateY(16px);filter:blur(3px)}to{opacity:1;transform:none;filter:none}}
+@keyframes turn-gold-draw {0%{stroke-dashoffset:1;opacity:0;filter:drop-shadow(0 0 0 #f9de9100)}15%{opacity:.65}52%{stroke-dashoffset:0;opacity:.9;filter:drop-shadow(0 0 5px #f9de9170)}70%{opacity:.6}83%{opacity:1;filter:drop-shadow(0 0 8px #f9de9160)}100%{stroke-dashoffset:0;opacity:0;filter:drop-shadow(0 0 0 #f9de9100)}}
+@keyframes turn-gold-glide {0%{stroke-dashoffset:1;opacity:0}18%{opacity:.85}80%{opacity:.85}100%{stroke-dashoffset:-.2;opacity:0}}
+@media(max-width:1100px) {.turn-frame {gap:26px}.turn-outcome {font-size:clamp(32px,4.1vw,58px)}}
+@media(max-width:760px) {
+  .turn-frame {display:block;max-width:560px}
+  .turn-chapter .turn-story {max-width:560px}
+  .turn-gold {position:absolute;right:0;bottom:-12px;width:36%;max-width:160px;aspect-ratio:auto;height:210px}
+  .turn-gold svg {height:100%;object-fit:contain}
+  .turn-gold-trace {stroke-width:2.3}
+  .turn-gold-glint {stroke-width:3}
+  .turn-outcome {font-size:clamp(30px,7.3vw,42px)}
+
+
+
+}
+@media(min-width:441px) and (max-width:760px) {
+  .turn-gold {position:relative;right:auto;bottom:auto;width:190px;height:190px;margin:14px 0 0 auto}
+}
+@media(prefers-reduced-motion:reduce) {
+  .turn-chapter .turn-letter {animation:none!important;opacity:1!important;transform:none!important;filter:none!important}
+
+}
+@media(forced-colors:active) {.turn-gold {display:none}}

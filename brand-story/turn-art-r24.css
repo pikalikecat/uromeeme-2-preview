@@ -1,0 +1,38 @@
+/* Retain the complete illustration; only the SVG gently drifts, not the layout. */
+.turn-chapter.turn-playing .turn-gold {animation:none;opacity:1}
+.turn-chapter[data-turn-state="done"] .turn-gold {
+  opacity:1;
+  animation:none;
+  filter:drop-shadow(0 0 4px #f9de9133);
+}
+.turn-chapter[data-turn-state="done"] .turn-gold .turn-gold-trace {
+  animation:none;
+  opacity:1;
+  stroke-dashoffset:0;
+}
+.turn-chapter[data-turn-state="done"] .turn-gold svg {
+  transform-origin:50% 55%;
+  animation:seated-idle-float-r24 8s ease-in-out infinite;
+  animation-play-state:paused;
+}
+.turn-chapter[data-turn-state="done"][data-art-in-view="true"] .turn-gold svg {animation-play-state:running}
+@keyframes seated-idle-float-r24 {
+  0%,100% {transform:translateY(0) rotate(0deg)}
+  50% {transform:translateY(-6px) rotate(.25deg)}
+}
+/* The full illustration is a static result when JavaScript is disabled. */
+.turn-chapter:not([data-turn-state]) .turn-gold {opacity:1}
+.turn-chapter:not([data-turn-state]) .turn-gold .turn-gold-trace {opacity:1;stroke-dashoffset:0}
+@media(max-width:760px) {
+  .turn-chapter[data-turn-state="done"] .turn-gold svg {animation-name:seated-idle-float-mobile-r24}
+}
+@keyframes seated-idle-float-mobile-r24 {
+  0%,100% {transform:translateY(0) rotate(0deg)}
+  50% {transform:translateY(-3px) rotate(.15deg)}
+}
+@media(prefers-reduced-motion:reduce) {
+  .turn-chapter .turn-gold {display:block;opacity:1;animation:none!important;filter:none}
+  .turn-chapter .turn-gold svg {animation:none!important;transform:none}
+  .turn-chapter .turn-gold .turn-gold-trace {animation:none!important;opacity:1;stroke-dashoffset:0}
+}
+@media(forced-colors:active) {.turn-chapter .turn-gold {display:none}}

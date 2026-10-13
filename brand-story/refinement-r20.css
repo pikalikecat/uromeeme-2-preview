@@ -1,0 +1,3 @@
+/* R20 is a proposal revision within M19, not the M20 deployment milestone. */
+.cinema-copy p.cinema-subtitle {max-width:none}
+.cinema-copy .cinema-subtitle>span {display:block}
