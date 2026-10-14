@@ -1,0 +1,15 @@
+/* R28: no fragment-SVG mask/clip dependency in the opening. */
+.entry-wall.entry-wall-panels {background:none!important;mask:none!important;-webkit-mask:none!important}
+.entry-wall-panel {position:absolute;display:block;background-color:#f1ece1;background-image:url('assets/conversation-room-desktop.webp');background-repeat:no-repeat;pointer-events:none}
+.entry-portal img {clip-path:polygon(13.600% 2.400%,86.900% 2.400%,86.900% 98.000%,77.900% 98.000%,75.000% 94.400%,75.000% 14.900%,74.959% 14.007%,74.836% 13.208%,74.631% 12.503%,74.344% 11.892%,73.975% 11.375%,73.524% 10.952%,72.991% 10.623%,72.376% 10.388%,71.679% 10.247%,70.900% 10.200%,29.700% 10.200%,28.788% 10.247%,27.972% 10.388%,27.252% 10.623%,26.628% 10.952%,26.100% 11.375%,25.668% 11.892%,25.332% 12.503%,25.092% 13.208%,24.948% 14.007%,24.900% 14.900%,24.900% 94.400%,21.300% 98.000%,13.600% 98.000%)}
+.entry-preloader {position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;background:#faf8f2;pointer-events:none;text-align:center}
+.entry-preloader[hidden] {display:none}
+.entry-preloader img {display:block;width:min(52vw,190px);height:auto;max-width:none}
+.entry-preloader p {margin:0;color:#806c40;font:400 13px/1.8 Arial,'Microsoft JhengHei',sans-serif;letter-spacing:.12em}
+.entry-loading-dot {display:inline-block;width:4px;height:4px;margin-right:10px;vertical-align:.18em;border-radius:50%;background:#b19761;animation:entry-loading-breath-r28 1.2s ease-in-out infinite}
+.cinema-loading .entry-foreplane {opacity:0!important}
+.cinema-loading.entry-prepaint .entry-foreplane {opacity:1!important}
+.cinema-loading .cinema-copy {visibility:hidden}
+@keyframes entry-loading-breath-r28 {0%,100%{opacity:.35}50%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.entry-loading-dot{animation:none}}
+@media(forced-colors:active){.entry-preloader{background:Canvas}.entry-preloader p{color:CanvasText}.entry-loading-dot{background:CanvasText}}
