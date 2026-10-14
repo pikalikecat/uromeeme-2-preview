@@ -1,0 +1,37 @@
+/* R27: mobile opening only. The original settled reading layout stays intact.
+   Frame and door fit one independent stage, not the bottom of the copy. */
+@media(max-width:760px) {
+  .cinema-hero.entry-stage-active {height:var(--entry-frozen-height);min-height:0}
+  .entry-stage-active .entry-portal {
+    left:var(--entry-portal-x);top:var(--entry-portal-y);
+    width:var(--entry-portal-width);height:var(--entry-portal-height);
+  }
+  .entry-stage-active .door-perspective {
+    left:var(--entry-door-x);top:var(--entry-door-y);
+    width:var(--entry-door-width);height:var(--entry-door-height);
+  }
+  .entry-stage-active .entry-foreplane {transform-origin:50% var(--entry-stage-origin-y)}
+  .entry-stage-active .cinema-copy {opacity:0;pointer-events:none}
+  .entry-stage-active .cinema-readability {opacity:0}
+  .cinema-playing.entry-stage-active .cinema-readability {
+    animation:entry-mobile-readability-r27 var(--cinema-time) ease-out both;
+  }
+  .cinema-playing.entry-stage-active .cinema-copy {
+    animation:entry-copy-read-r27 var(--cinema-time) cubic-bezier(.2,.6,.25,1) both;
+  }
+  .entry-stage-active.entry-copy-ready .cinema-copy {pointer-events:auto}
+  .entry-stage-active .cinema-credit {
+    top:calc(var(--entry-stage-height) - 27px);bottom:auto;
+  }
+}
+@keyframes entry-copy-read-r27 {
+  0%,64%{opacity:0;transform:translateY(8px)}
+  90%,100%{opacity:1;transform:none}
+}
+@keyframes entry-mobile-readability-r27 {
+  0%,64%{opacity:0}
+  90%,100%{opacity:1}
+}
+@media(prefers-reduced-motion:reduce) {
+  .entry-stage-active .cinema-copy {animation:none!important;opacity:1;transform:none;pointer-events:auto}
+}
