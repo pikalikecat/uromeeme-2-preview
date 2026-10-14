@@ -1,0 +1,2 @@
+/* Keep the approved second sentence together at 320px, without changing copy. */
+@media(max-width:380px){.cf-hero-sub{font-size:21px;letter-spacing:.025em}}

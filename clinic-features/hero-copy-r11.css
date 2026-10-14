@@ -1,0 +1,2 @@
+/* Fit the corrected second sentence at 320px without a trailing orphan. */
+@media(max-width:380px){.cf-hero-sub{font-size:20px;letter-spacing:.01em}}

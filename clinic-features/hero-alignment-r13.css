@@ -1,0 +1,36 @@
+/* R13 — R26's actual editorial hero geometry / typography, scoped to this page.
+   Two-line title and three-line subtitle slots align the cross-page landmarks
+   without adding copy. Min-height, rather than clipping height, supports zoom
+   and longer text. No door, scene generation, or scroll lock is imported. */
+.cf-hero{--cf-title-size:clamp(34px,3.6vw,62px);--cf-title-leading:1.72;--cf-sub-size:16px;--cf-shell-height:182px;display:flex;align-items:center;min-height:clamp(660px,calc(100svh - 130px),820px);height:auto;padding:0;text-align:left;background:#faf8f2}
+.cf-hero-inner{display:block;width:100%;max-width:none;margin:0;position:relative;z-index:1}
+.cf-hero-copy{position:relative;width:50%;max-width:760px;padding:40px 0 56px clamp(36px,5.3vw,100px);margin:0;text-align:left}
+.cf-hero .cf-eyebrow{font:400 12px/2 Arial,"Microsoft JhengHei",sans-serif;letter-spacing:.14em;color:#746343;margin:0 0 35px;max-width:450px;padding:0}
+.cf-hero h1{font:700 var(--cf-title-size)/var(--cf-title-leading) "Noto Serif TC","PMingLiU",serif;color:#00483e;letter-spacing:.04em;text-shadow:none;margin:0;max-width:none;min-height:calc(var(--cf-title-size) * var(--cf-title-leading) * 2)}
+.cf-hero .cf-rule{height:1px;width:56px;background:#a98b56;margin:34px 0 26px}
+.cf-hero .cf-hero-sub{font:400 var(--cf-sub-size)/1.9 Arial,"Microsoft JhengHei",sans-serif;color:#344c42;letter-spacing:normal;max-width:none;margin:0;min-height:calc(var(--cf-sub-size) * 1.9 * 3)}
+.cf-hero .cf-read{display:inline-flex;align-items:center;gap:24px;color:#00483e;text-decoration:none;min-height:44px;padding:7px 0;margin:35px 0 0;font:400 13px/1.7 Arial,"Microsoft JhengHei",sans-serif;letter-spacing:.12em;border-bottom:1px solid #00483e55}
+.cf-hero .cf-read span{font-size:18px}
+@media(min-width:1800px){.cf-hero-copy{width:45%;padding-left:calc((100vw - 1680px)/2 + 70px)}}
+@media(max-width:1100px) and (min-width:761px){.cf-hero{--cf-title-size:clamp(29px,3.7vw,42px);--cf-sub-size:15px}.cf-hero-copy{width:54%;padding-left:36px}}
+@media(max-width:760px){
+ .cf-hero{--cf-title-size:clamp(29px,7.7vw,47px);--cf-title-leading:1.65;--cf-sub-size:12px;min-height:clamp(540px,calc(100svh - var(--cf-shell-height)),830px);align-items:flex-start}
+ .cf-hero-copy{width:100%;max-width:none;padding:58px 24px 0;text-align:center}
+ .cf-hero .cf-eyebrow{font-size:10px;letter-spacing:.1em;margin:0 auto 24px;max-width:none;padding:0 20px}
+ .cf-hero h1{letter-spacing:.025em}
+ .cf-hero .cf-rule{width:34px;margin:20px auto 16px}
+ .cf-hero .cf-hero-sub{margin:0 auto}
+ .cf-hero .cf-read{margin-top:13px;gap:16px;font-size:11px}
+ /* Keep the photographed logo below the centered reading field. */
+ .cf-hero-scene{width:108%;height:52%;min-height:260px;right:-8%;left:auto;top:auto;bottom:0}
+ .cf-hero:before{background:linear-gradient(180deg,#faf8f2 0%,#faf8f2 46%,#faf8f2f2 54%,#faf8f280 63%,#faf8f21a 73%,transparent 83%)}
+}
+@media(max-width:360px){
+ .cf-hero{--cf-title-size:28px;--cf-sub-size:11px;min-height:clamp(510px,calc(100svh - var(--cf-shell-height)),830px)}
+ .cf-hero-copy{padding:54px 17px 0}
+ .cf-hero .cf-eyebrow{padding:0 8px;margin-bottom:14px}
+ .cf-hero .cf-rule{margin-top:13px;margin-bottom:12px}
+ .cf-hero .cf-read{margin-top:8px}
+}
+@media(max-height:500px) and (min-width:761px){.cf-hero{min-height:540px}}
+@media(forced-colors:active){.cf-hero{background:Canvas}.cf-hero .cf-eyebrow,.cf-hero h1,.cf-hero .cf-hero-sub,.cf-hero .cf-read{color:CanvasText}.cf-hero .cf-rule{background:CanvasText}}

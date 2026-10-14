@@ -1,0 +1,23 @@
+/* R6: editorial photographic background, not an inset picture card. */
+.cf-hero{isolation:isolate;position:relative;overflow:hidden;background:#f8f5ed;padding:54px 0 58px}
+.cf-hero-scene{position:absolute;inset:0 0 0 auto;width:72%;z-index:-2;pointer-events:none}
+.cf-hero-scene img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 43%;border-radius:0}
+.cf-hero:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,#faf8f2 0%,#faf8f2 25%,#faf8f2f7 35%,#faf8f2df 43%,#faf8f2a6 51%,#faf8f24d 61%,#faf8f210 74%,transparent 88%)}
+.cf-hero:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,#faf8f245 0%,transparent 20%,transparent 76%,#faf8f269 91%,#faf8f2 100%)}
+.cf-hero-inner{display:block;width:min(1152px,calc(100% - 80px));position:relative;z-index:1}
+.cf-hero-copy{width:58%;padding:20px 0 20px 18px}
+.cf-hero .cf-eyebrow{color:#7e6036}
+.cf-hero .cf-read{border-bottom-color:#8baca0}
+@media(min-width:1700px){.cf-hero-scene{width:68%;}.cf-hero:before{background:linear-gradient(90deg,#faf8f2 0%,#faf8f2 30%,#faf8f2f2 39%,#faf8f2b3 48%,#faf8f259 58%,transparent 78%)}}
+@media(max-width:1100px) and (min-width:761px){.cf-hero{padding:42px 0 46px}.cf-hero-inner{width:calc(100% - 64px)}.cf-hero-copy{width:61%;padding-left:0}.cf-hero-scene{width:78%;}.cf-hero-scene img{object-position:55% 43%}}
+@media(max-width:760px){
+ .cf-hero{padding:30px 0 262px;background:#faf8f2}
+ .cf-hero-inner{width:calc(100% - 40px)}
+ .cf-hero-copy{width:100%;padding:0 5px}
+ .cf-hero-scene{inset:auto 0 0;width:100%;height:320px}
+ .cf-hero-scene img{object-position:30% 52%}
+ .cf-hero:before{background:linear-gradient(180deg,#faf8f2 0%,#faf8f2 46%,#faf8f2f2 53%,#faf8f2a6 61%,#faf8f233 73%,transparent 83%)}
+ .cf-hero:after{background:linear-gradient(180deg,transparent 82%,#faf8f240 91%,#faf8f2 100%)}
+}
+@media(max-width:380px){.cf-hero{padding-bottom:234px}.cf-hero-scene{height:292px}}
+@media(forced-colors:active){.cf-hero{background:Canvas}.cf-hero-scene,.cf-hero:before,.cf-hero:after{display:none}.cf-hero{padding-bottom:36px}.cf-hero .cf-eyebrow{color:CanvasText}}

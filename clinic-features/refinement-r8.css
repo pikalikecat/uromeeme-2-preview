@@ -1,0 +1,14 @@
+/* R8: use R26's actual alpha artwork and image-relative emerald halos.
+   Keep this page's quiet closing layout, not the whole brand-page gold frame. */
+.cf-tagline{max-width:1000px}
+.cf-tagline-art{position:relative;isolation:isolate;width:100%;max-width:920px;margin:0 auto}
+.cf-tagline-art:before{
+ content:"";position:absolute;inset:-25% 0;z-index:0;pointer-events:none;
+ background:
+ radial-gradient(ellipse 54% 27% at 49.2% 39.6%,#b7d3a76b 0%,#c5dabc45 48%,#c5dabc00 100%),
+ radial-gradient(ellipse 54% 27% at 53.6% 64.2%,#b7d3a76b 0%,#c5dabc45 48%,#c5dabc00 100%),
+ radial-gradient(ellipse 58% 44% at 50% 50%,#d9e6c63d 0%,#d9e6c600 100%);
+}
+.cf-tagline .cf-tagline-art img{position:relative;z-index:1;display:block;width:100%;height:auto;border-radius:0;mix-blend-mode:normal;filter:drop-shadow(0 2px 0 #fffcf1) drop-shadow(0 12px 18px #164d3620)}
+@media(max-width:760px){.cf-tagline{padding:28px 0 32px}.cf-tagline-art{max-width:560px}.cf-tagline .cf-tagline-art img{filter:drop-shadow(0 1px 0 #fffcf1) drop-shadow(0 6px 10px #164d3620)}}
+@media(forced-colors:active){.cf-tagline-art:before{display:none}.cf-tagline .cf-tagline-art img{filter:none}}
