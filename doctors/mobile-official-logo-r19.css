@@ -1,0 +1,9 @@
+/* Exact user-supplied official logo pixels; native SVG viewport excludes the four-character wordmark. No redraw or raster edit. */
+.dr-mobile-brand-mark{display:none}
+@media(max-width:760px){
+ .emerald-hero::before{background-image:none}
+ .emerald-hero .dr-mobile-brand-mark{display:block;position:absolute;left:50%;top:-31%;width:115%;height:auto;aspect-ratio:1034/724;transform:translateX(-50%);opacity:.14;z-index:-1;overflow:hidden;pointer-events:none;user-select:none}
+ .emerald-hero .dr-lineup-scene{position:relative;z-index:0}
+}
+@media(forced-colors:active){.emerald-hero .dr-mobile-brand-mark{display:none}}
+@media print{.emerald-hero .dr-mobile-brand-mark{display:none}}
