@@ -1,0 +1,10 @@
+/* R7: native vector scrollwork in the frame only; portrait pixels untouched. */
+.dr-portrait-stage{padding:51px 15px 39px;border-color:#cdbb95;box-shadow:0 16px 35px #143e2c0b,inset 0 0 0 4px #fffdf875,inset 0 0 0 5px #b49b6b21}
+.dr-portrait-stage::before,.dr-portrait-stage::after{content:"";position:absolute;left:50%;transform:translateX(-50%);background:url("assets/portrait-ornament-r7.svg") center / contain no-repeat;pointer-events:none;user-select:none;}
+.dr-portrait-stage::before{top:6px;width:calc(100% - 26px);height:38px}
+.dr-portrait-stage::after{bottom:7px;width:68%;height:25px;opacity:.87}
+.dr-portrait-art{box-shadow:0 0 0 1px #b49b6b38,0 2px 12px #183e2910}
+.dr-portrait figcaption{border-color:#d6c7a8}
+@media(max-width:760px){.dr-portrait-stage{padding:49px 13px 37px}.dr-portrait-stage::before{top:6px;height:36px;width:calc(100% - 24px)}.dr-portrait-stage::after{bottom:7px;height:23px}}
+@media(forced-colors:active){.dr-portrait-stage{border-color:CanvasText;box-shadow:none}.dr-portrait-stage::before,.dr-portrait-stage::after{display:none}.dr-portrait-art{box-shadow:none}.dr-portrait figcaption{border-color:CanvasText}}
+@media print{.dr-portrait-stage{box-shadow:none}}

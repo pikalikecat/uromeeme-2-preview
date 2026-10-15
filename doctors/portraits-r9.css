@@ -1,0 +1,20 @@
+/* R9: scrollwork corners only. No gold rail, inner ring or outer gold border. */
+.dr-portrait-stage{background:linear-gradient(145deg,#fffdf8 6%,#f5f6ee 48%,#eaf2e9 100%);border-color:transparent;box-shadow:0 16px 35px #143e2c0b;transition:box-shadow .35s ease;--dr-light-x:50%;--dr-light-y:50%}
+.dr-portrait-art{box-shadow:0 2px 12px #183e2910}
+.dr-gilded-corner{background-image:url("assets/portrait-corner-r9.svg");transition:filter .3s ease}
+.dr-portrait-stage::before{content:"";inset:-10px;top:-10px;right:-10px;bottom:-10px;left:-10px;width:auto;height:auto;padding:0;transform:none;z-index:0;border-radius:24px;background:radial-gradient(ellipse at var(--dr-light-x) var(--dr-light-y),#00736175 0%,#428e6f45 30%,transparent 70%),radial-gradient(ellipse at 90% 10%,#e3c07c60 0%,transparent 56%);background-size:auto;background-position:center;-webkit-mask:none;mask:none;filter:blur(13px);opacity:0;transition:opacity .35s ease;animation:none!important;pointer-events:none}
+.dr-portrait-stage::after{display:none!important;animation:none!important}
+.dr-portrait-stage:focus-visible{outline:2px solid #006454;outline-offset:5px;box-shadow:0 22px 44px #00483e22,0 0 26px #d3b57532}
+.dr-portrait-stage:focus-visible::before{opacity:.9}
+.dr-portrait-stage:focus-visible .dr-gilded-corner{filter:brightness(1.18) drop-shadow(0 0 3px #d5ae6290)}
+.dr-sparkles{position:absolute;inset:0;z-index:4;pointer-events:none;user-select:none}
+.dr-spark{position:absolute;display:block;width:11px;height:11px;opacity:0;background:linear-gradient(135deg,#fffef7 20%,#fff8d5 48%,#dcb673 100%);clip-path:polygon(50% 0,59% 38%,100% 50%,59% 60%,50% 100%,40% 60%,0 50%,40% 39%);filter:drop-shadow(0 0 3px #fff2b7);pointer-events:none;--dr-delay:0ms}
+.dr-spark-1{top:13px;left:16px;--dr-delay:0ms}.dr-spark-2{top:18px;right:15px;width:14px;height:14px;--dr-delay:140ms}.dr-spark-3{bottom:14px;right:16px;--dr-delay:260ms}.dr-spark-4{bottom:18px;left:14px;width:14px;height:14px;--dr-delay:380ms}.dr-spark-5{top:35%;left:11px;width:7px;height:7px;--dr-delay:110ms}.dr-spark-6{top:62%;right:12px;width:8px;height:8px;--dr-delay:310ms}.dr-spark-7{top:12px;left:56%;width:8px;height:8px;--dr-delay:220ms}.dr-spark-8{bottom:12px;left:39%;width:7px;height:7px;--dr-delay:460ms}
+@keyframes dr-scroll-illuminate{0%{filter:brightness(1) drop-shadow(0 0 0 transparent)}30%{filter:brightness(1.35) drop-shadow(0 0 4px #ffe6a0)}65%{filter:brightness(1.13) drop-shadow(0 0 2px #f3cf85)}100%{filter:brightness(1.18) drop-shadow(0 0 3px #d5ae6290)}}
+@keyframes dr-star-bloom{0%{opacity:0;transform:scale(.2) rotate(-25deg)}25%{opacity:1;transform:scale(1.25) rotate(0)}60%{opacity:.7;transform:scale(.85) rotate(14deg)}100%{opacity:0;transform:scale(.15) rotate(35deg)}}
+@media(hover:hover) and (pointer:fine){.dr-portrait-stage:hover{box-shadow:0 22px 44px #00483e22,0 0 26px #d3b57532}.dr-portrait-stage:hover::before{opacity:.9}.dr-portrait-stage:hover .dr-gilded-corner{filter:brightness(1.18) drop-shadow(0 0 3px #d5ae6290)}}
+@media(prefers-reduced-motion:no-preference){.dr-portrait-stage:focus-visible .dr-gilded-corner{animation:dr-scroll-illuminate 1.35s ease-out 1}.dr-portrait-stage:focus-visible .dr-spark{animation:dr-star-bloom 1.2s ease-out var(--dr-delay) 1}}
+@media(prefers-reduced-motion:no-preference) and (hover:hover) and (pointer:fine){.dr-portrait-stage:hover .dr-gilded-corner{animation:dr-scroll-illuminate 1.35s ease-out 1}.dr-portrait-stage:hover .dr-spark{animation:dr-star-bloom 1.2s ease-out var(--dr-delay) 1}}
+@media(prefers-reduced-motion:reduce){.dr-portrait-stage,.dr-portrait-stage::before,.dr-gilded-corner{transition:none!important}.dr-gilded-corner,.dr-spark{animation:none!important}.dr-spark{display:none}}
+@media(forced-colors:active){.dr-portrait-stage{background:Canvas;border-color:CanvasText;box-shadow:none}.dr-portrait-stage::before,.dr-gilded-corners,.dr-sparkles{display:none}.dr-portrait-stage:focus-visible{outline:2px solid Highlight;box-shadow:none}}
+@media print{.dr-portrait-stage{box-shadow:none;outline:none}.dr-portrait-stage::before,.dr-sparkles{display:none}.dr-gilded-corner{animation:none!important;filter:none}}

@@ -1,0 +1,5 @@
+/* R12: dark matte reference gold at rest; existing bright gold when active. */
+.dr-gilded-corner{background-image:url("assets/portrait-corner-rest-r12.svg");filter:none}
+.dr-portrait:has(:focus-visible) .dr-gilded-corner,.dr-portrait-stage.is-mobile-lit .dr-gilded-corner{background-image:url("assets/portrait-corner-r9.svg")}
+@media(hover:hover) and (pointer:fine){.dr-portrait:hover .dr-gilded-corner{background-image:url("assets/portrait-corner-r9.svg")}}
+@media(hover:none),(pointer:coarse){html:not(.dr-photo-auto-ready) .dr-gilded-corner{background-image:url("assets/portrait-corner-r9.svg")}}

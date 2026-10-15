@@ -1,0 +1,5 @@
+/* V3: mobile background only. The normal clinic logo and doctor pixels are untouched. */
+@media(max-width:760px){
+ .emerald-hero::before{background-image:url("assets/mobile-identity-fold-v3.svg")}
+ .emerald-hero::after{background:linear-gradient(180deg,#fffefa08,transparent 38%,#f6faf340)}
+}

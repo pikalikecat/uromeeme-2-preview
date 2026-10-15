@@ -1,0 +1,8 @@
+/* R6 resume portraits only. No change to Banner, source pixels or shared shell. */
+.dr-portrait-stage{position:relative;padding:14px;background:linear-gradient(145deg,#fffdf8 8%,#eff5ed 68%,#e5efe6);border:1px solid #cfddd0;border-radius:23px;box-shadow:0 16px 35px #143e2c0b,inset 0 0 0 1px #ffffffb3;isolation:isolate}
+.dr-portrait-art{display:block;width:100%;height:auto;overflow:hidden;border-radius:13px;background:#eef3ea;box-shadow:0 2px 12px #183e2910}
+.dr-portrait-art image{filter:none}
+.dr-portrait figcaption{padding:15px 3px 14px;border-color:#d2dfd1;color:#52685c}
+@media(max-width:760px){.dr-portrait-stage{padding:12px;border-radius:21px}.dr-portrait-art{border-radius:12px}.dr-portrait figcaption{padding-top:13px;padding-bottom:12px}}
+@media(forced-colors:active){.dr-portrait-stage{background:Canvas;border:1px solid CanvasText;box-shadow:none}.dr-portrait-art{box-shadow:none;background:Canvas}.dr-portrait figcaption{color:CanvasText;border-color:CanvasText}}
+@media print{.dr-portrait-stage{box-shadow:none}}

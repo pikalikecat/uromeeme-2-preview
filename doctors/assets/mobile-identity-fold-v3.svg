@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 634" preserveAspectRatio="none"><defs>
+<linearGradient id="base" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#fcfcf8"/><stop offset=".5" stop-color="#f7faf3"/><stop offset="1" stop-color="#eef6eb"/></linearGradient>
+<linearGradient id="brand-fold" x1="0" x2="1" y1="0" y2=".8"><stop stop-color="#4e7138" stop-opacity=".075"/><stop offset=".43" stop-color="#035f34" stop-opacity=".105"/><stop offset="1" stop-color="#4e7138" stop-opacity=".075"/></linearGradient>
+<linearGradient id="fold-light" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffef4" stop-opacity=".32"/><stop offset=".5" stop-color="#ffffff" stop-opacity="0"/><stop offset="1" stop-color="#ffffff" stop-opacity=".12"/></linearGradient>
+</defs><rect width="390" height="634" fill="url(#base)"/>
+<path d="M212 13L3 235L360 241L48 478" fill="none" stroke="url(#brand-fold)" stroke-width="90" stroke-linecap="butt" stroke-linejoin="bevel"/>
+<path d="M212 13L3 235L360 241L48 478" fill="none" stroke="url(#fold-light)" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel"/>
+</svg>

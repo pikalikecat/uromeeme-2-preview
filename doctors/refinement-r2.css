@@ -1,0 +1,27 @@
+/* Only R2 doctor content changes; never changes the copied shared shell. */
+.doctors-page [hidden]{display:none!important}
+.dr-hero-r2{background:radial-gradient(ellipse at 70% 40%,#e4ede1 0,transparent 65%),linear-gradient(110deg,#faf8f2 16%,#e5eee0 72%,#d0e5d6);min-height:clamp(670px,calc(100svh - 130px),850px);padding:42px 0 28px;overflow:hidden}
+.dr-hero-r2 .dr-hero-inner{max-width:1520px;padding:0 54px;grid-template-columns:minmax(0,.34fr) minmax(0,.66fr);gap:0;align-items:center}
+.dr-hero-r2 .dr-hero-copy{padding:0 0 50px 22px;position:relative;z-index:2}
+.dr-hero-r2 .dr-hero-sub{font-size:16px;max-width:350px}
+.dr-lineup{margin:0;min-width:0;position:relative;isolation:isolate}
+.dr-lineup:before{content:"";position:absolute;inset:8% -10% 8% -5%;background:radial-gradient(ellipse,#ffffffb3,transparent 67%);filter:blur(15px);z-index:-1}
+.dr-lineup-scene{display:block;width:100%;height:auto;overflow:hidden}
+.dr-lineup figcaption{position:relative;margin:-12px -12px 0;font-size:12px;color:#344c42;text-align:center;letter-spacing:.06em;line-height:1.85;padding:0 0 12px}
+.dr-lineup figcaption span{display:block}.dr-lineup figcaption small{font-size:inherit;color:#746343}
+.dr-filter{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:25px;row-gap:12px;background:#f1f4eb;border:1px solid #d7dfcf;padding:23px 25px;border-radius:14px;margin-bottom:26px}
+.dr-filter-label{font-size:17px;font-weight:700;align-self:center;white-space:nowrap}
+.dr-filter-buttons{display:flex;flex-wrap:wrap;gap:10px}
+.dr-filter button{appearance:none;font:400 15px/1.5 Arial,"Microsoft JhengHei",sans-serif;background:#fffdf8;color:#00483e;border:1px solid #b6c5b7;border-radius:7px;min-height:46px;padding:10px 20px;cursor:pointer;transition:background .15s,color .15s}
+.dr-filter button[aria-pressed="true"]{background:#00483e;color:#fff;border-color:#00483e}
+.dr-filter button:hover:not([aria-pressed="true"]){background:#e2eee1}
+.dr-filter button:focus-visible{outline:3px solid #00483e;outline-offset:4px}
+.dr-filter-status{grid-column:2;font-size:12px;line-height:1.7;color:#52685c}
+#doctor-results:focus{outline:none}
+@media(min-width:1800px){.dr-hero-r2 .dr-hero-inner{max-width:1640px;padding:0 70px}.dr-hero-r2 .dr-hero-copy{padding-left:0}}
+@media(max-width:1100px) and (min-width:761px){.dr-hero-r2 .dr-hero-inner{padding:0 32px;grid-template-columns:.32fr .68fr}.dr-hero-r2 .dr-hero-copy{padding-left:0}.dr-hero-r2 .dr-hero-sub{font-size:15px}.dr-hero-r2{min-height:620px}.dr-hero-r2 .dr-eyebrow{font-size:11px}.dr-lineup figcaption{font-size:11px;letter-spacing:0}.dr-filter button{padding:10px 16px}}
+@media(max-width:760px){.dr-hero-r2{min-height:0;padding:47px 0 28px}.dr-hero-r2 .dr-hero-inner{display:block;padding:0 19px}.dr-hero-r2 .dr-hero-copy{padding:0 6px 26px}.dr-hero-r2 .dr-hero-sub{font-size:16px;margin-left:auto!important;margin-right:auto!important}.dr-lineup{max-width:660px;margin:0 auto}.dr-lineup-scene{width:calc(100% + 22px);margin-left:-11px}.dr-lineup figcaption{font-size:11px;margin:-4px 0 0;padding-bottom:0;line-height:2.1;letter-spacing:0}.dr-filter{grid-template-columns:1fr;padding:20px 16px;gap:12px}.dr-filter-label{font-size:16px}.dr-filter-buttons{gap:9px}.dr-filter button{font-size:14px;padding:10px 15px;flex-grow:1}.dr-filter-status{grid-column:1;font-size:12px}.dr-team-title{margin-bottom:22px}}
+@media(max-width:360px){.dr-lineup figcaption{font-size:10px}.dr-filter{padding:17px 12px}.dr-filter button{padding:10px 12px;font-size:13px}.dr-hero-r2 .dr-hero-sub{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.dr-filter button{transition:none}}
+@media(forced-colors:active){.dr-hero-r2,.dr-filter{background:Canvas;color:CanvasText}.dr-lineup:before{display:none}.dr-filter button{background:ButtonFace;color:ButtonText;border-color:ButtonText}.dr-filter button[aria-pressed="true"]{background:Highlight;color:HighlightText}.dr-lineup figcaption,.dr-lineup figcaption small,.dr-filter-status{color:CanvasText}}
+@media print{.doctors-page #doctor-results>[hidden]{display:block!important}.dr-filter{display:none!important}}

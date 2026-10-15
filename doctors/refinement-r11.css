@@ -1,0 +1,14 @@
+/* R11: the entire figure (photograph + gap + booking CTA) shares photo effects. */
+.dr-portrait:has(:focus-visible) .dr-portrait-stage::before{opacity:.9}
+.dr-portrait:has(:focus-visible) .dr-portrait-stage{box-shadow:0 22px 44px #00483e22,0 0 26px #d3b57532}
+.dr-portrait:has(:focus-visible) .dr-gilded-corner{filter:brightness(1.18) drop-shadow(0 0 3px #d5ae6290)}
+@media(hover:hover) and (pointer:fine){.dr-portrait:hover .dr-portrait-stage::before{opacity:.9}.dr-portrait:hover .dr-portrait-stage{box-shadow:0 22px 44px #00483e22,0 0 26px #d3b57532}.dr-portrait:hover .dr-gilded-corner{filter:brightness(1.18) drop-shadow(0 0 3px #d5ae6290)}}
+@media(prefers-reduced-motion:no-preference){.dr-portrait:has(:focus-visible) .dr-gilded-corner{animation:dr-scroll-illuminate 1.35s ease-out 1}.dr-portrait:has(:focus-visible) .dr-spark{animation:dr-star-bloom 1.2s ease-out var(--dr-delay) 1}}
+@media(prefers-reduced-motion:no-preference) and (hover:hover) and (pointer:fine){.dr-portrait:hover .dr-gilded-corner{animation:dr-scroll-illuminate 1.35s ease-out 1}.dr-portrait:hover .dr-spark{animation:dr-star-bloom 1.2s ease-out var(--dr-delay) 1}}
+/* Keep the button sheen, but physically suppress the legacy two-dot layer. */
+.dr-booking-cta::after{content:none!important;display:none!important;background:none!important;animation:none!important}
+/* Remove every visible count line while retaining the polite live region. */
+.dr-filter-status{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
+@media(prefers-reduced-motion:reduce){.dr-portrait .dr-gilded-corner,.dr-portrait .dr-spark{animation:none!important}}
+@media(forced-colors:active){.dr-portrait:hover .dr-portrait-stage,.dr-portrait:has(:focus-visible) .dr-portrait-stage{box-shadow:none}}
+@media print{.dr-portrait .dr-gilded-corner,.dr-portrait .dr-spark{animation:none!important}.dr-portrait .dr-portrait-stage{box-shadow:none}}

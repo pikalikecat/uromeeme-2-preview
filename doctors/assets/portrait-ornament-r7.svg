@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="88" viewBox="0 0 600 88">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#c9b88e"/><stop offset=".48" stop-color="#b49b6b"/><stop offset="1" stop-color="#957a4a"/>
+    </linearGradient>
+    <g id="left" stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M26 43H188M26 46H186" fill="none" stroke-width="1.2"/>
+      <path d="M22 36C15 29 12 39 17 43C8 45 17 55 22 48C28 55 33 45 26 43C32 38 27 31 22 36Z" fill="url(#gold)" stroke-width=".6"/>
+      <path d="M186 43C202 43 201 23 213 20C229 16 234 34 224 40C214 46 206 35 213 31C218 28 222 32 220 35" fill="none" stroke-width="3"/>
+      <path d="M202 45C223 62 237 53 246 45C255 37 266 38 274 44" fill="none" stroke-width="2.6"/>
+      <path d="M224 48C223 66 240 76 251 66C264 54 247 43 242 54C239 61 247 65 250 60" fill="none" stroke-width="2.5"/>
+      <path d="M236 39C242 18 262 17 271 30C278 40 269 46 265 41C260 35 271 34 267 29" fill="none" stroke-width="2.8"/>
+      <path d="M250 29C252 18 270 15 278 7C278 22 267 33 253 34Z" fill="url(#gold)" stroke-width=".6"/>
+      <path d="M260 49C270 49 281 56 285 68C273 67 263 59 260 49Z" fill="url(#gold)" stroke-width=".6"/>
+      <path d="M237 43C235 35 229 32 223 34C225 40 230 43 237 43Z" fill="url(#gold)" stroke-width=".6"/>
+      <path d="M203 49C199 53 198 61 201 66C208 62 211 54 203 49Z" fill="url(#gold)" stroke-width=".6"/>
+      <path d="M278 43C285 36 292 34 296 44C289 49 282 49 278 43Z" fill="url(#gold)" stroke-width=".6"/>
+      <path d="M179 36C184 32 188 35 184 38M173 36L174 36" fill="none" stroke-width="1.8"/>
+      <circle cx="191" cy="44" r="2.4" fill="url(#gold)" stroke="none"/>
+    </g>
+  </defs>
+  <use href="#left"/><use href="#left" transform="translate(600 0) scale(-1 1)"/>
+  <g fill="url(#gold)" stroke="#b49b6b" stroke-width=".65" stroke-linejoin="round">
+    <path d="M300 4C289 14 290 27 300 40C310 27 311 14 300 4Z"/>
+    <path d="M300 48C289 59 291 74 300 84C309 74 311 59 300 48Z"/>
+    <path d="M296 43C286 40 280 31 284 23C295 26 299 32 299 40Z"/>
+    <path d="M304 43C314 40 320 31 316 23C305 26 301 32 301 40Z"/>
+    <path d="M296 47C286 51 283 59 287 67C296 63 299 55 299 49Z"/>
+    <path d="M304 47C314 51 317 59 313 67C304 63 301 55 301 49Z"/>
+    <path d="M300 38L306 44L300 50L294 44Z"/>
+  </g>
+  <path d="M300 12V33M300 56V75" stroke="#eadfc6" stroke-width=".85" fill="none"/>
+</svg>
