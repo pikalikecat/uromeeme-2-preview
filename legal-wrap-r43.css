@@ -1,0 +1,13 @@
+/* R43: make the complete notice readable without horizontal scrolling at every width. */
+.m19-home-preview.tsuku-home .footer-r9 .home-legal-single-r34 {
+  max-width: 1140px;
+  margin-inline: auto;
+  overflow: visible;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.m19-home-preview.tsuku-home .footer-r9 .home-legal-single-r34 > span {
+  width: auto;
+  min-width: 0;
+  text-align: inherit;
+}
