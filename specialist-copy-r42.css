@@ -1,0 +1,15 @@
+/* R42: keep 8 and its unit on one line in the existing laurel frame. */
+.m19-home-preview.tsuku-home .home-stat-team-r26 .stat-team-figure-r42 {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+.m19-home-preview.tsuku-home .stat-team-figure-r42 > span {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}

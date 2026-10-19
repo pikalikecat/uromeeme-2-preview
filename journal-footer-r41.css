@@ -1,0 +1,22 @@
+/* R41: keep article scrolling without a visible browser scrollbar. */
+.m19-home-preview .journal-r95 .journal-track-r95 {
+  scrollbar-width: none;
+}
+.m19-home-preview .journal-r95 .journal-track-r95::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+/* Match the stacked mobile footer brand block to one shared centerline. */
+@media (max-width: 600px) {
+  .m19-home-preview.tsuku-home .footer-r21 .home-footer-top > div:first-child {
+    text-align: center;
+  }
+  .m19-home-preview.tsuku-home .footer-r21 .home-footer-logo,
+  .m19-home-preview.tsuku-home .footer-r21 .insurance-r11 {
+    margin-inline: auto;
+  }
+  .m19-home-preview.tsuku-home .footer-r21 .insurance-r11 {
+    text-align: left;
+  }
+}

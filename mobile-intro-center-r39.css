@@ -1,0 +1,6 @@
+/* R39: center only the mobile specialty introduction. */
+@media (max-width: 768px) {
+  .m19-home-preview.tsuku-home .home-intro-heading > .intro-specialties-r29 {
+    text-align: center;
+  }
+}

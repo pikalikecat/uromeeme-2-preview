@@ -1,0 +1,8 @@
+/* R40: center the mobile statistics heading without changing its type or measure. */
+@media (max-width: 768px) {
+  .m19-home-preview.tsuku-home .home-intro-heading > #counter-title {
+    text-align: center;
+    width: 100%;
+    margin-inline: auto;
+  }
+}
