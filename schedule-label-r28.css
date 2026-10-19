@@ -1,0 +1,8 @@
+/* Match the existing OUR COMMITMENTS label; reuse shared label typography. */
+.m19-home-preview.tsuku-home .home-schedule .schedule-eyebrow-r28 {
+  color: #80652e;
+  margin: 0 0 24px;
+}
+@media (max-width: 600px) {
+  .m19-home-preview.tsuku-home .home-schedule .schedule-eyebrow-r28 { margin-bottom: 18px; }
+}

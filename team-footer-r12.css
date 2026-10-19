@@ -1,0 +1,38 @@
+/* Crop through the existing photo window; original photos remain untouched. */
+.m19-home-preview .team-r56 .team-grid .doctor-4-r56 img {
+  width: 140%; height: auto; left: -20%; top: -4%; object-fit: initial;
+}
+.m19-home-preview .team-r56 .team-grid .doctor-8-r56 img {
+  width: 142%; height: auto; left: -21%; top: -12%; object-fit: initial;
+}
+.tsuku-home .footer-r12 .home-footer-top {
+  grid-template-columns: minmax(0,1.3fr) minmax(0,.6fr) minmax(0,1.9fr) minmax(0,.65fr) minmax(0,1.25fr);
+  gap: 28px;
+}
+.tsuku-home .footer-r12 .home-footer-top > * { min-width: 0; }
+.tsuku-home .footer-r12 .home-footer-info { grid-column: auto; grid-row: auto; display: block; }
+.tsuku-home .footer-r12 .insurance-r11 { margin-top: 24px; }
+.tsuku-home .footer-r12 .footer-treatments-r11 {
+  display: block; margin: 0; padding: 0; border: 0;
+}
+.tsuku-home .footer-r12 .footer-treatments-r11 h2 {
+  margin: 0 0 16px; color: var(--home-gold-light); font: 500 16px/1.6 var(--home-sans); letter-spacing: normal;
+}
+.tsuku-home .footer-r12 .footer-treatments-r11 ul { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 20px; }
+.tsuku-home .footer-r12 a.footer-treatment-link-r11 { padding: 10px 0; }
+@media (min-width:601px) and (max-width:1299px) {
+  .tsuku-home .footer-r12 .home-footer-top { grid-template-columns: repeat(6,minmax(0,1fr)); gap: 36px 20px; }
+  .tsuku-home .footer-r12 .home-footer-top > div:first-child { grid-column: 1 / 4; grid-row: 1; }
+  .tsuku-home .footer-r12 .home-footer-info { grid-column: 4 / 7; grid-row: 1; }
+  .tsuku-home .footer-r12 nav[aria-label="頁尾快速導覽"] { grid-column: 1; grid-row: 2; }
+  .tsuku-home .footer-r12 .footer-treatments-r11 { grid-column: 2 / 6; grid-row: 2; }
+  .tsuku-home .footer-r12 nav[aria-label="頁尾就診資訊"] { grid-column: 6; grid-row: 2; }
+}
+@media (max-width:600px) {
+  .tsuku-home .footer-r12 .home-footer-top { grid-template-columns: minmax(0,1fr); gap: 28px; }
+  .tsuku-home .footer-r12 .home-footer-top > * { grid-column: 1; grid-row: auto; }
+  .tsuku-home .footer-r12 .footer-treatments-r11 ul { gap: 0 18px; }
+}
+@media (max-width:379px) {
+  .tsuku-home .footer-r12 .footer-treatments-r11 ul { grid-template-columns: minmax(0,1fr); }
+}

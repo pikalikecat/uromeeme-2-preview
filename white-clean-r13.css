@@ -1,0 +1,4 @@
+.m19-home-preview .team-r56,
+.m19-home-preview .team-r56 .doctor-caption-r56 { background: #fff; }
+/* The official PNG already has alpha; remove the CSS white backing only. */
+.tsuku-home .footer-r12 .insurance-r11 img { background: transparent; }

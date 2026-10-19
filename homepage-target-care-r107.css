@@ -74,3 +74,20 @@
 .m19-home-preview .counter-section{font-family:"Noto Serif TC","PMingLiU",serif}
 .m19-home-preview .counter-section #counter-title,.m19-home-preview .counter-section p,.m19-home-preview .counter-section strong,.m19-home-preview .counter-section span{font-family:"Noto Serif TC","PMingLiU",serif}
 .m19-home-preview .care-r59 .care-rainbow .care-quote-r97{margin-bottom:1.85em}
+
+/* Mobile nine-commitments cards: size each slide by its own content and keep arrows in view. */
+@media (max-width:760px){
+  .m19-home-preview .care-r59 .track{align-items:stretch}
+  .m19-home-preview .care-r59 .card{min-height:0;padding:62px 22px 74px}
+  .m19-home-preview .care-r59 .icon,
+  .m19-home-preview .care-r59 .care-long-r97 .icon{width:58px;height:58px;padding:11px;margin-bottom:9px}
+  .m19-home-preview .care-r59 .topic{font-size:11px}
+  .m19-home-preview .care-r59 .card h3,
+  .m19-home-preview .care-r59 .care-long-r97 h3{font-size:22px;line-height:1.35;margin:6px 0 10px}
+  .m19-home-preview .care-r59 .body,
+  .m19-home-preview .care-r59 .care-long-r97 .body{font-size:14px;line-height:1.6}
+  .m19-home-preview .care-r59 .care-quote-r97{margin-bottom:10px}
+  .m19-home-preview .care-r59 .care-long-r97 .body p{margin-bottom:8px}
+  .m19-home-preview .care-r59 .tagline{font-size:17px;margin-top:9px}
+  .m19-home-preview .care-r59 .care-card-nav-r87{bottom:15px}
+}

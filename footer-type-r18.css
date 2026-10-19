@@ -1,0 +1,21 @@
+/* All seven Footer groups share one type scale on desktop and mobile. */
+.tsuku-home .footer-r18 .home-footer-top > nav > h2,
+.tsuku-home .footer-r18 .home-footer-top > nav > strong {
+  display: block;
+  margin: 0 0 16px;
+  color: var(--home-gold-light);
+  font: 700 16px/1.6 var(--home-sans);
+  letter-spacing: normal;
+}
+.tsuku-home .footer-r18 .home-footer-top > nav a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 0;
+  color: #e2ece6;
+  font: 400 14px/1.7 var(--home-sans);
+  letter-spacing: normal;
+}
+.tsuku-home .footer-r18 .home-footer-top > nav a:hover {
+  color: var(--home-gold-light);
+}

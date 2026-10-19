@@ -1,0 +1,45 @@
+/* R24: homepage demo only; retain the established green / gold identity. */
+.tsuku-home .home-intro h2 .intro-gold-r24 {
+  color: #e7d6a1;
+  text-shadow: 0 0 14px rgb(231 214 161 / 18%), 0 0 30px rgb(231 214 161 / 8%);
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .tsuku-home .home-intro h2 .intro-gold-r24 {
+    background-image: linear-gradient(110deg, #ceb477 10%, #e7d6a1 38%, #fff0c8 49%, #e7d6a1 60%, #ceb477 90%);
+    background-size: 220% 100%;
+    background-position: 100% 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: intro-gold-sheen-r24 9s ease-in-out infinite;
+  }
+}
+@keyframes intro-gold-sheen-r24 {
+  0%, 100% { background-position: 100% 50%; }
+  50% { background-position: 0% 50%; }
+}
+.tsuku-home.home-js .home-announcement .notice-enter-r24:not([hidden]) {
+  animation: notice-enter-r24 180ms cubic-bezier(.2,.65,.3,1) both;
+}
+@keyframes notice-enter-r24 {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+  .tsuku-home .home-announcement-inner { grid-template-columns: auto minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tsuku-home .home-intro h2 .intro-gold-r24,
+  .tsuku-home.home-js .home-announcement .notice-enter-r24:not([hidden]) { animation: none; }
+}
+@media (forced-colors: active) {
+  .tsuku-home .home-intro h2 .intro-gold-r24 {
+    color: CanvasText;
+    -webkit-text-fill-color: currentColor;
+    background: none;
+    text-shadow: none;
+    animation: none;
+  }
+}
+
+.tsuku-home .intro-last-treatment-r24 { white-space: nowrap; }

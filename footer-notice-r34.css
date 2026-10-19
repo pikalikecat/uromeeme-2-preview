@@ -1,0 +1,23 @@
+/* Keep the requested first notice on one readable, locally scrollable line. */
+.tsuku-home .footer-r9 .home-legal {
+  max-width: none;
+}
+.tsuku-home .footer-r9 .home-legal-single-r34 {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.tsuku-home .footer-r9 .home-legal-single-r34 > span {
+  display: block;
+  width: max-content;
+  min-width: 100%;
+  text-align: center;
+}
+.tsuku-home .footer-r9 .home-legal-single-r34:focus-visible {
+  outline: 2px solid var(--home-gold-light);
+  outline-offset: 3px;
+}
+.tsuku-home .footer-r9 .home-legal-health-r34 {
+  max-width: 1140px;
+  margin-inline: auto;
+}

@@ -1,0 +1,52 @@
+.tsuku-home .home-environment .environment-eyebrow-r6 { font: 400 12px/1.8 var(--home-sans); letter-spacing: .19em; color: #80652e; margin: 0 0 24px; }
+.tsuku-home .home-gallery .home-controls { margin-top: 20px; }
+.tsuku-home .schedule-guide-r6 { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 40px; padding: 28px 32px; margin-top: 32px; border-radius: 16px; background: var(--home-mist); }
+.tsuku-home .schedule-guide-copy-r6 { display: grid; gap: 20px; }
+.tsuku-home .schedule-guide-copy-r6 strong { display: block; font-weight: 600; }
+.tsuku-home .schedule-guide-copy-r6 p { margin: 8px 0 0; }
+.tsuku-home .schedule-guide-action-r6 { margin: 0; padding: 0; width: auto; }
+.tsuku-home .schedule-guide-action-r6 .action { white-space: nowrap; min-width: 140px; color: var(--home-white); }
+.m19-home-preview .cinema-r62 .cta-r14__inner > p:not(.eyebrow) { max-width: 36em; line-height: 1.85; }
+
+/* One flex line shares the tallest card, including when an excerpt is expanded. */
+.m19-home-preview .reviews-r79 .reviews-track-r31 { align-items: stretch; }
+.m19-home-preview .reviews-r79 .review-card-r79 { height: auto; align-self: stretch; }
+.m19-home-preview .reviews-r79 .review-profile-r91 { min-height: 76px; align-items: flex-start; }
+.m19-home-preview .reviews-r79 .review-card-r79 blockquote.is-collapsed-r89 { min-height: 5.1em; }
+.m19-home-preview .reviews-r79 .review-source-r79 { margin-top: auto; }
+.m19-home-preview .reviews-r79 .review-original-r79 { margin-top: 0; }
+
+.m19-home-preview .faq-contact-r104 a { position: relative; isolation: isolate; overflow: hidden; justify-content: center; gap: 10px; transition: transform 180ms ease-out, box-shadow 220ms ease-out, background-color 220ms ease-out; }
+.m19-home-preview .faq-contact-r104 a::before { content: ''; position: absolute; inset: -50% -10%; z-index: -1; pointer-events: none; background: linear-gradient(110deg,transparent 30%,#dfd1a761 48%,#ffffff6b 50%,transparent 68%); transform: translateX(-130%) skewX(-18deg); }
+.m19-home-preview .faq-contact-r104 a::after { content: '↗'; display: inline-block; font-size: 18px; transition: transform 220ms ease-out; }
+.m19-home-preview .faq-contact-r104 a:focus-visible { outline: 3px solid #b49a60; outline-offset: 5px; }
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  .m19-home-preview .faq-contact-r104 a:hover { transform: translateY(-3px); box-shadow: 0 7px 22px #00544838,0 0 0 1px #b49a60; }
+  .m19-home-preview .faq-contact-r104 a:hover::before { animation: line-sheen-r6 750ms cubic-bezier(.22,1,.36,1) both; }
+  .m19-home-preview .faq-contact-r104 a:hover::after { transform: translate(2px,-2px); }
+}
+.m19-home-preview .faq-contact-r104 a:active { transform: translateY(0) scale(.97); }
+.m19-home-preview .line-ripple-r6 { position: absolute; z-index: -1; pointer-events: none; left: var(--ripple-x); top: var(--ripple-y); width: 280px; height: 280px; border-radius: 50%; background: #dfd1a78c; animation: line-ripple-r6 650ms ease-out forwards; }
+@keyframes line-sheen-r6 { to { transform: translateX(130%) skewX(-18deg); } }
+@keyframes line-ripple-r6 { from { transform: translate(-50%,-50%) scale(.05); opacity: .85; } to { transform: translate(-50%,-50%) scale(1); opacity: 0; } }
+
+.m19-home-preview .clinic-map-r6 { min-width: 0; overflow: hidden; border: 1px solid #d1e1d8; border-radius: 16px; background: #fff; }
+.m19-home-preview .clinic-map-r6 iframe { display: block; width: 100%; height: clamp(300px,30vw,420px); border: 0; }
+.m19-home-preview .clinic-map-r6 > p { padding: 16px 20px; margin: 0; font-size: 14px; line-height: 1.7; }
+@media (max-width:900px) {
+  .tsuku-home .schedule-guide-r6 { grid-template-columns: 1fr; gap: 24px; }
+}
+@media (max-width:600px) {
+  .tsuku-home .home-stats { gap: 28px 18px; }
+  .tsuku-home .home-stats > div { padding-top: 16px; border-top: 1px solid #dfd1a74d; gap: 10px; }
+  .tsuku-home .home-stats dd { display: flex; align-items: baseline; gap: 5px; font-size: clamp(24px,7.4vw,32px); white-space: nowrap; letter-spacing: -.025em; }
+  .tsuku-home .home-stats dd > span { display: inline; flex-shrink: 0; margin: 0; font-size: 11px; line-height: 1.4; }
+  .tsuku-home .home-stats dt { font-size: 14px; line-height: 1.65; }
+  .tsuku-home .home-environment .environment-eyebrow-r6 { font-size: 11px; letter-spacing: .1em; margin-bottom: 18px; }
+  .tsuku-home .schedule-guide-r6 { padding: 24px 20px; }
+  .m19-home-preview .clinic-map-r6 iframe { height: 300px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .m19-home-preview .faq-contact-r104 a, .m19-home-preview .faq-contact-r104 a::after { transition: none; transform: none; }
+  .m19-home-preview .faq-contact-r104 a::before, .m19-home-preview .line-ripple-r6 { display: none; animation: none; }
+}

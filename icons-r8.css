@@ -1,0 +1,21 @@
+.m19-home-preview .care-r59 {
+  --care-icon-line-r8: #376d58;
+  --care-icon-active-r8: #235b43;
+}
+.m19-home-preview .care-r59 .icon.care-icon-r8 { color: var(--care-icon-line-r8); stroke: currentColor; }
+.m19-home-preview .care-r59 .card.active .icon.care-icon-r8 { color: var(--care-icon-active-r8); }
+.m19-home-preview .care-r59 .care-line-icon-r8 .line-word-r8 { stroke-width: 1.5; }
+/* Reuse the original alpha contour, recolour all lines together, retain its horizontal mirror. */
+.m19-home-preview .care-r59 .shockwave-lines-r8 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: currentColor;
+  -webkit-mask: url("assets/shockwave-reference-r7.png") center / contain no-repeat;
+  mask: url("assets/shockwave-reference-r7.png") center / contain no-repeat;
+  mask-mode: alpha;
+  transform: scaleX(-1);
+}
+@media (max-width:760px) {
+  .m19-home-preview .care-r59 .icon.care-line-icon-r8 { width: 78px; height: 78px; padding: 10px; }
+}

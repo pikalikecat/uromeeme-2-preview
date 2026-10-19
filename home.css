@@ -1,0 +1,367 @@
+/* Taste v2 continuation: the approved banner is a locked brand component. */
+.tsuku-home {
+  --home-ink: #00483e;
+  --home-deep: #003d34;
+  --home-paper: #fafbf8;
+  --home-white: #fff;
+  --home-mist: #e8efea;
+  --home-sage: #c9ded2;
+  --home-gold: #947c43;
+  --home-gold-light: #dfd1a7;
+  --home-text: #173f35;
+  --home-note: #405c51;
+  --home-serif: "Noto Serif TC", "PMingLiU", serif;
+  --home-sans: system-ui, "Microsoft JhengHei", sans-serif;
+  --home-body: 16px;
+  --home-large: 24px;
+  --home-title: clamp(30px, 3vw, 42px);
+  --home-display: clamp(36px, 4.5vw, 64px);
+  --home-inset: clamp(24px, 5.5vw, 104px);
+  --home-space: clamp(64px, 7.8vw, 112px);
+  background: var(--home-paper);
+}
+.tsuku-home .home-wrap { width: 100%; max-width: 1512px; padding-inline: var(--home-inset); margin-inline: auto; }
+.tsuku-home .home-section { padding-block: var(--home-space); }
+.tsuku-home [id] { scroll-margin-top: 112px; }
+.tsuku-home [hidden] { display: none !important; }
+.tsuku-home:not(.home-js) .home-schedule-mobile .day-panel[hidden] { display: block !important; }
+.tsuku-home:not(.home-js) .home-schedule-mobile .tabs { display: none; }
+.tsuku-home .home-section h2, .tsuku-home .home-consultation h2 { font: 700 var(--home-title)/1.45 var(--home-serif); letter-spacing: -.025em; color: inherit; margin: 0 0 24px; }
+.tsuku-home .home-section h3 { font: 700 var(--home-large)/1.5 var(--home-serif); color: inherit; margin: 0 0 8px; }
+.tsuku-home .home-section :is(h2,h3) :is(span,strong,em) { font: inherit; color: inherit; }
+.tsuku-home .home-section p, .tsuku-home .home-footer p, .tsuku-home .home-consultation p { font: 400 var(--home-body)/1.85 var(--home-sans); color: inherit; margin: 0 0 24px; }
+.tsuku-home .home-section a, .tsuku-home .home-footer a { color: inherit; }
+.tsuku-home .home-link { display: inline-block; padding-block: 10px; color: inherit; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+.tsuku-home .home-link:hover { text-decoration-thickness: 2px; }
+.tsuku-home .home-button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 24px; border: 0; border-radius: 999px; background: var(--home-ink); color: var(--home-white) !important; font: 600 16px/1.5 var(--home-sans); text-decoration: none; white-space: nowrap; }
+.tsuku-home .home-button:hover { background: var(--home-deep); }
+.tsuku-home .home-note { color: var(--home-note); }
+.tsuku-home .home-section-top { display: flex; gap: 24px; align-items: baseline; justify-content: space-between; margin-bottom: 24px; }
+.tsuku-home .home-section-top h2 { margin-bottom: 0; }
+.tsuku-home .home-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; }
+.tsuku-home .home-controls { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.tsuku-home .home-controls button, .tsuku-home .home-care-controls button { min-width: 48px; min-height: 48px; border: 0; color: inherit; background: var(--home-mist); padding: 10px 16px; }
+.tsuku-home .home-controls button:hover, .tsuku-home .home-care-controls button:hover { background: var(--home-sage); }
+.tsuku-home .home-controls [data-position] { min-width: 40px; text-align: center; font-variant-numeric: tabular-nums; }
+.tsuku-home .home-header { position: sticky; top: 0; z-index: 30; background: var(--home-white); }
+.tsuku-home .home-header-inner { padding: 18px var(--home-inset); max-width: 1600px; margin-inline: auto; display: flex; align-items: center; gap: 28px; }
+.tsuku-home .home-logo { flex: 0 0 210px; display: block; }
+.tsuku-home .home-logo img { width: 100%; height: auto; display: block; }
+.tsuku-home .home-desktop-nav { display: flex; align-items: center; justify-content: center; gap: 16px; margin-left: auto; }
+.tsuku-home .home-desktop-nav > .home-link { text-decoration: none; white-space: nowrap; }
+.tsuku-home .home-desktop-nav > .home-link:first-child { display: none; }
+.tsuku-home .home-nav-group { position: relative; }
+.tsuku-home .home-nav-group > summary { min-height: 48px; padding-block: 12px; list-style: none; cursor: pointer; white-space: nowrap; }
+.tsuku-home .home-nav-group > summary::after { content: '⌄'; display: inline-block; padding-left: 5px; }
+.tsuku-home .home-nav-group > summary::-webkit-details-marker { display: none; }
+.tsuku-home .home-nav-group[open] > summary::after { transform: rotate(180deg); padding-right: 5px; padding-left: 0; }
+.tsuku-home .home-desktop-nav .home-nav-children { position: absolute; top: 100%; left: -24px; width: 330px; max-height: 65vh; overflow-y: auto; padding: 20px 24px; background: var(--home-mist); }
+.tsuku-home .home-nav-children a { display: block; padding-block: 10px; text-decoration: none; white-space: normal; }
+.tsuku-home .home-nav-children a:hover { text-decoration: underline; }
+.tsuku-home .home-header-actions { display: flex; align-items: center; gap: 20px; }
+.tsuku-home .home-consult { white-space: nowrap; color: inherit; text-underline-offset: 5px; }
+.tsuku-home .home-menu { display: none; }
+.tsuku-home .home-menu > summary { display: flex; align-items: center; justify-content: center; gap: 10px; min-width: 48px; min-height: 48px; cursor: pointer; list-style: none; }
+.tsuku-home .home-menu > summary::-webkit-details-marker { display: none; }
+.tsuku-home .home-menu-lines { width: 22px; height: 12px; border-block: 2px solid currentColor; }
+.tsuku-home .home-menu-panel { position: absolute; top: 100%; left: 0; right: 0; max-height: calc(100dvh - 84px); overflow-y: auto; overscroll-behavior: contain; padding: 20px var(--home-inset) 40px; background: var(--home-mist); }
+.tsuku-home .home-menu-panel > .home-link, .tsuku-home .home-menu-panel > details > summary { display: block; font: 600 20px/1.6 var(--home-serif); min-height: 56px; padding-block: 12px; text-decoration: none; }
+.tsuku-home .home-menu-panel .home-nav-children { padding: 0 16px 20px; }
+.tsuku-home .home-menu-close { float: right; border: 0; padding: 12px; background: var(--home-white); color: inherit; min-height: 48px; margin: 0 0 12px 20px; }
+.tsuku-home .home-menu-panel > .home-button { margin: 16px 0; }
+.tsuku-home .home-menu-panel p { font-size: 16px; }
+.tsuku-home .home-announcement { background: var(--home-mist); color: var(--home-ink); }
+.tsuku-home .home-announcement-inner { display: flex; align-items: center; gap: 24px; padding-block: 8px; min-height: 60px; }
+.tsuku-home .home-announcement strong { flex-shrink: 0; font-weight: 600; }
+.tsuku-home .home-announcement ul { list-style: none; padding: 0; margin: 0; flex: 1; min-width: 0; }
+.tsuku-home .home-announcement li { line-height: 1.65; }
+.tsuku-home.home-js .home-announcement:not(.home-all-notices) ul { display: grid; }
+.tsuku-home.home-js .home-announcement:not(.home-all-notices) li { grid-area: 1/1; }
+.tsuku-home.home-js .home-announcement li[hidden] { display: block !important; visibility: hidden; }
+.tsuku-home .home-announcement-controls { display: flex; flex-shrink: 0; align-items: center; }
+.tsuku-home .home-announcement button { border: 0; min-width: 44px; min-height: 44px; padding: 8px; background: transparent; color: inherit; }
+.tsuku-home .home-announcement button:hover { background: var(--home-sage); }
+.tsuku-home .home-intro { background: var(--home-ink); color: var(--home-white); }
+.tsuku-home .home-intro-heading { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 64px; }
+.tsuku-home .home-intro h2 { max-width: 14em; }
+.tsuku-home .home-intro-name { display: inline-block; }
+.tsuku-home .home-intro-heading > p { margin: 0; }
+.tsuku-home .home-stats { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 32px; margin: 48px 0 0; }
+.tsuku-home .home-stats > div { display: flex; flex-direction: column-reverse; gap: 12px; }
+.tsuku-home .home-stats dt { font-size: 16px; }
+.tsuku-home .home-stats dd { font: 500 clamp(32px,3.5vw,48px)/1.2 var(--home-serif); font-variant-numeric: tabular-nums; letter-spacing: -.04em; margin: 0; }
+.tsuku-home .home-stats dd span { font: 400 16px/1.5 var(--home-serif); margin-left: 8px; letter-spacing: 0; color: var(--home-gold-light); }
+.tsuku-home .home-service-layout { display: block; }
+.tsuku-home .home-section-lead { display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 40px; align-items: center; margin-bottom: 48px; }
+.tsuku-home .home-section-lead h2, .tsuku-home .home-section-lead > p { margin: 0; }
+.tsuku-home .home-section-lead > a { justify-self: end; }
+.tsuku-home .home-service-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 48px; background: var(--home-mist); padding: 8px 24px; }
+.tsuku-home .home-section-lead > p { font-family: var(--home-serif); font-size: 24px; }
+.tsuku-home .home-service { padding: 24px 28px; }
+.tsuku-home .home-service:nth-child(odd) { background: transparent; }
+.tsuku-home .home-service[open] { grid-column: 1/-1; background: var(--home-sage); margin: 16px 0; }
+.tsuku-home .home-service[open] ul { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 40px; }
+.tsuku-home .home-service > summary { display: flex; align-items: center; justify-content: space-between; gap: 24px; list-style: none; cursor: pointer; min-height: 56px; }
+.tsuku-home .home-service > summary::-webkit-details-marker { display: none; }
+.tsuku-home .home-service strong { display: block; font: 700 24px/1.5 var(--home-serif); }
+.tsuku-home .home-service summary span span { display: block; font-size: 16px; margin-top: 4px; }
+.tsuku-home .home-service i { font-style: normal; font-size: 24px; }
+.tsuku-home .home-service[open] i { transform: rotate(45deg); }
+.tsuku-home .home-service ul { list-style: none; padding: 8px 0 0; margin: 16px 0 0; }
+.tsuku-home .home-service:not([open]) > ul, .tsuku-home .home-commitment:not([open]) > .home-commitment-copy { display: none; }
+.tsuku-home .home-service li { margin: 0 0 8px; }
+.tsuku-home .home-service li small { display: block; font-size: 16px; color: var(--home-note); }
+.tsuku-home .home-service li > span { display: block; padding-top: 10px; }
+.tsuku-home .home-team { background: var(--home-mist); }
+.tsuku-home .home-doctors { list-style: none; margin: 40px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 48px 24px; }
+.tsuku-home .home-doctors > li { min-width: 0; }
+.tsuku-home .home-doctor-photo { aspect-ratio: 4/5; overflow: hidden; margin-bottom: 20px; background: var(--home-sage); }
+.tsuku-home .home-doctor-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
+.tsuku-home .home-framed-photo img { transform: scale(1.32); transform-origin: 50% 28%; }
+.tsuku-home .home-doctors h3 { margin: 0 0 4px; }
+.tsuku-home .home-doctors p { margin: 0; }
+.tsuku-home .home-space-layout { display: grid; grid-template-columns: .8fr 1.5fr; gap: 80px; align-items: center; }
+.tsuku-home .home-environment h2 span { display: block; }
+.tsuku-home .home-gallery { min-width: 0; }
+.tsuku-home .home-slides { display: flex; gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; }
+.tsuku-home .home-slides::-webkit-scrollbar { display: none; }
+.tsuku-home .home-slides > * { flex: 0 0 100%; min-width: 0; scroll-snap-align: start; }
+.tsuku-home .home-offscreen { visibility: hidden; }
+.tsuku-home .home-gallery figure { margin: 0; }
+.tsuku-home .home-gallery img { width: 100%; height: auto; aspect-ratio: 4/3; display: block; object-fit: cover; }
+.tsuku-home .home-gallery figcaption { font-size: 16px; padding-block: 16px; }
+.tsuku-home .home-gallery .home-controls { justify-content: flex-end; }
+.tsuku-home .home-care { background: var(--home-ink); color: var(--home-white); }
+.tsuku-home .home-care-layout { display: grid; grid-template-columns: .8fr 1.5fr; gap: 80px; align-items: start; }
+.tsuku-home .home-care-photo { display: block; width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; margin-top: 40px; }
+.tsuku-home .home-care-controls { display: flex; gap: 12px; margin-top: 24px; }
+.tsuku-home .home-care-controls button { background: var(--home-mist); color: var(--home-ink); }
+.tsuku-home .home-commitment { padding: 22px 24px; }
+.tsuku-home .home-commitment:nth-child(odd) { background: var(--home-deep); }
+.tsuku-home .home-commitment[open] { background: var(--home-mist); color: var(--home-ink); }
+.tsuku-home .home-commitment > summary { display: flex; align-items: start; justify-content: space-between; gap: 24px; cursor: pointer; list-style: none; min-height: 48px; }
+.tsuku-home .home-commitment > summary::-webkit-details-marker { display: none; }
+.tsuku-home .home-commitment summary > span:last-child { font-size: 24px; }
+.tsuku-home .home-commitment[open] summary > span:last-child { transform: rotate(45deg); }
+.tsuku-home .home-commitment-title, .tsuku-home .home-commitment-title * { font: 600 20px/1.65 var(--home-serif); color: inherit; margin: 0; }
+.tsuku-home .home-commitment-copy { padding-top: 24px; }
+.tsuku-home .home-commitment-copy p:last-child { margin: 0; }
+.tsuku-home .home-care-tagline { font-weight: 600; }
+.tsuku-home .home-schedule table { width: 100%; border-collapse: collapse; font-size: 16px; text-align: center; }
+.tsuku-home .home-schedule caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.tsuku-home .home-schedule td, .tsuku-home .home-schedule th { padding: 24px 10px; border: 1px solid var(--home-sage); vertical-align: middle; }
+.tsuku-home .home-schedule thead th { background: var(--home-ink); color: var(--home-white); font-weight: 500; }
+.tsuku-home .home-schedule tbody th { background: var(--home-mist); font-weight: 600; white-space: nowrap; }
+.tsuku-home .home-schedule .time, .tsuku-home .home-schedule small { display: block; font-size: 16px; font-weight: 400; }
+.tsuku-home .home-schedule .doctor { display: block; font-weight: 600; }
+.tsuku-home .home-schedule .surgery-cell { background: var(--home-mist); }
+.tsuku-home .home-schedule-mobile { display: none; }
+.tsuku-home .home-schedule-notes { display: grid; grid-template-columns: 1.5fr 1fr; gap: 32px; margin-top: 32px; }
+.tsuku-home .home-schedule-notes > div { padding: 24px; background: var(--home-mist); }
+.tsuku-home .home-schedule-notes p { margin: 12px 0 0; }
+.tsuku-home .home-consultation { background: var(--home-ink); color: var(--home-white); overflow: hidden; }
+.tsuku-home .home-consultation > .home-wrap { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; }
+.tsuku-home .home-consultation > .home-wrap > div:first-child { padding-block: 64px; }
+.tsuku-home .home-consultation h2 { font-size: var(--home-title); }
+.tsuku-home .home-consultation h2 > span { display: block; font: inherit; color: inherit; }
+.tsuku-home .home-consultation .home-button { background: var(--home-gold-light); color: var(--home-ink) !important; }
+.tsuku-home .home-consultation-photo { height: 440px; overflow: hidden; align-self: end; }
+.tsuku-home .home-consultation-photo img { display: block; width: 100%; height: auto; margin-top: -4%; }
+.tsuku-home .home-reviews { background: var(--home-mist); }
+.tsuku-home .home-reviews .home-controls button { background: var(--home-paper); }
+.tsuku-home .home-review { display: grid; grid-template-columns: .6fr 1.6fr; gap: 64px; padding-top: 32px; }
+.tsuku-home .home-review-person p { margin: 0 0 8px; }
+.tsuku-home .home-review blockquote { font: 500 24px/1.8 var(--home-serif); margin: 0 0 24px; }
+.tsuku-home .home-review blockquote.home-quote-collapsed { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6; overflow: hidden; }
+.tsuku-home .home-review [data-quote-toggle] { border: 0; background: var(--home-paper); color: inherit; padding: 12px 20px; min-height: 48px; margin-bottom: 16px; }
+.tsuku-home .home-visit { background: var(--home-paper); }
+.tsuku-home .home-visit h2 { max-width: 18em; }
+.tsuku-home .home-visit-steps { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 48px; padding-left: 24px; margin: 48px 0 0; }
+.tsuku-home .home-visit-steps li { padding-left: 8px; }
+.tsuku-home .home-visit-steps li::marker { font-size: 24px; color: var(--home-gold); }
+.tsuku-home .home-visit-steps li > div { display: flex; flex-wrap: wrap; gap: 0 20px; }
+.tsuku-home .home-journal { background: var(--home-mist); }
+.tsuku-home .home-journal-slides { margin-top: 40px; margin-bottom: 24px; }
+.tsuku-home .home-journal-slides > article { flex-basis: calc((100% - 48px)/3); }
+.tsuku-home .home-journal-entry { padding-right: 24px; }
+.tsuku-home .home-journal-entry .home-note > * { display: inline-block; margin-right: 12px; }
+.tsuku-home .home-journal-entry .home-article-title { font: 600 20px/1.7 var(--home-serif); }
+.tsuku-home .home-article-title a { text-decoration: none; }
+.tsuku-home .home-article-title a:hover { text-decoration: underline; }
+.tsuku-home .home-faq-layout { display: grid; grid-template-columns: .8fr 1.5fr; gap: 80px; }
+.tsuku-home .home-faq-list > details { padding: 24px; border: 0; }
+.tsuku-home .home-faq-list > details:nth-child(odd) { background: var(--home-mist); }
+.tsuku-home .home-faq-list summary { list-style: none; display: flex; justify-content: space-between; gap: 20px; cursor: pointer; font: 600 20px/1.65 var(--home-serif); min-height: 44px; align-items: center; }
+.tsuku-home .home-faq-list summary::-webkit-details-marker { display: none; }
+.tsuku-home .home-faq-list .faq-symbol { display: none; }
+.tsuku-home .home-faq-list summary::after { content: '+'; font: 400 24px/1 var(--home-sans); }
+.tsuku-home .home-faq-list details[open] > summary::after { content: '−'; }
+.tsuku-home .home-faq-list details > div, .tsuku-home .home-faq-list details > p { padding-top: 20px; margin: 0; }
+.tsuku-home .home-faq-list details > div p:last-child { margin-bottom: 0; }
+.tsuku-home .home-contact { background: var(--home-sage); }
+.tsuku-home .home-contact > .home-wrap { display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; align-items: center; }
+.tsuku-home .home-contact-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; }
+.tsuku-home .home-contact dl { margin: 32px 0; }
+.tsuku-home .home-contact dt { font-weight: 600; }
+.tsuku-home .home-contact dd { margin: 4px 0 20px; }
+.tsuku-home .home-footer { background: var(--home-deep); color: var(--home-white); padding-block: 72px 40px; }
+.tsuku-home .home-footer-top { display: grid; grid-template-columns: 1.7fr .65fr .65fr 1.2fr; gap: 48px; align-items: start; }
+.tsuku-home .home-footer-logo { display: block; width: min(100%,300px); padding: 18px 22px; background: var(--home-white); margin-bottom: 24px; }
+.tsuku-home .home-footer-logo img { display: block; width: 100%; height: auto; }
+.tsuku-home .home-footer p.home-footer-statement { font: 600 24px/1.8 var(--home-serif); }
+.tsuku-home .home-footer nav > strong { display: block; margin-bottom: 16px; color: var(--home-gold-light); font-size: 16px; font-weight: 500; }
+.tsuku-home .home-footer nav .home-link, .tsuku-home .home-footer-top nav a { display: block; padding-block: 10px; text-decoration: none; }
+.tsuku-home .home-footer a:hover { text-decoration: underline; }
+.tsuku-home .home-footer-info > p { margin-bottom: 0; }
+.tsuku-home .home-insurance { display: flex; align-items: center; gap: 16px; margin-top: 24px; }
+.tsuku-home .home-insurance img { width: 48px; height: 52px; object-fit: contain; background: var(--home-white); }
+.tsuku-home .home-insurance p { margin: 0; }
+.tsuku-home .home-social { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 48px; }
+.tsuku-home .home-footer nav.home-social a { display: inline-block; }
+.tsuku-home .home-legal { margin-top: 32px; max-width: 1000px; }
+.tsuku-home .home-legal p { margin-bottom: 16px; }
+.tsuku-home .home-copyright { margin: 32px 0 0 !important; }
+.tsuku-home .home-quick { position: fixed; right: 12px; bottom: 32px; z-index: 25; display: flex; flex-direction: column; width: 64px; background: var(--home-white); }
+.tsuku-home .home-quick > * { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4px; min-height: 72px; padding: 10px 4px; background: var(--home-mist); border: 0; color: var(--home-ink); text-decoration: none; }
+.tsuku-home .home-quick > :first-child { background: var(--home-ink); color: var(--home-white); }
+.tsuku-home .home-quick > :nth-child(2) { background: var(--home-gold-light); }
+.tsuku-home .home-quick svg { width: 24px; height: 24px; display: block; }
+.tsuku-home .home-quick svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.tsuku-home .home-quick span { font-size: 12px; line-height: 1.4; }
+.tsuku-home .home-quick > *:hover { filter: brightness(.94); }
+.tsuku-home .home-inline-quick { display: none; }
+@media(min-width:1600px) { .tsuku-home .home-header-inner { gap: 40px; } .tsuku-home .home-desktop-nav { gap: 28px; } }
+@media(max-width:1250px) {
+  .tsuku-home .home-desktop-nav, .tsuku-home .home-consult { display: none; }
+  .tsuku-home .home-header-actions { margin-left: auto; }
+  .tsuku-home .home-menu { display: block; }
+  .tsuku-home .home-header-inner { padding-block: 14px; }
+  .tsuku-home .home-space-layout, .tsuku-home .home-care-layout, .tsuku-home .home-faq-layout { gap: 40px; grid-template-columns: .9fr 1.3fr; }
+  .tsuku-home .home-contact > .home-wrap { gap: 40px; }
+  .tsuku-home .home-footer-top { grid-template-columns: 1.5fr 1fr 1fr; gap: 32px; }
+  .tsuku-home .home-footer-info { grid-column: 1/-1; display: flex; align-items: center; gap: 32px; }
+  .tsuku-home .home-insurance { margin-top: 0; }
+}
+@media(max-width:900px) {
+  .tsuku-home .home-stats { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px; }
+  .tsuku-home .home-intro-heading { gap: 32px; grid-template-columns: 1fr; }
+  .tsuku-home .home-doctors { gap: 32px 20px; }
+  .tsuku-home .home-doctors h3 { font-size: 24px; }
+  .tsuku-home .home-announcement-inner { flex-wrap: wrap; gap: 8px 16px; }
+  .tsuku-home .home-announcement strong { align-self: start; padding-top: 8px; }
+  .tsuku-home .home-announcement ul { flex-basis: calc(100% - 120px); }
+  .tsuku-home .home-announcement-controls { margin-left: auto; }
+  .tsuku-home .home-service-layout, .tsuku-home .home-space-layout, .tsuku-home .home-care-layout, .tsuku-home .home-faq-layout { grid-template-columns: 1fr; }
+  .tsuku-home .home-section-lead { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .tsuku-home .home-section-lead > a { grid-column: 1/-1; justify-self: start; }
+  .tsuku-home .home-service-list { gap: 0 16px; padding: 8px; }
+  .tsuku-home .home-care-lead { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
+  .tsuku-home .home-care-photo { grid-column: 2; grid-row: 1/3; aspect-ratio: 4/3; margin: 0; }
+  .tsuku-home .home-care-controls { margin-top: 0; }
+  .tsuku-home .home-schedule-desktop { display: none; }
+  .tsuku-home .home-schedule-mobile { display: block; margin-top: 32px; }
+  .tsuku-home .home-schedule .tabs { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 8px; }
+  .tsuku-home .home-schedule .tabs button { min-width: 0; min-height: 48px; border: 0; color: inherit; background: var(--home-mist); padding: 8px; }
+  .tsuku-home .home-schedule .tabs button[aria-selected=true] { background: var(--home-ink); color: var(--home-white); }
+  .tsuku-home .home-schedule .day-panel { padding: 24px; margin-top: 16px; background: var(--home-mist); }
+  .tsuku-home .home-schedule .session { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; }
+  .tsuku-home .home-schedule-notes { grid-template-columns: 1fr; gap: 16px; }
+  .tsuku-home .home-review { grid-template-columns: 1fr; gap: 24px; }
+  .tsuku-home .home-review-person { display: grid; grid-template-columns: 1fr 1.3fr; gap: 0 24px; }
+  .tsuku-home .home-review-person h3 { grid-row: 1/3; }
+  .tsuku-home .home-journal-slides > article { flex-basis: calc((100% - 24px)/2); }
+  .tsuku-home .home-visit-steps { gap: 24px; }
+  .tsuku-home .home-visit-steps h3 { font-size: 24px; }
+  .tsuku-home .home-quick { display: none; }
+  .tsuku-home .home-inline-quick { position: static; width: 100%; display: flex; flex-direction: row; background: var(--home-mist); }
+  .tsuku-home .home-quick > * { width: 20%; min-height: 64px; padding: 7px 4px; }
+  .tsuku-home { padding-bottom: 0; }
+  .tsuku-home .home-footer { padding-bottom: 48px; }
+}
+@media(max-width:600px) {
+  .tsuku-home { --home-inset: 24px; --home-title: 30px; }
+  .tsuku-home [id] { scroll-margin-top: 96px; }
+  .tsuku-home .home-header-inner { padding: 12px 20px; gap: 12px; }
+  .tsuku-home .home-logo { flex-basis: 156px; }
+  .tsuku-home .home-header-actions { gap: 12px; }
+  .tsuku-home .home-header .home-button { padding: 10px 16px; font-size: 16px; min-height: 44px; }
+  .tsuku-home .home-menu-word { display: none; }
+  .tsuku-home .home-menu > summary { min-width: 32px; min-height: 44px; }
+  .tsuku-home .home-menu-panel { max-height: calc(100dvh - 68px); }
+  .tsuku-home .home-announcement-inner { padding-block: 10px; gap: 4px 12px; }
+  .tsuku-home .home-announcement strong { padding: 0; }
+  .tsuku-home .home-announcement-controls { order: 1; }
+  .tsuku-home .home-announcement ul { order: 2; flex-basis: 100%; }
+  .tsuku-home .home-announcement button { min-height: 44px; }
+  .tsuku-home .home-section-top { flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+  .tsuku-home .home-intro-heading { gap: 8px; }
+  .tsuku-home .home-stats dd { font-size: 32px; }
+  .tsuku-home .home-stats dd span { display: block; margin: 8px 0 0; }
+  .tsuku-home .home-stats { margin-top: 32px; gap: 32px 24px; }
+  .tsuku-home .home-service-layout { gap: 24px; }
+  .tsuku-home .home-section-lead { display: block; margin-bottom: 32px; }
+  .tsuku-home .home-section-lead h2, .tsuku-home .home-section-lead > p { margin-bottom: 24px; }
+  .tsuku-home .home-service-list { display: block; padding: 8px 0; }
+  .tsuku-home .home-service[open] { margin: 0; }
+  .tsuku-home .home-service[open] ul { grid-template-columns: 1fr; }
+  .tsuku-home .home-service { padding: 24px 20px; }
+  .tsuku-home .home-service strong { font-size: 24px; }
+  .tsuku-home .home-doctors { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px 16px; margin-top: 32px; }
+  .tsuku-home .home-doctor-photo { margin-bottom: 16px; }
+  .tsuku-home .home-doctors p { font-size: 16px; line-height: 1.65; }
+  .tsuku-home .home-space-layout { gap: 32px; }
+  .tsuku-home .home-environment p br { display: none; }
+  .tsuku-home .home-environment p br + br { display: block; }
+  .tsuku-home .home-care-lead { display: block; }
+  .tsuku-home .home-care-photo { aspect-ratio: 4/3; margin: 32px 0 24px; }
+  .tsuku-home .home-care-layout { gap: 24px; }
+  .tsuku-home .home-commitment { padding: 24px 20px; }
+  .tsuku-home .home-commitment summary { gap: 16px; }
+  .tsuku-home .home-schedule .tabs { gap: 6px; }
+  .tsuku-home .home-schedule .day-panel { padding: 24px 20px; }
+  .tsuku-home .home-schedule .session { gap: 16px; }
+  .tsuku-home .home-schedule-notes > div { padding: 24px 20px; }
+  .tsuku-home .home-consultation > .home-wrap { display: flex; flex-direction: column; gap: 0; }
+  .tsuku-home .home-consultation > .home-wrap > div:first-child { padding-block: 56px 16px; width: 100%; }
+  .tsuku-home .home-consultation-photo { height: 320px; width: 100%; }
+  .tsuku-home .home-consultation-photo img { margin-top: -2%; }
+  .tsuku-home .home-review-person { display: block; }
+  .tsuku-home .home-review-person h3 { margin-bottom: 12px; }
+  .tsuku-home .home-review blockquote { font-size: 20px; }
+  .tsuku-home .home-visit-steps { grid-template-columns: 1fr; gap: 32px; margin-top: 32px; }
+  .tsuku-home .home-visit-steps p { margin-bottom: 8px; }
+  .tsuku-home .home-journal-slides > article { flex-basis: 100%; }
+  .tsuku-home .home-journal-entry { padding: 24px; }
+  .tsuku-home .home-faq-layout { gap: 32px; }
+  .tsuku-home .home-faq-list > details { padding: 24px 20px; }
+  .tsuku-home .home-contact > .home-wrap { grid-template-columns: 1fr; gap: 32px; }
+  .tsuku-home .home-contact-photo img { aspect-ratio: 4/3; }
+  .tsuku-home .home-footer { padding-block: 56px 32px; }
+  .tsuku-home .home-footer-top { grid-template-columns: 1fr 1fr; gap: 32px 24px; }
+  .tsuku-home .home-footer-top > div:first-child { grid-column: 1/-1; }
+  .tsuku-home .home-footer-info { grid-column: 1/-1; display: block; }
+  .tsuku-home .home-insurance { margin-top: 24px; }
+  .tsuku-home .home-social { gap: 0 20px; margin-top: 32px; }
+  .tsuku-home .home-social a { min-height: 44px; }
+  .tsuku-home .home-footer p.home-footer-statement { margin-bottom: 0; }
+}
+@media(max-width:350px) {
+  .tsuku-home { --home-inset: 20px; --home-title: 28px; }
+  .tsuku-home .home-logo { flex-basis: 132px; }
+  .tsuku-home .home-header-inner { padding-inline: 16px; gap: 8px; }
+  .tsuku-home .home-header-actions { gap: 8px; }
+  .tsuku-home .home-header .home-button { padding-inline: 12px; }
+  .tsuku-home .home-doctors h3 { font-size: 24px; }
+  .tsuku-home .home-journal-entry { padding: 20px; }
+  .tsuku-home .home-service strong { font-size: 22px; }
+}
+@media(prefers-reduced-motion:no-preference) {
+  .tsuku-home .home-text-arrive { animation: home-arrive 520ms cubic-bezier(.22,1,.36,1); }
+  .tsuku-home .home-photo-arrive { animation: home-settle 850ms cubic-bezier(.22,1,.36,1); }
+  .tsuku-home .home-slides { scroll-behavior: smooth; }
+  .tsuku-home .home-controls button, .tsuku-home .home-button { transition: background-color 160ms ease-out; }
+}
+@keyframes home-arrive { from { transform: translateY(12px); opacity: .7; } to { transform: translateY(0); opacity: 1; } }
+@keyframes home-settle { from { transform: scale(.985); opacity: .8; } to { transform: scale(1); opacity: 1; } }
+@media(prefers-reduced-motion:reduce) { .tsuku-home .home-slides { scroll-behavior: auto; } }
+@media print { .tsuku-home .home-header, .tsuku-home .home-quick { position: static; } .tsuku-home .home-slides { display: block; overflow: visible; } .tsuku-home .home-slides > * { margin-bottom: 32px; } }

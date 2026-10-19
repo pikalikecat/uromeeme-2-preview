@@ -1,0 +1,74 @@
+/* Keep R10 foliage; soften only the lower-left intersection of the gold curves. */
+@media (min-width:769px) {
+  .m19-home-preview .hero.home-entry {
+    background-image:
+      radial-gradient(ellipse 19% 22% at 27% 92%, #f4f9f6cc 0%, #f4f9f680 38%, #f4f9f600 100%),
+      radial-gradient(ellipse 45% 72% at 0% 100%, #f6faf8 0%, #f6faf8e8 38%, #f6faf866 72%, #f6faf800 100%),
+      url("assets/homepage-target-reference-r42.webp");
+  }
+}
+.tsuku-home .footer-r9 .footer-treatments-r11 {
+  display: grid;
+  grid-template-columns: 140px minmax(0,1fr);
+  gap: 32px;
+  margin-top: 44px;
+  padding-top: 32px;
+  border-top: 1px solid #dfd1a738;
+}
+.tsuku-home .footer-r9 .footer-treatments-r11 h2 {
+  margin: 7px 0 0;
+  color: var(--home-gold-light);
+  font: 700 22px/1.5 var(--home-serif);
+  letter-spacing: -.025em;
+}
+.tsuku-home .footer-r9 .footer-treatments-r11 ul {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 4px 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tsuku-home .footer-r9 .footer-treatments-r11 li { min-width: 0; }
+.tsuku-home .footer-r9 a.footer-treatment-link-r11 {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 0;
+  font: 400 14px/1.7 var(--home-sans);
+  color: #e2ece6;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.tsuku-home .footer-r9 a.footer-treatment-link-r11:hover { color: var(--home-gold-light); text-decoration: underline; text-underline-offset: 5px; }
+.tsuku-home .footer-r9 a.footer-treatment-link-r11:focus-visible { outline: 2px solid var(--home-gold-light); outline-offset: 4px; border-radius: 2px; }
+.tsuku-home .footer-r9 .insurance-r11 {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 14px;
+  max-width: 100%;
+  margin-top: 24px;
+  padding: 14px 18px;
+  background: #f5f8f3;
+  color: var(--home-ink);
+  border: 1px solid #d9cba9;
+  border-radius: 14px;
+}
+.tsuku-home .footer-r9 .insurance-r11 img { flex: 0 0 50px; width: 50px; height: auto; display: block; }
+.tsuku-home .footer-r9 .insurance-r11 p { margin: 0; }
+.tsuku-home .footer-r9 .insurance-r11 p span { display: block; color: #52685c; font: 400 12px/1.6 var(--home-sans); margin-bottom: 4px; }
+.tsuku-home .footer-r9 .insurance-r11 p strong { display: block; color: var(--home-ink); font: 700 17px/1.5 var(--home-serif); white-space: nowrap; }
+@media (min-width:1001px) and (max-width:1200px) {
+  .tsuku-home .footer-r9 .insurance-r11 { margin-top: 0; }
+}
+@media (max-width:1000px) {
+  .tsuku-home .footer-r9 .footer-treatments-r11 { grid-template-columns: 1fr; gap: 20px; }
+  .tsuku-home .footer-r9 .footer-treatments-r11 h2 { margin: 0; }
+  .tsuku-home .footer-r9 .footer-treatments-r11 ul { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:600px) {
+  .tsuku-home .footer-r9 .footer-treatments-r11 { margin-top: 32px; padding-top: 28px; }
+  .tsuku-home .footer-r9 .footer-treatments-r11 ul { grid-template-columns: 1fr; gap: 0; }
+  .tsuku-home .footer-r9 .insurance-r11 { padding: 14px 16px; }
+}

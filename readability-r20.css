@@ -1,0 +1,86 @@
+/* Keep the approved visual system; enlarge only secondary information. */
+.m19-home-preview.tsuku-home main :is(.hero.home-entry .eyebrow, .eyebrow, .environment-eyebrow-r6) {
+  font-size: 13px;
+  line-height: 1.7;
+  letter-spacing: .12em;
+}
+.m19-home-preview.tsuku-home .care-r59 .topic {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #715725;
+}
+.m19-home-preview.tsuku-home .team-r56 .doctor-caption-r56 p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #465f54;
+}
+.m19-home-preview.tsuku-home .home-stats dd > span,
+.m19-home-preview.tsuku-home .team-r56 a > span[lang="en"],
+.m19-home-preview.tsuku-home .journal-r95 .journal-cover-r95 > span,
+.m19-home-preview.tsuku-home .journal-r95 .journal-cover-r95 > i,
+.m19-home-preview.tsuku-home .reviews-r79 .review-guide-r91 {
+  font-size: 13px;
+  line-height: 1.6;
+}
+.m19-home-preview.tsuku-home .insurance-r11 p > span { font-size: 13px; }
+.m19-home-preview.tsuku-home .reviews-r79 :is(.review-meta-r79, .review-source-r79, .review-date-note-r20) {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #465f54;
+}
+.m19-home-preview.tsuku-home .reviews-r79 .review-date-note-r20 {
+  margin: 12px 0 20px;
+}
+.m19-home-preview.tsuku-home #visit-title .title-phrase-r20 {
+  display: inline-block;
+  white-space: nowrap;
+}
+.tsuku-home .home-footer-top .footer-toggle-r20 { display: none; }
+.tsuku-home .home-footer-top .footer-panel-r20[hidden] { display: none; }
+@media (min-width:769px) and (max-height:650px) {
+  .m19-home-preview.tsuku-home .hero.home-entry .names .hero-role-r27 > span {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+}
+@media (max-width:768px) {
+  .m19-home-preview.tsuku-home .hero.home-entry .names .hero-role-r27 {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  .m19-home-preview.tsuku-home .hero.home-entry .names .name-card strong {
+    font-size: clamp(16px,4vw,19px);
+  }
+}
+/* Drop compact-screen nameplates below the faces, preserving the shared float. */
+@media (max-width:360px), (max-width:768px) and (max-height:780px) {
+  .m19-home-preview.tsuku-home .hero.home-entry { min-height: 480px; }
+  .m19-home-preview.tsuku-home .hero.home-entry .names { bottom: 14px; }
+}
+@media (max-width:700px) {
+  .tsuku-home .footer-r18 .home-footer-top { grid-template-columns: minmax(0,1fr); gap: 0; }
+  .tsuku-home .footer-r18 .home-footer-top > div:first-child { margin-bottom: 24px; }
+  .tsuku-home .footer-r18 .home-footer-top > nav > :is(h2,strong) { margin: 0; }
+  .tsuku-home .home-footer-top .footer-title-r20 { display: none; }
+  .tsuku-home .home-footer-top .footer-toggle-r20 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    min-height: 56px;
+    padding: 14px 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+  .tsuku-home .home-footer-top .footer-toggle-r20 > span { font-size: 22px; font-weight: 400; }
+  .tsuku-home .home-footer-top .footer-toggle-r20:focus-visible {
+    outline: 2px solid var(--home-gold-light);
+    outline-offset: 3px;
+  }
+  .tsuku-home .home-footer-top .footer-panel-r20 { padding-bottom: 14px; }
+}

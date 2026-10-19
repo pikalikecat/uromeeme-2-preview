@@ -1,0 +1,29 @@
+/* Match the approved waiting-room H2 without changing section layouts. */
+.m19-home-preview.tsuku-home :is(#care-title, #reviews-title, #visit-title, #articles-title, #faq-title, #contact-title) {
+  font-family: var(--home-serif);
+  font-size: var(--home-title);
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: -.025em;
+  color: var(--home-ink);
+}
+.tsuku-home :is(.care-r59 > .heading, .reviews-r79, .visit-r94, .journal-r95, .faq-heading-r105, .band[aria-labelledby="contact-title"]) .eyebrow {
+  font: 400 12px/1.8 var(--home-sans);
+  letter-spacing: .19em;
+  color: #80652e;
+  margin: 0 0 24px;
+}
+/* Quiet only the left foliage behind the actions; keep the original artwork. */
+@media (min-width:769px) {
+  .m19-home-preview .hero.home-entry {
+    background-image: radial-gradient(ellipse 45% 72% at 0% 100%, #f6faf8 0%, #f6faf8e8 38%, #f6faf866 72%, #f6faf800 100%), url("assets/homepage-target-reference-r42.webp");
+  }
+}
+.m19-home-preview .faq-contact-r104 a::after { content: none; display: none; }
+@media (max-width:600px) {
+  .tsuku-home :is(.care-r59 > .heading, .reviews-r79, .visit-r94, .journal-r95, .faq-heading-r105, .band[aria-labelledby="contact-title"]) .eyebrow {
+    font-size: 11px;
+    letter-spacing: .1em;
+    margin-bottom: 18px;
+  }
+}

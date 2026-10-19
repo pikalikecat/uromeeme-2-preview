@@ -1,0 +1,19 @@
+/* R33: phrase-level wrapping only in the existing mobile breakpoint. */
+.m19-home-preview .services-r55 .sub > wbr {
+  display: none;
+}
+@media (max-width: 760px) {
+  .m19-home-preview .services-r55 .sub > .service-phrase-r33 {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .m19-home-preview .services-r55 .sub > wbr {
+    display: inline;
+  }
+}
+/* Reserve the longest description's three lines across the mobile card rows. */
+@media (min-width: 341px) and (max-width: 760px) {
+  .m19-home-preview .services-r55 .sub.service-copy-r33 {
+    min-height: 4.8em;
+  }
+}

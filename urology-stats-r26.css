@@ -1,0 +1,35 @@
+/* R26: six balanced statistics; preserve reading order at every breakpoint. */
+.tsuku-home .home-stats-r26 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  column-gap: clamp(16px, 2vw, 28px);
+}
+.tsuku-home .home-stats-r26 > div { min-width: 0; justify-content: flex-end; }
+.tsuku-home .home-stats-r26 dd {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: clamp(32px, 2.5vw, 42px);
+  white-space: nowrap;
+}
+.tsuku-home .home-stats-r26 dd > span {
+  display: inline;
+  flex-shrink: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+@media (max-width: 1279px) {
+  .tsuku-home .home-stats-r26 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .tsuku-home .home-stats-r26 dd { font-size: 32px; }
+}
+@media (max-width: 768px) {
+  .tsuku-home .home-stats-r26 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tsuku-home .intro-stats-r26 { padding-bottom: 48px; }
+}
+@media (max-width: 600px) {
+  .tsuku-home .home-stats-r26 { gap: 28px 18px; }
+  .tsuku-home .home-stats-r26 dd { font-size: clamp(24px, 7.4vw, 32px); }
+  .tsuku-home .intro-stats-r26 { padding-bottom: 40px; }
+}
+
+.tsuku-home .home-stat-team-r26 dt > span { display: inline-block; }

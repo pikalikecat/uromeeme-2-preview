@@ -1,0 +1,53 @@
+/* Original artwork and alpha stay intact; only this Footer uses the reverse logo. */
+.tsuku-home .footer-r21 .home-footer-logo {
+  display: flex;
+  align-items: center;
+  width: min(100%,240px);
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  margin-bottom: 28px;
+}
+.tsuku-home .footer-r21 .home-footer-logo img {
+  filter: brightness(0) invert(1) sepia(.15) brightness(.96);
+}
+.tsuku-home .footer-r21 p.home-footer-statement { color: #f3f0e4; }
+.tsuku-home .footer-r21 .home-footer-info { margin-top: 24px; }
+.tsuku-home .footer-r21 .home-footer-info > p { color: #d0e0d7; }
+.tsuku-home .footer-r21 .home-footer-info > a { color: #f3f0e4; }
+.tsuku-home .footer-r21 .insurance-r11 {
+  gap: 12px;
+  margin-top: 20px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #f3f0e4;
+}
+/* A small circular backing preserves legibility inside the original colour emblem. */
+.tsuku-home .footer-r21 .insurance-r11 img {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  padding: 1px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #f7f7ef;
+  filter: none;
+}
+.tsuku-home .footer-r21 .insurance-r11 p span {
+  margin-bottom: 2px;
+  color: #c5d8cc;
+  font: 400 13px/1.6 var(--home-sans);
+}
+.tsuku-home .footer-r21 .insurance-r11 p strong {
+  color: #f3f0e4;
+  font: 600 16px/1.5 var(--home-sans);
+}
+@media (min-width:601px) and (max-width:1199px) {
+  .tsuku-home .footer-r21 .home-footer-info { margin-top: 0; }
+}

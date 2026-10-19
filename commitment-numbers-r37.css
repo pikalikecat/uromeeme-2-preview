@@ -1,0 +1,23 @@
+/* User-selected A: a sequence number at the start of each card's gold rail. */
+.m19-home-preview .care-r59 .commitment-number-r37 {
+  position: absolute;
+  left: 28px;
+  top: 30px;
+  z-index: 3;
+  color: #997a3e;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 44px;
+  font-weight: 400;
+  font-variant-numeric: lining-nums tabular-nums;
+  line-height: 1;
+  letter-spacing: -.035em;
+}
+.m19-home-preview .care-r59 .ensemble-rail { left: 86px; }
+@media (max-width: 760px) {
+  .m19-home-preview .care-r59 .commitment-number-r37 {
+    left: 22px;
+    top: 27px;
+    font-size: 30px;
+  }
+  .m19-home-preview .care-r59 .ensemble-rail { left: 54px; }
+}

@@ -1,0 +1,11 @@
+.tsuku-home .home-announcement a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+.tsuku-home .home-announcement a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
