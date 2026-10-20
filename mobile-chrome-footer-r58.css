@@ -1,0 +1,59 @@
+@media screen and (max-width: 768px) {
+  html {
+    scroll-padding-top: calc(var(--entry-chrome-height, 132px) + 16px);
+  }
+  .m19-home-preview.tsuku-home .home-announcement {
+    position: sticky;
+    top: var(--mobile-header-height-r58, 60px);
+    z-index: 29;
+  }
+  .m19-home-preview.tsuku-home .footer-r21 .home-footer-top > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1 / -1;
+    grid-row: auto;
+    width: min(100%, 360px);
+    margin-inline: auto;
+    text-align: center;
+  }
+  .m19-home-preview.tsuku-home .footer-r21 .home-footer-logo {
+    flex: none;
+    margin-inline: auto;
+  }
+  .m19-home-preview.tsuku-home .footer-r21 .home-footer-statement {
+    width: 100%;
+    margin-inline: auto;
+    text-align: center;
+  }
+  /* Center the words themselves, not the trailing full-width punctuation cell. */
+  .m19-home-preview.tsuku-home .footer-r21 .footer-line-r58 {
+    position: relative;
+    display: inline-block;
+  }
+  .m19-home-preview.tsuku-home .footer-r21 .footer-punctuation-r58 {
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+  .m19-home-preview.tsuku-home .footer-r21 .home-footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    margin-top: 24px;
+    gap: 0;
+    text-align: center;
+  }
+  .m19-home-preview.tsuku-home .footer-r21 .home-footer-info > p {
+    width: 100%;
+    text-align: center;
+  }
+  .m19-home-preview.tsuku-home .footer-r21 .insurance-r11 {
+    align-self: center;
+    margin-inline: auto;
+    text-align: left;
+  }
+}

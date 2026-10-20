@@ -1,0 +1,10 @@
+/* Hide only the physician scroller chrome; keep native touch and keyboard scrolling. */
+.m19-home-preview .team-r56 .team-grid {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.m19-home-preview .team-r56 .team-grid::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}

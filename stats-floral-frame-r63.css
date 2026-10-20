@@ -1,0 +1,40 @@
+/* Reference-inspired scrollwork stays at the edges; the original numbers lead. */
+.m19-home-preview.tsuku-home .intro-stats-r26 { position: relative; }
+.m19-home-preview.tsuku-home .stats-floral-frame-r63 {
+  position: absolute;
+  inset: 18px clamp(24px, 3.2vw, 64px);
+  border: 1px solid rgb(216 197 140 / 24%); /* taste-skill-ignore: user-requested delicate ornamental frame */
+  pointer-events: none;
+}
+.m19-home-preview.tsuku-home .floral-corner-r63 {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  background: url("assets/floral-corner-r63.svg") center / contain no-repeat;
+  opacity: .48;
+}
+.m19-home-preview.tsuku-home .floral-tl-r63 { top: -1px; left: -1px; }
+.m19-home-preview.tsuku-home .floral-tr-r63 { top: -1px; right: -1px; transform: rotate(90deg); }
+.m19-home-preview.tsuku-home .floral-br-r63 { bottom: -1px; right: -1px; transform: rotate(180deg); }
+.m19-home-preview.tsuku-home .floral-bl-r63 { bottom: -1px; left: -1px; transform: rotate(270deg); }
+.m19-home-preview.tsuku-home .floral-center-r63 {
+  position: absolute;
+  left: 50%;
+  width: 72px;
+  height: 17px;
+  background: url("assets/floral-center-r63.svg") center / contain no-repeat;
+  opacity: .38;
+}
+.m19-home-preview.tsuku-home .floral-top-r63 { top: -1px; transform: translateX(-50%); }
+.m19-home-preview.tsuku-home .floral-bottom-r63 { bottom: -1px; transform: translateX(-50%) rotate(180deg); }
+@media (min-width: 769px) and (max-width: 1100px) {
+  .m19-home-preview.tsuku-home .floral-corner-r63 { width: 44px; height: 44px; }
+}
+@media (max-width: 768px) {
+  .m19-home-preview.tsuku-home .stats-floral-frame-r63 { inset: 14px; }
+  .m19-home-preview.tsuku-home .floral-corner-r63 { width: 42px; height: 42px; opacity: .44; }
+  .m19-home-preview.tsuku-home .floral-center-r63 { width: 48px; height: 12px; opacity: .34; }
+}
+@media (forced-colors: active), print {
+  .m19-home-preview.tsuku-home .stats-floral-frame-r63 { display: none; }
+}
