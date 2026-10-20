@@ -2,6 +2,9 @@
 .m19-home-preview.tsuku-home .reviews-r79 .review-source-r79 { display: none; }
 .m19-home-preview.tsuku-home .reviews-r79 .review-original-r79 { margin-top: auto; }
 
+/* Clip SVG backgrounds from the first composited frame, not only after border-radius paint settles. */
+.m19-home-preview.tsuku-home .care-r59 .icon { clip-path: circle(50%); }
+
 .m19-home-preview.tsuku-home .home-environment .home-space-layout > div:first-child > .home-link {
   position: relative;
   top: 2lh;

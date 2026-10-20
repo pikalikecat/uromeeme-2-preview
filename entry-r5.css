@@ -41,15 +41,15 @@
   .tsuku-home .home-announcement-controls { order: 0; margin: 0; }
   .tsuku-home .home-announcement [data-notice-prev], .tsuku-home .home-announcement [data-notice-next] { display: none; }
   .tsuku-home .home-announcement [data-notice-pause] { font-size: 11px; min-width: 28px; min-height: 44px; padding: 4px; }
-  .m19-home-preview .hero.home-entry { display: grid; grid-template-rows: minmax(230px,42%) minmax(0,1fr); height: calc(100svh - var(--entry-chrome-height, 132px) - var(--entry-quick-height, 68px)); min-height: 0; background-position: 60% center; background-size: auto 100%; }
-  .m19-home-preview .hero.home-entry .intro { position: relative; grid-row: 1; inset: auto; align-self: stretch; width: 100%; padding: clamp(24px,4svh,50px) 16px 0; text-align: center; background: linear-gradient(#f7fbfaf5,#f7fbfa80); }
+  .m19-home-preview .hero.home-entry { display: grid; grid-template-rows: minmax(230px,auto) auto; height: auto; min-height: 0; background-position: 60% center; background-size: auto 100%; }
+  .m19-home-preview .hero.home-entry .intro { position: relative; grid-row: 1; inset: auto; align-self: stretch; width: 100%; padding: 32px 16px 0; text-align: center; background: linear-gradient(#f7fbfaf5,#f7fbfa80); }
   .m19-home-preview .hero.home-entry .eyebrow { font-size: clamp(9px,2.5vw,13px); letter-spacing: .22em; line-height: 1.8; max-width: none; white-space: nowrap; }
   .m19-home-preview .hero.home-entry h1 { font-size: clamp(19px,6vw,36px); line-height: 1.6; margin: 20px 0 0; }
   .m19-home-preview .hero.home-entry .hero-message-r43 { margin-top: 18px; }
   .m19-home-preview .hero.home-entry .hero-rule-r43 { margin-inline: auto; }
   .m19-home-preview .hero.home-entry .hero-message-r43 p { margin: 10px 0 0; font-size: clamp(14px,3.8vw,20px); line-height: 1.8; }
-  .m19-home-preview .hero.home-entry .portrait--original { position: relative; grid-row: 2; inset: auto; align-self: stretch; width: min(100%,660px); height: 100%; margin: 0 auto; }
-  .m19-home-preview .hero.home-entry .portrait--original img { top: -7%; left: 50%; width: min(100%, calc((100svh - var(--entry-chrome-height, 132px) - var(--entry-quick-height, 68px)) * .58)); height: auto; transform: translateX(-50%); }
+  .m19-home-preview .hero.home-entry .portrait--original { position: relative; grid-row: 2; inset: auto; align-self: stretch; width: min(100%,660px); height: min(100vw,560px); margin: 0 auto; }
+  .m19-home-preview .hero.home-entry .portrait--original img { top: -7%; left: 50%; width: 100%; height: auto; transform: translateX(-50%); }
   .m19-home-preview .hero.home-entry .names, .m19-home-preview .hero.home-entry .hero-actions { display: none; }
 }
 /* Very short landscape windows may scroll rather than shrink readable copy away. */
