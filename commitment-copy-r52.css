@@ -1,0 +1,4 @@
+/* Card 02: keep sentence breaks without extra paragraph spacing. */
+.m19-home-preview .care-r59 .care-nursing-copy-r52 .body p + p { margin-top: 0; }
+/* Keep the longer card 08 heading on complete phrase boundaries. */
+.m19-home-preview .care-r59 .care-fastpass-heading-r52 > span { display: inline-block; }

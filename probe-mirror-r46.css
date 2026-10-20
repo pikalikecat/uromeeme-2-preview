@@ -1,0 +1,5 @@
+/* R46: mirror only the vector handpiece; the anatomy and wave contour are unchanged. */
+.m19-home-preview .care-r59 .care-shockwave-icon-r7 > .shockwave-lines-r8 {
+  -webkit-mask-image: url("assets/shockwave-probe-r46.svg");
+  mask-image: url("assets/shockwave-probe-r46.svg");
+}

@@ -1,0 +1,5 @@
+/* R45: reduce the LINE outline and lettering together without resizing the icon. */
+.m19-home-preview .care-r59 .icon.care-line-icon-r8,
+.m19-home-preview .care-r59 .care-line-icon-r8 .line-word-r8 {
+  stroke-width: 1;
+}

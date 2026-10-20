@@ -1,0 +1,5 @@
+/* Replace only the handpiece contour in commitment 03; retain the original mask colour and mirror. */
+.m19-home-preview .care-r59 .care-shockwave-icon-r7 > .shockwave-lines-r8 {
+  -webkit-mask-image: url("assets/shockwave-probe-r44.svg");
+  mask-image: url("assets/shockwave-probe-r44.svg");
+}

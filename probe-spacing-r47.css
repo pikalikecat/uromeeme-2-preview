@@ -1,0 +1,5 @@
+/* R47: move only the probe left in the rendered icon to separate it from the waves. */
+.m19-home-preview .care-r59 .care-shockwave-icon-r7 > .shockwave-lines-r8 {
+  -webkit-mask-image: url("assets/shockwave-probe-r47.svg");
+  mask-image: url("assets/shockwave-probe-r47.svg");
+}
