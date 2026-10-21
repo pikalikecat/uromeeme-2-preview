@@ -1,0 +1,102 @@
+/* R2 body only: approved banner styles remain in the copied R1 files. */
+.sti-body{--ink:#164e43;--gold:#937641;--line:#d7e3da;--wash:#f1f6f1;color:#344d45;font-family:Arial,"Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.95;overflow-wrap:anywhere}
+.sti-body *{box-sizing:border-box;min-width:0}.sti-body p,.sti-body li{font-size:inherit;line-height:1.95}.sti-body p{margin:0 0 18px;text-align:left}.sti-body strong,.sti-body b{font-weight:600}
+.sti-body a{color:#005448;text-underline-offset:4px}.sti-body a:focus-visible,.sti-body summary:focus-visible{outline:3px solid #80642f;outline-offset:5px;border-radius:4px}.sti-body a:hover{text-decoration-thickness:2px}
+.sti-body [id]{scroll-margin-top:180px}.sti-body .body-section{max-width:1115px;margin:90px auto;position:relative}.sti-body .section-head{max-width:900px;margin:0 auto 34px;text-align:center}.sti-body .section-kicker{color:#806638;font-size:12px;letter-spacing:.2em;text-align:center;margin:0 0 12px;font-weight:600}.sti-body h2{font-family:Georgia,"Noto Serif TC","PMingLiU",serif;font-size:clamp(25px,2.1vw,34px);font-weight:600;line-height:1.6;text-align:center;color:var(--ink);margin:0;text-wrap:balance}.sti-body .section-head:after{content:"";display:block;width:56px;height:1px;background:#af935b;margin:24px auto 0}.sti-body h3{font-size:24px;line-height:1.55;color:var(--ink);text-align:center;margin:0 0 24px;font-weight:600}.sti-body h4{font-size:15px;line-height:1.6;color:#7b663f;text-align:center;margin:0 0 10px;letter-spacing:.08em}
+.sti-body .reading{max-width:760px;margin:0 auto}.sti-body .reading>h2{margin:44px auto 24px}.sti-body .sti-intro-card{margin-bottom:24px}.sti-body .sti-intro-card p{margin:0;max-width:760px}.sti-body .preview-status{font-size:13px;line-height:1.8;text-align:center;color:#61746a;max-width:900px;margin:24px auto 0}.sti-body .review-label{font-size:13px;color:#715d37;text-align:center;margin:18px auto 28px;line-height:1.75}.sti-body .screening-section{background:linear-gradient(140deg,#f8faf5,#eaf3ed);border:1px solid #d9e5da;border-radius:32px 8px;padding:50px 44px}.sti-body .screening-steps{list-style:none;counter-reset:steps;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;padding:0;margin:34px 0}.sti-body .screening-steps>li{counter-increment:steps;position:relative;padding:28px 28px 28px 76px;margin:0;background:#fffefa;border:1px solid #d8e2d6;border-radius:20px 5px;box-shadow:0 6px 20px #184b3b04}.sti-body .screening-steps>li:before{content:counter(steps,decimal-leading-zero);position:absolute;top:26px;left:23px;font-family:Georgia,serif;font-size:29px;line-height:1.2;color:#9b814b}.sti-body .service-caveat{border-top:1px solid #c4d3c5;padding-top:10px;max-width:900px;margin:auto}.sti-body .service-caveat p{font-size:15px}.sti-body .service-caveat .review-label{text-align:left;margin:10px 0}
+.sti-body .check-situations{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 44px;padding:0;margin:24px auto;list-style:none;max-width:950px}.sti-body .check-situations li{margin:0;padding:24px 0 24px 27px;border-bottom:1px solid var(--line);position:relative}.sti-body .check-situations li:before{content:"";position:absolute;left:2px;top:36px;width:7px;height:7px;background:#ac915a;transform:rotate(45deg)}
+.sti-body .knowledge-section{padding:48px 40px;border-block:1px solid #dfe7dd}.sti-body .body-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:16px;margin:36px auto 0}.sti-body .body-actions a{min-height:56px;display:flex;align-items:center;justify-content:center;gap:26px;padding:13px 32px;border:1px solid #005448;border-radius:99px;background:#005448;color:#fffefa;text-decoration:none;font-size:17px;font-weight:600}.sti-body .body-actions a.secondary{background:#fffefa;color:#005448;border-color:#aa915b}.sti-body .body-actions span{font-size:18px;font-weight:400}
+.sti-body .disease-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;align-items:start}.sti-body .disease-card{padding:30px 34px 20px;background:#fffefa;border:1px solid #d6e2d7;border-radius:26px 6px;box-shadow:0 9px 35px #1b4f3d05}.sti-body .card-index{text-align:center;font-family:Georgia,serif;color:#9e844d;font-size:16px;margin:0 0 10px;letter-spacing:.13em}.sti-body .disease-card h3{margin-bottom:28px}.sti-body .disease-field{border-top:1px solid #e1e6db;padding-top:20px;margin-top:20px}.sti-body .disease-field p{font-size:16px;line-height:1.95;margin-bottom:16px}.sti-body .source-figure{max-width:950px;margin:30px auto;border:1px solid var(--line);border-radius:12px;background:#f9fbf7}.sti-body summary{cursor:pointer;list-style:none;position:relative;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:60px;padding:16px 24px;line-height:1.7;color:var(--ink);font-weight:600}.sti-body summary::-webkit-details-marker{display:none}.sti-body .expand-mark{display:block;width:16px;height:16px;position:relative;flex:0 0 16px}.sti-body .expand-mark:before,.sti-body .expand-mark:after{content:"";position:absolute;top:7px;left:0;width:16px;height:1px;background:#8b7345}.sti-body .expand-mark:after{transform:rotate(90deg)}.sti-body details[open]>summary .expand-mark:after{display:none}.sti-body figure{margin:0;padding:0 24px 24px}.sti-body figure img{display:block;width:auto;max-width:100%;height:auto;max-height:none;margin:auto}.sti-body figcaption{font-size:13px;text-align:center;margin-top:14px}.sti-body .treatment-warning{padding:22px 28px;border-left:2px solid #aa8950;background:#f6f0e5;border-radius:3px 18px;max-width:950px;margin:0 auto 32px;color:#665538}.sti-body .treatment-warning strong{font-size:16px}.sti-body .treatment-warning p{font-size:15px;margin:7px 0 0}.sti-body .treatment-list{max-width:950px;margin:auto}.sti-body .treatment-row{display:grid;grid-template-columns:minmax(130px,1fr) minmax(0,3fr);gap:36px;border-top:1px solid #d5dfd3;padding:30px 12px;align-items:start}.sti-body .treatment-row h3{font-size:21px;margin:0}.sti-body .treatment-row p{margin:0 0 16px}.sti-body .treatment-row p:last-child{margin:0}
+.sti-body .physician-stack{margin-top:40px}.sti-body .physician-card{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;padding:34px;border:1px solid #d7e3d9;border-radius:24px 6px;background:#fff;margin:0 0 28px}.sti-body .physician-card:nth-child(even) .physician-image{order:-1}.sti-body .physician-name{color:#8c7348;font-size:24px}.sti-body .physician-motto{text-align:center;font-family:Georgia,"PMingLiU",serif;font-size:27px;font-weight:600;color:#184f43;line-height:1.6}.sti-body .physician-image img{display:block;width:100%;height:auto}.sti-body .more-doctors{text-align:center}.sti-body .more-doctors p{text-align:center}.sti-body .more-doctors a{display:inline-flex;min-height:44px;align-items:center;padding:8px 18px}.sti-body .care-features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:32px}.sti-body .care-features article{padding:24px 22px;border-top:2px solid #b39b68;background:#f2f6ef;border-radius:0 0 18px 4px}.sti-body .care-features p{font-size:16px;margin:0}.sti-body .care-features b,.sti-body .care-features strong{color:#164e43}
+.sti-body .faq-list{max-width:950px;margin:auto;border-top:1px solid #c9d8ce}.sti-body .faq-item{border-bottom:1px solid #c9d8ce;background:#fffefa}.sti-body .faq-item summary{padding:23px 26px;font-size:19px}.sti-body .faq-item[open]{background:#f2f6ef}.sti-body .faq-answer{padding:0 28px 12px;max-width:810px;margin:auto}.sti-body .medical-disclaimer{max-width:950px;margin:40px auto;color:#53665b;border-block:1px solid #d6dfd1;padding:22px}.sti-body .medical-disclaimer p{margin:0;font-size:16px}
+.sti-body .visit-card{background:linear-gradient(135deg,#f8faf5,#e9f2e9);border:1px solid #d7e2d6;border-radius:28px 6px;padding:38px 44px}.sti-body .visit-address{text-align:center;padding-bottom:30px;border-bottom:1px solid #cbd8c8}.sti-body .visit-address p{text-align:center;font-size:23px;color:var(--ink)}.sti-body .map-link{display:inline-flex;align-items:center;gap:24px;min-height:48px;padding:9px 24px;border-radius:99px;border:1px solid #a58e5c;text-decoration:none;background:#fffefa}.sti-body .directions{max-width:850px;margin:34px auto 0}.sti-body .direction-row{padding:20px 0;border-bottom:1px solid #d7e1d1}.sti-body .direction-row:last-child{border:0}.sti-body .direction-row p{margin:0}.sti-body .demo-note summary{display:list-item;font-size:15px}.sti-body .demo-note p,.sti-body .demo-note li{font-size:14px}.sti-body .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:900px){.sti-body .body-section{margin:64px auto}.sti-body .care-features{grid-template-columns:1fr}.sti-body .screening-section{padding:36px 26px}.sti-body .physician-card{gap:26px;padding:26px}.sti-body .disease-card{padding:28px 24px 16px}}
+@media(max-width:760px){.sti-body .disease-grid,.sti-body .screening-steps,.sti-body .check-situations,.sti-body .physician-card{grid-template-columns:1fr}.sti-body .physician-image,.sti-body .physician-card:nth-child(even) .physician-image{order:-1;max-width:420px;margin:auto}.sti-body .treatment-row{grid-template-columns:1fr;gap:20px}.sti-body .screening-section{padding:30px 20px}.sti-body .body-section{margin:56px auto}.sti-body .section-head{margin-bottom:26px}.sti-body .knowledge-section{padding:32px 10px}.sti-body .visit-card{padding:28px 24px}.sti-body .screening-steps>li{padding:23px 20px 23px 64px}.sti-body .screening-steps>li:before{left:18px;top:24px;font-size:25px}.sti-body .check-situations{gap:0}.sti-body .check-situations li{padding-block:20px}.sti-body .faq-item summary{padding:20px;font-size:18px}.sti-body .faq-answer{padding:0 20px 10px}.sti-body [id]{scroll-margin-top:145px}.sti-body .source-figure summary{padding:16px;font-size:15px}.sti-body .treatment-warning{padding:18px 20px}.sti-body .visit-address p{font-size:21px}}
+@media(max-width:400px){.sti-body .screening-section{padding:28px 14px}.sti-body .body-actions{gap:12px}.sti-body .body-actions a{width:100%}.sti-body .physician-card{padding:22px 18px}.sti-body .disease-card{padding:26px 20px 16px}.sti-body .visit-card{padding:24px 20px}.sti-body .sti-jump a{padding:9px 13px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+/* The inherited shell has 240px root scroll-padding; add a small safety gap,
+   not a second full header offset. Override the old .bph-page section[id] rule. */
+.sti-page .sti-body [id]{scroll-margin-top:24px}
+.sti-page .sti-body #physicians{scroll-margin-top:24px}
+.sti-page .sti-body [tabindex="-1"]:focus:not(:focus-visible){outline:none}
+/* Local-only responsive header safety; source shell files remain untouched. */
+html:has(.sti-body){scroll-padding-top:var(--m19-sticky-height,0px)}
+html:not(.sti-measured-header) body:has(.sti-body) .site-top-r48{position:relative}
+@media(max-width:700px){
+body:has(.sti-body) .site-top-r48 .header{grid-template-columns:minmax(44px,1fr) minmax(0,auto) 44px}
+body:has(.sti-body) .site-top-r48 .header .header-actions-r26{min-width:0}
+body:has(.sti-body) .site-top-r48 .header .header-actions-r26>.action{white-space:normal;min-height:44px;text-align:center}
+body:has(.sti-body) .site-top-r48 .header>.menu>summary{width:44px;min-height:44px}
+}
+/* R3: seven user-requested refinements. Banner and shared source CSS untouched. */
+.sti-body .sti-intro-card p{margin-inline:auto;text-align:center;text-wrap:pretty}
+.sti-body .screening-steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 22px;position:relative;margin:38px 0 0}
+.sti-body .screening-steps>.screening-step{padding:26px 24px;border-radius:25px;background:#fffefa;counter-increment:none;isolation:isolate;box-shadow:0 10px 28px #174d3c05}
+.sti-body .screening-steps>.screening-step:before{display:none}
+.sti-body .screening-step:nth-child(3n+2){background:linear-gradient(145deg,#eaf4ed,#e0eee5);border-color:#b8d1bf}
+.sti-body .step-top{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:24px}
+.sti-body .step-number{font-family:Georgia,serif;color:#94723e;font-size:34px;line-height:1.2;letter-spacing:.04em}
+.sti-body .step-top svg{width:38px;height:38px;fill:none;stroke:#005448;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.sti-body .screening-step h3{text-align:left;font-family:Arial,"Microsoft JhengHei",sans-serif;font-size:21px;margin:0 0 14px;line-height:1.6}
+.sti-body .step-copy{font-size:16px;line-height:1.95;color:#49665a}
+.sti-body .screening-step a{position:relative;z-index:1}
+.sti-body .screening-step:nth-child(3n+1):after,.sti-body .screening-step:nth-child(3n+2):after{content:"";position:absolute;left:100%;top:48px;width:23px;height:1px;background:#c4b081;z-index:-1}
+.sti-body .screening-step.step-enter{animation:sti-step-enter .65s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--step-delay,0ms)}
+.sti-body .screening-step:focus-within{animation:none!important;opacity:1;transform:none}
+@keyframes sti-step-enter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.sti-body .check-situations{max-width:none;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:30px;counter-reset:situations}
+.sti-body .check-situations li{counter-increment:situations;border:1px solid #d6e1d5;border-radius:22px;background:linear-gradient(145deg,#fffefa,#f4f8f2);padding:68px 26px 28px;box-shadow:0 8px 28px #174d3c04}
+.sti-body .check-situations li:before{content:counter(situations,decimal-leading-zero);width:auto;height:auto;transform:none;left:26px;top:21px;background:none;color:#997a42;font-family:Georgia,serif;font-size:24px;line-height:1.2}
+.sti-body #when>.reading p{text-align:center}
+.sti-body .condition-emblem{width:132px;height:132px;margin:0 auto 20px;border:1px solid #d9d8bd;border-radius:50%;background:radial-gradient(circle at 32% 22%,#fffffb 0,#f1f5e9 48%,#deece1 100%);box-shadow:inset 0 0 0 7px #ffffff80,0 10px 25px #124a3a08;display:grid;place-items:center}
+.sti-body .condition-emblem svg{width:108px;height:108px;fill:none;stroke:#326c59;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sti-body .condition-emblem .icon-accent{stroke:#aa8c4f}
+.sti-body .disease-card{padding-top:32px}
+@media(max-width:1000px) and (min-width:761px){
+ .sti-body .screening-steps,.sti-body .check-situations{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .sti-body .screening-step:after{display:none}
+ .sti-body .screening-step:nth-child(odd):after{display:block;width:23px}
+}
+@media(max-width:760px){
+ .sti-body .screening-steps{grid-template-columns:1fr;gap:24px;padding-left:17px}
+ .sti-body .screening-steps:before{content:"";position:absolute;left:3px;top:36px;bottom:36px;width:1px;background:linear-gradient(#d7c89d,#a79760,#d7c89d)}
+ .sti-body .screening-steps>.screening-step{padding:24px 22px;border-radius:23px}
+ .sti-body .screening-steps>.screening-step:after{display:block;content:"";position:absolute;left:-19px;top:35px;width:9px;height:9px;border:2px solid #f1f6ee;border-radius:50%;background:#a68b52;z-index:1;box-shadow:0 0 0 1px #c6b786}
+ .sti-body .step-top{margin-bottom:20px}.sti-body .step-number{font-size:30px}
+ .sti-body .check-situations{grid-template-columns:1fr;gap:16px}
+ .sti-body .check-situations li{padding:65px 24px 25px}
+ .sti-body .condition-emblem{width:112px;height:112px}.sti-body .condition-emblem svg{width:92px;height:92px}
+}
+@media(prefers-reduced-motion:reduce){.sti-body .screening-step.step-enter{animation:none!important;opacity:1;transform:none}}
+@media print{.sti-body .screening-step.step-enter{animation:none!important;opacity:1;transform:none}}
+/* R4: reference-aligned physicians and a decorative reading-progress rail. */
+.sti-body .body-actions a{min-width:210px;gap:0}
+.sti-body .treatment-list{position:relative;padding-left:58px}
+.sti-body .treatment-rail{position:absolute;left:18px;top:0;bottom:0;width:2px;background:#e3e5d8}
+.sti-body .treatment-progress{position:absolute;left:0;top:0;width:2px;height:var(--treatment-progress,24px);background:linear-gradient(#b5a372,#527d64);transition:height .4s ease}
+.sti-body .treatment-pointer{position:absolute;left:1px;top:var(--treatment-progress,24px);transform:translate(-50%,-50%);width:34px;height:42px;display:grid;place-items:center;border:1px solid #b5a06b;border-radius:18px;background:#faf8ed;box-shadow:0 4px 14px #7c72481a;transition:top .4s ease}
+.sti-body .treatment-pointer svg{width:23px;height:27px;fill:none;stroke:#8f763e;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.sti-body .treatment-row{padding:28px 26px;gap:28px;border:1px solid #dce4d7;border-radius:18px;background:#fcfdf9;margin:0 0 18px;transition:background .5s ease,border-color .5s ease,box-shadow .5s ease}
+.sti-body .treatment-row:last-child{margin-bottom:0}
+.sti-body .treatment-row.is-reached{background:#f0f6ed;border-color:#c7d5bb}
+.sti-body .treatment-row.is-active{background:linear-gradient(110deg,#fcfaec,#eaf4e9);border-color:#b8a56a;box-shadow:0 8px 26px #a6a07220,inset 0 1px 0 #fff}
+.sti-body .treatment-row h3{font-size:21px}
+.sti-body #physicians>.reading p{text-align:center;text-wrap:pretty}
+.sti-body .physician-card{gap:48px;margin:30px 0}
+.sti-body .physician-copy{display:flex;flex-direction:column;justify-content:center;align-self:center}
+.sti-body .physician-copy .physician-name{text-align:left;margin:16px 0 0;color:#896c34;font-family:Arial,"Microsoft JhengHei",sans-serif;font-size:24px;font-weight:400;line-height:1.8}
+.sti-body .physician-copy .physician-motto{text-align:left;margin:0 0 16px;font-family:Arial,"Microsoft JhengHei",sans-serif;font-size:27px;font-weight:700;line-height:1.45;color:#00483e}
+.sti-body .physician-copy>p:last-child{line-height:1.75;margin:0 0 16px}
+.sti-body .physician-image img{border-radius:15px}
+.sti-body .medical-disclaimer{background:none;border:0;padding:0 16px;margin:36px auto 80px}
+.sti-body .medical-disclaimer p{font-size:14px;line-height:1.8;text-align:center;color:#587469}
+@media(max-width:760px){
+ .sti-body .treatment-list{padding-left:33px}.sti-body .treatment-rail{left:7px}
+ .sti-body .treatment-pointer{width:25px;height:35px}.sti-body .treatment-pointer svg{width:19px;height:23px}
+ .sti-body .treatment-row{padding:24px 20px;gap:16px}
+ .sti-body .physician-card{padding:22px;gap:20px}
+ .sti-body .physician-copy .physician-name{margin-top:0}
+ .sti-body .physician-copy .physician-motto{font-size:24px}
+ .sti-body .medical-disclaimer{margin:28px auto 56px}
+}
+@media(prefers-reduced-motion:reduce){.sti-body .treatment-row,.sti-body .treatment-pointer,.sti-body .treatment-progress{transition:none!important}}

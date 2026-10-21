@@ -1,0 +1,51 @@
+/* Source-backed r2 components; scoped to this page. */
+:root{--ps-anchor-offset:180px}
+html:has(.private-surgery-page){scroll-padding-top:var(--ps-anchor-offset);scroll-padding-bottom:90px}
+.private-surgery-page{padding-bottom:110px}
+.private-surgery-page .ps-copy{text-align:center}
+.private-surgery-page .hero-actions{margin:32px auto;max-width:none}
+.private-surgery-page a.original-button{cursor:pointer;text-decoration:none}
+.private-surgery-page a.original-button:hover{filter:brightness(.93)}
+.private-surgery-page .ps-treatment-nav a{position:relative;text-decoration:none;min-height:96px}
+.private-surgery-page .ps-treatment-nav a span:nth-child(2){text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.private-surgery-page .ps-treatment-nav a:hover{background:#edf5ee;border-color:#a18a5a}
+.private-surgery-page .ps-treatment-nav a span:first-child,.private-surgery-page .ps-treatment-nav a span:last-child{flex-shrink:0}
+.private-surgery-page .ps-section{padding:42px 0;border-bottom:1px solid #e4ece7;scroll-margin-top:0}
+.private-surgery-page .ps-section h2{scroll-margin-top:0}
+.private-surgery-page .ps-section h2:focus{outline:3px solid #a18a5a;outline-offset:5px}
+.private-surgery-page .ps-section h3{margin:36px 0 16px;line-height:1.5;text-align:left}
+.private-surgery-page .ps-section p{margin:16px 0;overflow-wrap:anywhere}
+.private-surgery-page .ps-section li{margin:12px 0;padding-left:6px}
+.private-surgery-page .ps-section ol,.private-surgery-page .ps-section ul{padding-left:28px}
+.private-surgery-page .ps-section blockquote{background:#faf8f2;border-left:2px solid #b79b61;margin:0 0 30px;padding:24px 28px;border-radius:0 20px 20px 0}
+.private-surgery-page .ps-source-content img{display:block;max-width:100%;width:min(100%,620px);height:auto;margin:28px auto;border-radius:16px}
+.private-surgery-page .ps-image-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;align-items:start;margin:24px 0}
+.private-surgery-page .ps-image-grid img{width:100%;margin:0}
+.private-surgery-page .ps-image-grid:has(>img:only-child){display:block}
+.private-surgery-page .ps-image-grid>img:only-child{width:min(100%,620px);margin:auto}
+.private-surgery-page #physicians .ps-image-grid{max-width:660px;margin:28px auto}
+.private-surgery-page .ps-physician-card{display:grid;grid-template-columns:1.1fr 1fr;gap:0 28px;padding:28px;margin:28px 0;border:1px solid #d7e3d9;border-radius:24px 6px;background:#f8faf7;align-items:center}
+.private-surgery-page .ps-physician-card p{grid-column:1}
+.private-surgery-page .ps-physician-card img{grid-column:2;grid-row:1 / span 3;margin:0;width:100%}
+.private-surgery-page .ps-physician-card p:first-of-type{font-size:23px;color:#00483e;margin-bottom:0}
+.private-surgery-page #physicians p:has(.ps-more){text-align:center}
+.private-surgery-page .medical-disclaimer{text-align:center;margin-top:56px!important}
+.private-surgery-page .ps-faq{border:1px solid #c5d7cd;border-radius:20px 6px 20px 6px;margin:18px 0;padding:0 24px;background:#f8faf7}
+.private-surgery-page .ps-faq summary{padding:22px 0;cursor:pointer;min-height:48px}
+.private-surgery-page .ps-faq summary h3{display:inline;margin:0;font-size:23px;line-height:1.5}
+.private-surgery-page .ps-faq[open]{padding-bottom:20px;background:#fff}
+.private-surgery-page summary:focus-visible{outline:3px solid #a18a5a;outline-offset:5px}
+.private-surgery-page .ps-original-banner{margin:32px auto 0;max-width:960px;color:#777e7a;font-size:14px}
+.private-surgery-page .ps-original-banner summary,.private-surgery-page .ps-source-image summary{cursor:pointer;min-height:44px;padding:12px 0}
+.private-surgery-page .ps-original-banner img{width:100%;height:auto}
+.private-surgery-page .ps-comparison{border-collapse:collapse;table-layout:fixed;width:100%;font-size:16px;line-height:1.7;color:#284b40;margin:28px 0}
+.private-surgery-page .ps-comparison caption{font-weight:700;padding:16px;font-size:21px;color:#00483e}
+.private-surgery-page .ps-comparison th,.private-surgery-page .ps-comparison td{border:1px solid #d7e3d9;padding:18px;text-align:left;overflow-wrap:anywhere}
+.private-surgery-page .ps-comparison thead{background:#edf5ee}
+.private-surgery-page .ps-comparison tbody th{background:#f8faf7}
+.private-surgery-page .ps-comparison-cards{display:none}
+@media(max-width:900px){.private-surgery-page .ps-comparison.has-mobile-cards{display:none}.private-surgery-page .ps-comparison-cards{display:block}.private-surgery-page .ps-comparison-cards details{border:1px solid #d7e3d9;padding:16px;margin:12px 0;border-radius:16px;background:#f8faf7}.private-surgery-page .ps-comparison-cards summary{font-size:18px;font-weight:700;cursor:pointer;min-height:44px}.private-surgery-page .ps-comparison-cards dt{font-size:17px;font-weight:700;margin-top:14px}.private-surgery-page .ps-comparison-cards dd{font-size:16px;line-height:1.85;margin:6px 0 18px}.private-surgery-page .ps-comparison th,.private-surgery-page .ps-comparison td{padding:8px}}
+@media(max-width:700px){.private-surgery-page .ps-section{padding:32px 0}.private-surgery-page .ps-faq{padding-left:16px;padding-right:16px}.private-surgery-page .ps-faq summary h3{font-size:21px}.private-surgery-page .ps-image-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.private-surgery-page .ps-section blockquote{padding:20px}.private-surgery-page .ps-treatment-nav a{min-height:80px}.private-surgery-page .hero-actions{gap:10px}}
+@media(max-width:350px){.private-surgery-page .ps-image-grid{grid-template-columns:1fr}.private-surgery-page .ps-treatment-nav a{padding:18px 12px}.private-surgery-page .hero-actions{flex-wrap:wrap}.private-surgery-page .hero-actions a{flex:1 1 110px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+@media(max-width:700px){.private-surgery-page .ps-physician-card{display:flex;flex-direction:column;padding:20px;align-items:stretch}.private-surgery-page .ps-physician-card img{max-width:360px;margin:16px auto}.private-surgery-page .ps-physician-card p{width:100%}}

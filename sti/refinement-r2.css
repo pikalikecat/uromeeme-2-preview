@@ -1,0 +1,28 @@
+/* Local r2 only; same design system, less mobile scrolling. */
+.bph-page #physicians .ps-physician-copy>p:nth-of-type(2){font-weight:700}
+.bph-page .ps-treatment-nav{margin-bottom:18px}
+.bph-reading-links{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 24px;margin:0 0 38px}
+.bph-reading-links a{display:inline-flex;align-items:center;min-height:48px;padding:10px 16px;border:1px solid #d7e3d9;border-radius:16px 4px;color:#00483e;background:#f8faf7;font-size:16px;text-underline-offset:4px}
+.bph-page .ps-comparison th,.bph-page .ps-comparison td{padding:14px 12px;vertical-align:top}
+.bph-page .bph-transit-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:26px}
+.bph-page .bph-transit-card{border:1px solid #d7e3d9;border-radius:22px 6px;padding:24px;background:#f8faf7;min-width:0}
+.bph-page .bph-transit-card:last-child{grid-column:1/-1}
+.bph-page .bph-transit-card>span{display:block;white-space:pre-line;margin:0 0 12px;overflow-wrap:anywhere}
+.bph-page .bph-transit-card>span:first-child{font-size:20px;color:#00483e;margin-bottom:16px}
+@media(max-width:800px){
+ .bph-page .ps-hero{padding:26px 22px 22px;gap:12px}
+ .bph-page .ps-copy{padding:0}
+ .bph-page .ps-copy .eyebrow{margin-bottom:18px}
+ .bph-page .ps-hero h1{margin-bottom:18px}
+ .bph-page .ps-hero h1 span:last-child{padding-bottom:18px}
+ .bph-page .ps-hero .hero-actions{margin:20px auto}
+ .bph-page .ps-portraits{max-width:340px}
+ .bph-page .ps-nameplate{padding:14px 8px 12px}
+ .bph-page .bph-orange-grid{gap:12px}
+ .bph-page .bph-orange-grid .ps-media-card{max-width:280px;margin:4px auto;padding:12px}
+ .bph-page .bph-orange-grid .ps-media-card img{max-width:210px;margin:auto}
+ .bph-page .bph-orange-grid figcaption{margin-top:10px;padding:10px 0 0}
+ .bph-page .bph-transit-grid{grid-template-columns:1fr;gap:14px}
+ .bph-page .bph-transit-card{padding:20px}
+}
+@media(max-width:350px){.bph-reading-links{gap:8px;margin-bottom:28px}.bph-reading-links a{width:100%;justify-content:center}.bph-page .ps-hero{padding-inline:18px}}

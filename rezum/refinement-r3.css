@@ -1,0 +1,29 @@
+/* Static editorial refinement. Original portraits, source copy and anchor cards unchanged. */
+.private-surgery-page .ps-hero{background:radial-gradient(ellipse at 72% 28%,#fffaf0 0%,#fffaf080 15%,transparent 42%),radial-gradient(ellipse at 110% 5%,#3b7565a3,transparent 56%),radial-gradient(ellipse at 0% 100%,#a5c7b080,transparent 52%),linear-gradient(125deg,#fffefa 10%,#edf4ee 57%,#b2cbb9);border-color:#b8b797;box-shadow:0 24px 64px #153d2921,inset 0 0 0 5px #ffffff70;min-height:660px}
+.private-surgery-page .ps-hero:before{inset:16px;border-color:#b79b6170;border-radius:25px;box-shadow:inset 0 0 0 5px #ffffff35}
+.private-surgery-page .ps-hero:after{content:"";position:absolute;inset:30px;border:1px solid #ffffff8c;border-radius:16px;pointer-events:none;z-index:0}
+.private-surgery-page .ps-hero-ornament{position:absolute;width:640px;height:760px;right:-30px;top:-70px;border:1px solid #b79b6180;border-radius:50%;transform:rotate(-24deg);box-shadow:0 0 0 22px #ffffff18,0 0 0 23px #b79b613b,0 0 0 62px #ffffff1c,0 0 0 63px #b79b612b;pointer-events:none;z-index:0}
+.private-surgery-page .ps-copy,.private-surgery-page .ps-portraits{position:relative;z-index:1}
+.private-surgery-page .ps-copy{padding:24px 8px}
+.private-surgery-page .ps-copy .eyebrow{display:flex;align-items:center;justify-content:center;gap:14px;letter-spacing:.2em;margin-bottom:32px;color:#806c40}
+.private-surgery-page .ps-copy .eyebrow:before,.private-surgery-page .ps-copy .eyebrow:after{content:"";width:36px;height:1px;background:linear-gradient(90deg,transparent,#b79b61)}
+.private-surgery-page .ps-copy .eyebrow:after{transform:rotate(180deg)}
+.private-surgery-page .ps-hero h1{font-size:clamp(36px,3.8vw,55px);letter-spacing:.065em;text-shadow:0 2px 0 #fff9;margin-bottom:28px}
+.private-surgery-page .ps-hero h1 span:last-child{position:relative;padding-bottom:26px}
+.private-surgery-page .ps-hero h1 span:last-child:after{content:"";position:absolute;width:88px;height:3px;bottom:0;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,transparent,#b79b61 25%,#dccba0 50%,#b79b61 75%,transparent)}
+.private-surgery-page .ps-intro{border-block:1px solid #b79b613d;background:linear-gradient(90deg,transparent,#fff8,transparent);padding:18px 0;font-size:19px;line-height:1.9;letter-spacing:.015em}
+.private-surgery-page .ps-hero .original-button{box-shadow:0 7px 18px #00483e17,inset 0 1px 0 #ffffff40}
+.private-surgery-page .ps-hero .secondary{border-color:#a69b73;background:#fffdf6}
+.private-surgery-page .ps-nameplates{gap:16px}
+.private-surgery-page .ps-nameplate{position:relative;border-color:#b79b618f;background:linear-gradient(135deg,#fffef7f2,#f3f7eeed);padding:24px 10px 20px;box-shadow:0 12px 25px #153d291c,inset 0 0 0 4px #ffffff80;border-radius:24px 6px 24px 6px}
+.private-surgery-page .ps-nameplate:before{content:"";position:absolute;top:10px;left:25%;right:25%;height:1px;background:linear-gradient(90deg,transparent,#b79b61,transparent)}
+.private-surgery-page .ps-nameplate span{letter-spacing:.1em;margin-bottom:8px}
+.private-surgery-page .ps-introduction blockquote,.private-surgery-page .ps-introduction blockquote p{text-align:center}
+.private-surgery-page .ps-section .ps-section-subtitle{text-align:center;margin:20px auto 32px}
+.private-surgery-page .ps-section>h3{text-align:center}
+/* Five illustrations: 3+2 centered at equal size, not 4+1. */
+.private-surgery-page .ps-five-images{display:flex;flex-wrap:wrap;justify-content:center;gap:22px}
+.private-surgery-page .ps-five-images>img{width:calc((100% - 44px)/3);max-width:none;aspect-ratio:1;object-fit:contain;flex:0 0 auto;margin:0}
+@media(max-width:800px){.private-surgery-page .ps-hero{min-height:0;padding:38px 24px 30px}.private-surgery-page .ps-hero:before{inset:10px;border-radius:18px}.private-surgery-page .ps-hero:after{inset:20px;border-radius:12px}.private-surgery-page .ps-hero-ornament{width:520px;height:650px;right:-190px;top:34%}.private-surgery-page .ps-copy{padding:8px 0}.private-surgery-page .ps-copy .eyebrow{font-size:12px;gap:10px;letter-spacing:.12em;margin-bottom:26px}.private-surgery-page .ps-copy .eyebrow:before,.private-surgery-page .ps-copy .eyebrow:after{width:24px}.private-surgery-page .ps-hero h1{font-size:36px;letter-spacing:.04em}.private-surgery-page .ps-intro{font-size:17px}.private-surgery-page .ps-nameplates{gap:10px}.private-surgery-page .ps-nameplate{padding:22px 8px 16px}}
+@media(max-width:700px){.private-surgery-page .ps-five-images{gap:16px}.private-surgery-page .ps-five-images>img{width:calc((100% - 16px)/2)}}
+@media(max-width:350px){.private-surgery-page .ps-hero{padding-inline:18px}.private-surgery-page .ps-hero h1{font-size:30px}.private-surgery-page .ps-intro{font-size:16px}.private-surgery-page .ps-five-images>img{width:100%;max-width:280px}.private-surgery-page .ps-nameplate span{letter-spacing:0}}

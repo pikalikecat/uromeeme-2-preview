@@ -1,0 +1,30 @@
+/* Isolated Rezum r1. Existing page styles and sources are never modified. */
+.rezum-page .ps-hero h1{font-size:clamp(30px,3.3vw,48px);line-height:1.45;overflow-wrap:anywhere}
+.rezum-page .ps-hero h1 span:last-child{font-size:inherit}
+.rezum-page .ps-intro{max-width:30em;font-size:19px;line-height:1.9}
+.rezum-page .bph-intro p,.rezum-page .ps-section>p,.rezum-page .ps-section>span{white-space:pre-line;line-height:1.9}
+.rezum-page .ps-section>span{display:block;margin:18px 0}
+.rezum-page .ps-media-card{width:min(100%,900px)}
+.rezum-page .ps-section blockquote{font-size:14px;color:#50665e;text-align:center;margin:12px auto 28px}
+.rezum-page .ps-comparison{min-width:850px;width:100%;table-layout:fixed}
+.rezum-page .ps-comparison th,.rezum-page .ps-comparison td{font-size:15px;line-height:1.8;overflow-wrap:anywhere}
+.rezum-page .ps-comparison th:first-child{width:12%}
+.rezum-page .bph-comparison-note::before{content:'* ';font-weight:700}
+.rezum-page .bph-comparison-note span{display:inline}
+.rezum-page .ps-steps li{white-space:pre-line}
+.rezum-page .step-source-number{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.rezum-page .ps-faq summary{font-size:20px;font-weight:700;line-height:1.75;padding:22px 36px 22px 4px}
+.rezum-page .rezum-answer{padding:0 8px 24px;line-height:1.9}
+.rezum-page .rezum-answer p{margin:12px 0}
+.rezum-page .ps-physician-copy>p:nth-of-type(2){font-weight:700}
+.rezum-page .bph-visit .medical-disclaimer{text-align:center}
+.rezum-page .bph-visit>span{text-align:center}
+.rezum-page .bph-transit-card>span{text-align:left}
+.rezum-page .ps-media-card a{min-width:44px;min-height:48px}
+.rezum-page #aftercare{scroll-margin-top:var(--bph-header-offset,240px)}
+@media(max-width:800px){.rezum-page .ps-intro{font-size:17px}.rezum-page .ps-hero h1{font-size:32px}.rezum-page .ps-media-card{padding:10px}.rezum-page .ps-comparison-cards summary{min-height:48px}.rezum-page .ps-faq summary{font-size:19px}}
+@media(max-width:350px){.rezum-page .ps-hero h1{font-size:28px}}
+/* Exact private-surgery r4 directions component: plain paragraphs, not cards. */
+.rezum-page #directions{background:transparent;border:0;padding:0;line-height:1.75}
+.rezum-page #directions>p{line-height:1.75;margin:18px 0;text-align:start;white-space:normal}
+.rezum-page #directions .hero-actions{line-height:1.75;margin:32px auto}

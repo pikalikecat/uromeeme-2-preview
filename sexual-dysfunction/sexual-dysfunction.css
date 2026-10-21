@@ -1,0 +1,104 @@
+/* Page-scoped extension of the confirmed treatment-page frame. */
+.sd-page{--sd-deep:#00483e;--sd-mint:#edf4ee;--sd-gold:#b79b61;--sd-ivory:#fffefa}
+.sd-page{max-width:1840px;padding:36px 48px 72px}
+.sd-page .ps-hero{max-width:1320px;min-height:680px;margin:0 auto;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:12px;padding:75px 65px 90px;border-color:#b5cdbd;border-radius:36px;background:radial-gradient(ellipse at 98% 9%,#a2c7b6a8,transparent 39%),radial-gradient(ellipse at 0% 100%,#dcece1bd,transparent 58%),linear-gradient(105deg,#fff 11%,#f8fcf9 49%,#c5dfd2 100%);box-shadow:0 22px 65px #153d2915}
+.sd-page .ps-hero:before{inset:14px;border-color:#cdbb9490;border-radius:27px;box-shadow:none}
+.sd-page .ps-hero:after{inset:26px;border-color:#ffffffa8;border-radius:18px}
+.sd-page .ps-hero-ornament{width:70%;height:150%;right:-31%;top:-23%;border-color:#b79b614d;transform:rotate(-22deg);box-shadow:0 0 0 48px #ffffff0b}
+.sd-page .ps-copy{padding:20px 5% 20px 0;text-align:center;z-index:3}
+.sd-page .ps-copy .eyebrow{font-size:18px;letter-spacing:.26em;margin-bottom:30px}
+.sd-page .ps-hero h1{font-size:clamp(46px,3.7vw,68px);line-height:1.28;letter-spacing:.045em;margin-bottom:28px;overflow-wrap:anywhere}
+.sd-page .ps-hero h1 span:first-child{font-size:.54em;line-height:1.6;letter-spacing:.09em;text-wrap:balance}
+.sd-page .ps-hero h1 span:last-child{color:#a4894e;padding-bottom:30px}
+.sd-page .ps-hero h1 .sd-small-break{display:none}
+.sd-page .ps-hero .ps-intro{font-size:clamp(17px,1.25vw,20px);line-height:1.7;letter-spacing:.025em;max-width:none;margin:0 auto 24px;color:#806c40}
+.sd-page .ps-hero .hero-actions{margin:38px auto 0;max-width:none}
+.sd-page .ps-hero .original-button{min-width:168px;padding:14px 27px;font-size:18px}
+.sd-page .sd-portraits{position:relative;width:100%;max-width:none;height:100%;min-height:500px;margin:0;align-self:stretch;z-index:1}
+.sd-page .sd-hero-picture{display:block;position:absolute;inset:0;overflow:hidden;mask-image:linear-gradient(#000 0 84%,transparent 100%)}
+.sd-page .sd-hero-picture img{position:absolute;display:block;width:110%;max-width:none;height:auto;top:-70px;right:0;object-fit:contain}
+.sd-page .sd-hero-plate{position:absolute;z-index:2;display:flex;align-items:center;gap:10px;writing-mode:vertical-rl;width:66px;padding:17px 12px;border:1px solid #bba36f88;border-radius:28px 6px 28px 6px;background:#fffffff2;box-shadow:0 10px 28px #153d2912;color:var(--sd-deep)}
+.sd-page .sd-hero-plate span{font-size:13px;letter-spacing:.1em;color:#806c40}
+.sd-page .sd-hero-plate strong{font:700 23px/1.5 "Noto Serif TC","PMingLiU",serif;letter-spacing:.09em}
+.sd-page .sd-hero-plate-left{left:0;top:31%}
+.sd-page .sd-hero-plate-right{right:-3%;top:0}
+.sd-page .sd-intro{max-width:1000px;margin:52px auto 28px;line-height:1.9}
+.sd-page .sd-intro>p{margin:0 0 18px;white-space:normal}
+.sd-page .sd-legacy-slogans{display:flex;justify-content:center;gap:12px 30px;flex-wrap:wrap;padding:20px 24px;border-left:2px solid var(--sd-gold);border-radius:0 18px 18px 0;background:#faf8f2;color:var(--sd-deep);font-weight:700;text-align:center}
+.sd-page .sd-intro>p.sd-legacy-slogans{margin:24px 0 0}
+.sd-page .sd-topic-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;max-width:1160px;margin:28px auto 48px}
+.sd-page .sd-topic-nav a{display:flex;align-items:center;gap:12px;min-width:0;min-height:92px;padding:18px;border:1px solid #c5d7cd;border-radius:24px 6px;background:linear-gradient(130deg,#fff,#f2f6ef);box-shadow:0 8px 20px #153d2906;color:var(--sd-deep);font-weight:700;text-decoration:none}
+.sd-page .sd-topic-nav a span:last-child{margin-left:auto;border:1px solid #c5d7cd;border-radius:50%;width:34px;height:34px;display:grid;place-items:center;background:#fff;flex:none}
+.sd-page .sd-topic-nav a:hover,.sd-page .sd-topic-nav a:focus-visible{border-color:#a18a5a;background:#edf4ed}
+.sd-page .sd-section{scroll-margin-top:var(--ps-anchor-offset,180px)}
+.sd-page .sd-section .sd-subtopic{margin:14px 0 38px}
+.sd-page .sd-section h3{font-size:24px;line-height:1.55;text-align:center;margin:38px auto 20px}
+.sd-page .sd-section h4{font-family:Arial,"Microsoft JhengHei",sans-serif;color:var(--sd-deep);font-size:19px;line-height:1.6;margin:28px 0 12px}
+.sd-page .sd-subtopic>p,.sd-page .sd-intro>p{line-height:1.9;overflow-wrap:anywhere}
+.sd-page .sd-subtopic>p{white-space:normal}
+.sd-page .sd-category-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;list-style:none;padding:0!important;margin:22px 0 0}
+.sd-page .sd-category-list li{display:grid;place-items:center;margin:0;padding:18px;border:1px solid #c5d7cd;border-radius:20px 6px;background:#f8faf7;text-align:center;color:var(--sd-deep);font-weight:700}
+.sd-page .ps-media-card.source-11272{max-width:760px}
+.sd-page .sd-table-wrap{overflow-x:auto;max-width:100%;margin:22px 0 10px;border-radius:18px;scrollbar-gutter:stable}
+.sd-page .sd-comparison-table{border-collapse:collapse;width:100%;min-width:850px;table-layout:fixed;background:#fff;color:#284b40;font-size:15px;line-height:1.75}
+.sd-page .sd-comparison-table caption{padding:16px;color:var(--sd-deep);font:700 21px/1.5 "Noto Serif TC","PMingLiU",serif}
+.sd-page .sd-comparison-table th,.sd-page .sd-comparison-table td{padding:14px 12px;border:1px solid #d7e3d9;text-align:left;vertical-align:top;overflow-wrap:anywhere;white-space:pre-line}
+.sd-page .sd-comparison-table th:first-child{width:15%}
+.sd-page .sd-comparison-table thead{background:#faf8f2}
+.sd-page .sd-comparison-table tbody th{background:#f8faf7;color:var(--sd-deep)}
+.sd-page .sd-comparison-cards{display:none}
+.sd-page #physicians{scroll-margin-top:var(--ps-anchor-offset,180px)}
+.sd-page #physicians .ps-physician-copy{display:flex;flex-direction:column;justify-content:center}
+.sd-page #physicians .ps-physician-copy>p:nth-of-type(2){font-weight:700}
+.sd-page .sd-physicians-intro{margin:18px auto 32px;max-width:850px;line-height:1.9}
+.sd-page .sd-approach{margin:40px 0;padding:16px 24px;background:#faf8f2;border-left:2px solid var(--sd-gold);border-radius:0 18px 18px 0}
+.sd-page .sd-approach>p{margin:18px 0;line-height:1.9;white-space:normal}
+.sd-page .sd-visit{text-align:center}
+.sd-page .sd-visit>p{white-space:pre-line}
+.sd-page .sd-visit .bph-map-link{display:inline-flex;min-height:48px;align-items:center;justify-content:center;margin:18px auto;padding:10px 20px;border:1px solid #c5d7cd;border-radius:99px;background:#fff}
+.sd-page .sd-directions{max-width:1000px;margin:36px auto 0;background:transparent;border:0;text-align:left;line-height:1.75}
+.sd-page .sd-directions h3{text-align:center}
+.sd-page .sd-directions>p{line-height:1.75;margin:18px 0;white-space:pre-line}
+.sd-page .sd-directions>span{display:block;white-space:pre-line;margin:12px 0;text-align:left}
+.sd-page .sd-directions .hero-actions{margin:32px auto}
+.sd-page [tabindex="-1"]:focus{outline:3px solid #a18a5a;outline-offset:5px}
+@media(max-width:900px){.sd-page .sd-topic-nav{grid-template-columns:repeat(2,minmax(0,1fr))}.sd-page .sd-table-wrap.has-mobile-cards{display:none}.sd-page .sd-comparison-cards.has-mobile-cards{display:block}.sd-page .sd-comparison-cards details{margin:12px 0;padding:16px;border:1px solid #d7e3d9;border-radius:18px;background:#f8faf7}.sd-page .sd-comparison-cards summary{min-height:48px;cursor:pointer;font-size:19px;font-weight:700;line-height:1.65}.sd-page .sd-comparison-cards dl{margin:10px 0}.sd-page .sd-comparison-cards dt{margin:18px 0 5px;font-weight:700;color:var(--sd-deep)}.sd-page .sd-comparison-cards dd{margin:0 0 12px;line-height:1.8;white-space:pre-line}}
+@media(max-width:1050px){.sd-page{padding:24px 24px 60px}.sd-page .ps-hero{grid-template-columns:1fr;min-height:0;padding:38px 30px 0;gap:4px}.sd-page .ps-copy{padding:8px 0}.sd-page .sd-portraits{height:480px;min-height:480px;max-width:570px;margin:auto}.sd-page .sd-hero-picture img{width:min(90vw,630px);top:-48px;right:50%;transform:translateX(50%)}.sd-page .sd-hero-plate-left{left:0;top:30%}.sd-page .sd-hero-plate-right{right:0;top:15%}}
+@media(max-width:800px){.sd-page .ps-hero{padding:34px 24px 0;gap:0;border-radius:26px}.sd-page .ps-hero:before{inset:9px;border-radius:18px}.sd-page .ps-hero:after{inset:18px;border-radius:12px}.sd-page .ps-copy .eyebrow{font-size:13px;margin-bottom:24px}.sd-page .ps-hero h1{font-size:40px;margin-bottom:22px}.sd-page .ps-hero h1 span:last-child{padding-bottom:20px}.sd-page .ps-hero .ps-intro{font-size:17px}.sd-page .ps-hero .hero-actions{margin:22px auto 0}.sd-page .sd-portraits{height:410px;min-height:410px;max-width:440px}.sd-page .sd-hero-picture img{width:min(96vw,520px);top:-38px}.sd-page .sd-hero-plate{width:48px;padding:10px 7px;gap:5px}.sd-page .sd-hero-plate span{font-size:10px}.sd-page .sd-hero-plate strong{font-size:16px}}
+@media(max-width:700px){.sd-page{padding:16px 16px 48px}.sd-page .ps-hero{padding:30px 20px 0}.sd-page .ps-hero h1{font-size:34px}.sd-page .ps-hero .original-button{min-width:0;font-size:16px;padding:10px 18px}.sd-page .sd-portraits{height:345px;min-height:345px}.sd-page .sd-hero-picture img{top:-20px}.sd-page .sd-intro{margin:30px auto 16px}.sd-page .sd-category-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.sd-page .sd-category-list li{font-size:15px;padding:14px 10px}.sd-page .sd-topic-nav{gap:10px;margin:24px auto 30px}.sd-page .sd-topic-nav a{min-height:74px;padding:13px;font-size:16px}.sd-page .sd-legacy-slogans{padding:16px}.sd-page .sd-approach{padding:12px 18px}.sd-page .sd-section h3{font-size:21px}.sd-page .sd-section h4{font-size:18px}}
+@media(max-width:350px){.sd-page{padding:12px 12px 48px}.sd-page .ps-hero{padding:27px 18px 0}.sd-page .sd-topic-nav{grid-template-columns:1fr}.sd-page .sd-category-list{grid-template-columns:1fr}.sd-page .ps-hero h1{font-size:30px}.sd-page .ps-hero h1 span:first-child{font-size:.67em}.sd-page .ps-hero h1 .sd-small-break{display:block}.sd-page .hero-actions a{flex:1 1 100%}.sd-page .sd-portraits{height:290px;min-height:290px}.sd-page .sd-hero-picture img{width:330px;top:-8px}.sd-page .sd-hero-plate{width:42px;padding:8px 5px}.sd-page .sd-hero-plate strong{font-size:13px}.sd-page .sd-hero-plate span{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.sd-page *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* Source-backed grouping and treatment cards, matching the established mint/gold frame. */
+.sd-page .sd-legacy-slogans{gap:4px;font-weight:400}
+.sd-page .sd-legacy-slogans strong{font-weight:700}
+.sd-page .sd-category-list li,.sd-page .sd-topic-nav a{position:relative;isolation:isolate;background:linear-gradient(125deg,#fff 10%,#e3eee5);border-radius:26px 6px;box-shadow:0 12px 26px #153d290b}
+.sd-page .sd-category-list li:before,.sd-page .sd-topic-nav a:before{content:"";position:absolute;inset:8px;border:1px solid #cdbb9466;border-radius:19px 3px;pointer-events:none;z-index:-1}
+.sd-page .sd-category-list li{display:flex;flex-direction:column;justify-content:center;gap:10px;min-height:130px;padding:24px 18px}
+.sd-page .sd-category-number,.sd-page .sd-topic-nav .ps-number{font:500 29px/1.2 Georgia,serif;color:#a4894e}
+.sd-page .sd-topic-nav a{flex-direction:column;justify-content:center;gap:12px;min-height:156px;padding:24px 18px;text-align:center}
+.sd-page .sd-topic-nav a span:last-child{position:absolute;right:14px;bottom:14px;width:24px;height:24px;font-size:14px}
+.sd-page .sd-cause-group{margin:22px 0;padding:24px;border:1px solid #d7e3d9;border-radius:22px 6px;background:#f8faf7;line-height:1.9}
+.sd-page .sd-cause-label{display:block;font-weight:700;font-size:20px;color:var(--sd-deep);margin:0 0 18px}
+.sd-page .sd-cause-group h4{margin:0 0 18px}
+.sd-page .sd-factor{padding:16px 0;border-top:1px solid #d7e3d9}
+.sd-page .sd-factor b{display:block;color:var(--sd-deep)}
+.sd-page .sd-factor>span{display:block}
+.sd-page .sd-physicians-intro{text-align:center}
+.sd-page #physicians>.sd-physicians-intro{width:min(100%,850px);margin:18px auto 32px;text-align:center;text-wrap:pretty}
+.sd-page #physicians>.sd-physicians-intro>span{display:block}
+.sd-page #physicians>.sd-physicians-intro>span+span{margin-top:6px}
+.sd-page .sd-medical-disclaimer{font-size:14px!important;color:#6a7773;text-align:center;line-height:1.8;margin:28px auto 40px!important;max-width:900px}
+.sd-page .sd-treatment-box{margin:22px 0}
+.sd-page .sd-treatment-box summary{list-style:none}
+.sd-page .sd-treatment-box summary::-webkit-details-marker{display:none}
+.sd-page .sd-treatment-box summary h4{margin:0 0 12px}
+@media(max-width:900px){
+.sd-page .sd-treatment-box{padding:16px;border:1px solid #d7e3d9;border-radius:18px;background:#f8faf7}
+.sd-page .sd-treatment-box summary,.sd-page .sd-comparison-cards summary{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;min-height:48px;padding:0 26px;list-style:none;cursor:pointer}
+.sd-page .sd-treatment-box summary::-webkit-details-marker,.sd-page .sd-comparison-cards summary::-webkit-details-marker{display:none}
+.sd-page .sd-treatment-box summary:before,.sd-page .sd-comparison-cards summary:before{content:'▸';position:absolute;left:0;color:var(--sd-deep)}
+.sd-page details[open]>summary:before{transform:rotate(90deg)}
+.sd-page .sd-treatment-box summary h4{margin:0;font-size:19px}
+.sd-page .sd-treatment-box>span{display:block;margin-top:16px;line-height:1.9}
+.sd-page .sd-cause-group{padding:18px}
+}

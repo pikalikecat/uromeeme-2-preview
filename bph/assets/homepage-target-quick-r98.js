@@ -1,0 +1,1 @@
+(()=>{const b=document.getElementById('quick-top-r98');if(!b)return;b.addEventListener('click',()=>{window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});const skip=document.querySelector('.skip');if(skip)skip.focus({preventScroll:true});});})();
