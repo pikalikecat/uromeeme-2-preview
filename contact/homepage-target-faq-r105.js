@@ -1,0 +1,1 @@
+(()=>{'use strict';const root=document.querySelector('.faq-r105');if(!root)return;const items=[...root.querySelectorAll('.faq-item')];items.forEach(item=>{item.addEventListener('toggle',()=>{if(item.open)items.forEach(other=>{if(other!==item)other.open=false;});});});})();
