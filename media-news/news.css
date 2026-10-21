@@ -1,0 +1,5 @@
+/* Article-only additions; R12 branding, banner geometry and shared styles stay byte-identical. */
+.report-intro{font:400 16px/1.85 var(--home-sans);color:var(--media-ink);margin:16px 0 0;overflow-wrap:anywhere}
+.feature-copy .report-doctors{margin:0 0 12px;font-size:16px}
+.feature-date.report-meta{display:block}
+.page-next[aria-disabled="true"]{color:#6e7d74}
