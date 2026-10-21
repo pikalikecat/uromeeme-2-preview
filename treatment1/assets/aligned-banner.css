@@ -1,0 +1,19 @@
+/* Hero alignment reference inspected 2026-09-21. */
+body{background:#fff}
+.m19-home-preview .scene{padding:24px 40px 64px;background:#fff}
+.m19-home-preview .scene .viewport{padding:0;overflow:visible;cursor:default}
+.m19-home-preview .scene .card{flex-basis:100%;height:838px;min-height:660px;padding:56px 54px 42px;border:1px solid #b8b797;border-radius:36px;background:radial-gradient(at 72% 28%,#fffaf0 0%,#fffaf080 15%,transparent 42%),radial-gradient(at 110% 5%,#3b7565a3,transparent 56%),radial-gradient(at 0% 100%,#a5c7b080,transparent 52%),linear-gradient(125deg,#fffefa 10%,#edf4ee 57%,#b2cbb9);box-shadow:0 24px 64px #153d2921,inset 0 0 0 5px #ffffff70}
+.m19-home-preview .scene .card::before{content:"";position:absolute;inset:16px;width:auto;height:auto;border:1px solid #b79b6170;border-radius:25px;background:none;opacity:1;box-shadow:inset 0 0 0 5px #ffffff35;pointer-events:none;z-index:0;transform:none}
+.m19-home-preview .scene .card::after{content:"";display:block;position:absolute;inset:30px;width:auto;height:auto;border:1px solid #ffffff8c;border-radius:16px;background:none;transform:none;pointer-events:none;z-index:0}
+.m19-home-preview .scene .gold{display:none}
+.first-slot{left:calc(27% + 25px - 215px)}
+@media(max-width:1000px){.m19-home-preview .scene{padding:20px 24px 56px}.m19-home-preview .scene .card{padding:40px 30px}}
+@media(max-width:800px){
+ .m19-home-preview .scene .card{height:auto;min-height:0;padding:38px 24px 30px;border-radius:24px}
+ .m19-home-preview .scene .card::before{inset:10px;border-radius:18px}
+ .m19-home-preview .scene .card::after{inset:20px;border-radius:12px}
+ .people{width:calc(100% + 48px);margin-left:-24px;margin-right:-24px}
+ .benefits span{padding:0 5px;font-size:16px}
+ .doctor-name{font-size:17px}.doctor-role{font-size:9px}
+}
+@media(max-width:350px){.m19-home-preview .scene{padding-left:12px;padding-right:12px}.m19-home-preview .scene .card{padding-left:18px;padding-right:18px}.people{width:calc(100% + 36px);margin-left:-18px;margin-right:-18px}.benefits span{font-size:14px}}

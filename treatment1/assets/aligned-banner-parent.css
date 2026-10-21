@@ -1,0 +1,6 @@
+/* Match private-surgery r4's 1440px shell; fullscreen intro remains viewport-wide. */
+html:not(.intro-locked) .integrated-banner{width:min(100vw,1440px);max-width:none}
+html:not(.intro-locked) .integrated-banner iframe{background:#fff}
+
+/* Release compatibility: override the legacy important iframe border, which adds 2px to the viewport width. */
+.integrated-banner #treatment-banner{border:0!important}
