@@ -1,0 +1,8 @@
+/* The accepted header is relative: announcements must not pin below a stale header offset. */
+.m19-home-preview.tsuku-home .home-announcement{position:relative;top:auto}
+.tsuku-home .home-announcement.home-all-notices ul{display:grid;gap:10px}
+.tsuku-home .home-announcement-inner{font:16px/1.65 var(--home-sans)}
+@media(prefers-reduced-motion:reduce){.tsuku-home .home-announcement *{animation:none!important;transition:none!important}}
+/* No control column remains; both notice texts still have the full reading measure. */
+.tsuku-home .home-announcement-inner{grid-template-columns:auto minmax(0,1fr)}
+@media(max-width:700px){.tsuku-home .home-announcement-inner{font-size:14px}}
